@@ -7,13 +7,13 @@ Empyrical是一个由Quantopian开发的开源的Python库，专门用于计算�
 这个函数 beta_fragility_heuristic 用于估计在beta下降时的脆弱性。
 函数的参数如下：
 
-    returns：策略的每日收益，非累积。这可以是 pandas 的 Series 或 numpy 的 ndarray。
-    factor_returns：计算beta的因子的每日非累积收益。通常是一个基准，比如市场。这同样应为 pandas 的 Series 或 numpy 的 ndarray 类型。
+- returns：策略的每日收益，非累积。这可以是 pandas 的 Series 或 numpy 的 ndarray。
+- factor_returns：计算beta的因子的每日非累积收益。通常是一个基准，比如市场。这同样应为 pandas 的 Series 或 numpy 的 ndarray 类型。
 
 函数的返回值是一个浮点数或者 np.nan，表示策略的beta脆弱性。
 注意：
 
-    如果返回值为负，表示可能会在beta波动的情况下出现亏损。负值的大小表示可能亏损的大小。
+- 如果返回值为负，表示可能会在beta波动的情况下出现亏损。负值的大小表示可能亏损的大小。
 
 简单来说，Beta脆弱性启发式函数是一个量化风险的方法，它试图估计在给定风险因子（比如市场）的收益率变化的情况下，投资策略的脆弱性。在这种情况下，脆弱性被定义为策略在风险因子的负面影响下可能遭受的损失。这主要是通过计算投资策略与风险因子之间的Beta（即系统性风险）并观察其变化来完成的。如果Beta的变化引起了投资策略的收益变动，那么我们就可以说策略对Beta的变化是脆弱的。
 ### 11. beta_fragility_heuristic_aligned(returns, factor_returns)
