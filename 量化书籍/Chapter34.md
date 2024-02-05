@@ -2,7 +2,7 @@
 # 从零学量化34—量化投资策略评价和可视化分析概述
 
 
-$`\sin (\alpha \pm \beta)=\sin \alpha \cos \beta \pm \cos \alpha \sin \beta`$`
+$`\sin (\alpha \pm \beta)=\sin \alpha \cos \beta \pm \cos \alpha \sin \beta`$aaaaaaaaaaaaaa
 
 从本节开始，我们介绍量化投资的一个专题：量化策略评价和可视化分析。
 我们如何才能选择最佳的投资策略呢？这需要一套完整的评价体系来衡量策略的性能。这种评价不仅可以帮助我们了解策略的优势和弱点，调整和优化策略，而且还可以让我们在众多策略中找出最适合我们的那一种。
