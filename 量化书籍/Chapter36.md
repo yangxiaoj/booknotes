@@ -145,3 +145,4 @@ qs.plots.rolling_volatility(returns=results_df['月收益率'], period=6, period
 ```
 上述代码的参数 period=6 表示轮动窗口为6个月；函数 periods_per_year 用于设置一年中的交易频率，本例为月度调仓，一年的交易频率为12次。结果如下：
 ![](images/2024-02-04-18-12-47.png)
+以上便是使用empyrical和quantstats库进行策略的风险评价的内容。
