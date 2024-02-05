@@ -14,6 +14,10 @@ Ctrl+Alt+A
 
 ![](images/2024-02-04-16-58-03.png)
 
+![](images/2024-02-04-16-59-47.png)
+
+
+
 ### 数学公式嵌入
 
 $`\sin (\alpha \pm \beta)=\sin \alpha \cos \beta \pm \cos \alpha \sin \beta`$
