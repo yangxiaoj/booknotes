@@ -108,9 +108,11 @@ up_alpha_beta 函数只计算基准收益为正时期的 alpha 和 beta，这可
 - returns：策略的收益，非累计。可以为 pd.Series 或 np.ndarray。具体细节请参考 empyrical.stats.cum_returns 函数的解释。
 - factor_returns：用于计算 beta 的因子（通常为基准，如市场）的非累计收益。与 returns 的类型和风格相同。
 - period：定义 'returns' 数据的周期性，用于年化。如果指定了 annualization 参数，则忽略此值。默认值如下：
-    'monthly':12
-    'weekly': 52
-    'daily': 252
+'monthly':12
+
+'weekly': 52
+
+'daily': 252
 - **kwargs：其他参数，请参见 empyrical.capture 函数的文档。
 
 函数的返回值是上行捕获比率（Up Capture，float类型）。
