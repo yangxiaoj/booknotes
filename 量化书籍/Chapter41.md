@@ -22,12 +22,15 @@ beta_fragility_heuristic_aligned函数和之前提到的beta_fragility_heuristic
 该函数 cagr 用于计算复合年增长率（Compound Annual Growth Rate，CAGR），这是函 annual_return 的别名函数。
 函数参数如下：
 
-returns：策略的每日收益，非累积。这可以是 pandas 的 Series 或 numpy 的 ndarray。
+- returns：策略的每日收益，非累积。这可以是 pandas 的 Series 或 numpy 的 ndarray。
 
-period：定义 'returns' 数据的周期性，以便进行年化。如果指定了 annualization 参数，则忽略该值。默认值如下：
-- 'monthly': 12
-- 'weekly': 52
-- 'daily': 252
+- period：定义 'returns' 数据的周期性，以便进行年化。如果指定了 annualization 参数，则忽略该值。默认值如下：
+  
+  'monthly': 12
+
+  'weekly': 52
+
+  'daily': 252
 
 annualization：用于抑制 period 中可用的默认值，将收益转化为年收益。该值应为 returns 的年频率。
 
@@ -45,12 +48,15 @@ $`\text { CAGR }=(\text { Ending Value } / \text { Beginning Value }) \wedge(1 /
 
 函数的参数如下：
 
-returns：策略的每日收益，非累积。这可以是 pandas 的 Series 或 numpy 的 ndarray。
+- returns：策略的每日收益，非累积。这可以是 pandas 的 Series 或 numpy 的 ndarray。
 
-period：定义 'returns' 数据的周期性，以便进行年化。如果指定了 annualization 参数，则忽略该值。默认值如下：
-- 'monthly': 12
-- 'weekly': 52
-- 'daily': 252
+- period：定义 'returns' 数据的周期性，以便进行年化。如果指定了 annualization 参数，则忽略该值。默认值如下：
+  
+  'monthly': 12
+  
+  'weekly': 52
+  
+  'daily': 252
 
 annualization：用于抑制 period 中可用的默认值，将收益转化为年收益。该值应为 returns 的年频率。
 
@@ -68,14 +74,17 @@ Calmar比率 = 年化收益率 / 最大回撤的绝对值
 
 函数的参数如下：
 
-returns：策略的每日收益，非累积。这可以是 pandas 的 Series 或 numpy 的 ndarray。
+- returns：策略的每日收益，非累积。这可以是 pandas 的 Series 或 numpy 的 ndarray。
 
-factor_returns：计算beta的因子的每日非累积收益。通常是一个基准，比如市场。这同样应为 pandas 的 Series 或 numpy 的 ndarray 类型。
+- factor_returns：计算beta的因子的每日非累积收益。通常是一个基准，比如市场。这同样应为 pandas 的 Series 或 numpy 的 ndarray 类型。
 
-period：定义 'returns' 数据的周期性，以便进行年化。默认值如下：
-- 'monthly': 12
-- 'weekly': 52
-- 'daily': 252
+- period：定义 'returns' 数据的周期性，以便进行年化。默认值如下：
+  
+  'monthly': 12
+
+  'weekly': 52
+
+  'daily': 252
 
 函数的返回值是一个浮点数，代表捕获比率。
 
