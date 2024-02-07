@@ -11,9 +11,12 @@
 本文将继续以市值因子为例，详细介绍因子信息系数（IC）的评价。因子IC评价是通过调用Alphalens库的create_information_tear_sheet函数完成的。关于什么是因子IC评价，请参见《解析因子评价：如何选择最佳的投资因子》一节。
 
 ## 01 调用create_information_tear_sheet函数
-### 1. 在调用create_information_tear_sheet函数之前，先要获取因子值数据和股票的交易价格数据，然后用Alphalens的get_clean_factor_and_forward_returns函数来预处理因子数据，得到符合Alphalens格式要求的数据factor_data。
+
+1. 在调用create_information_tear_sheet函数之前，先要获取因子值数据和股票的交易价格数据，然后用Alphalens的get_clean_factor_and_forward_returns函数来预处理因子数据，得到符合Alphalens格式要求的数据factor_data。
+
 具体的因子数据和数据预处理参见《因子评价神器Alphalens库详解（一）：数据准备》一节，这里不再赘述。
-### 2. 得到符合Alphalens格式要求的数据factor_data后，就可以调create_information_tear_sheet函数生成因子的IC评价报告：
+
+2. 得到符合Alphalens格式要求的数据factor_data后，就可以调create_information_tear_sheet函数生成因子的IC评价报告：
 
 ```python 
 
