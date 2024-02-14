@@ -125,11 +125,33 @@ In summary, these results suggest an important role for spatial restriction of i
 
 ## Stromal multicellular neighbourhoods
 To provide a global view of intercellular interactions, cellular densities and overall multicellular structures of the intestine, we performed cellular neighbourhood analysis10 (Methods and Extended Data Fig. 1a).
+![](images/2024-02-13-16-19-27.png)
+A) Schematic for how CODEX multiplexed imaging was performed on arrays of 4 different sections of either colon and small intestine from the same donor simultaneously. Image processing steps done to extract single-cell spatial data. 
 
- This revealed 18 significant multicellular structures with major epithelial, stromal and immune-based neighbourhoods (Fig. 2a,b and Extended Data Fig. 2b–d). Eight neighbourhoods were classified as stromal neighbourhoods and identified major structures within the intestine: micro- and macrovasculature, innervated stroma and smooth muscle, and innate immune hubs within the stroma and smooth muscle areas (Fig. 2a). Only the Smooth Muscle neighbourhood increased moving from the small intestine to the colon, whereas the innervated and innate immune smooth muscle neighbourhoods did not (Extended Data Fig. 2e and Supplementary Fig. 8a). This further suggests that these dense compartmentalized smooth muscle cell areas (Extended Data Fig. 2f) increase within the colon.
 
-![](images/2024-02-08-13-40-56.png)
-a, Twenty unique intestinal multicellular neighbourhoods were defined by enriched cell types as compared to the overall percentage of cell types in the samples. b, An example in which neighbourhoods mapped back to the tissue show overall tissue structures. Scale bar, 0.5 mm. c, The percentage of Neuroendocrine-Enriched neighbourhood of all of the neighbourhoods as determined by individually characterizing cellular neighbourhoods by region. n = 8 donors. The box plots show the median (centre line), 25th to 75th percentile (box limits), minimum and maximum values (whiskers), and outliers (points outside 1.5× the interquartile range). d,e, Quantification of the same-cell density for neuroendocrine cells compared across the small bowel and colon (n = 32 tissue sections) (d) or the epithelial neighbourhoods as determined by individually characterizing cellular neighbourhoods by region (n = 64 tissue sections) (e). Avg., average; max., maximum. f, A subset of epithelial neighbourhoods mapped back to a representative magnified region (n = 8 donors) of the mucosa of a transverse colon section. Scale bar, 250 µm. g,h, The approach to calculate concentric increasing neighbourhoods around a Paneth cell (g) to generate cellular neighbourhoods for Paneth cells at increasing radii (h). i,j, Schematic (i) and CODEX fluorescence data illustrating a representative (1 of 32 sections from 8 donors) magnified portion of the proximal jejunum depicting colocalization of Paneth cells (DEFA5, green) and CD8+ T cells (CD8, cyan) and CD4+ T cells (CD4, yellow) in the intestinal crypt environment (j). Scale bar, 50 µm.
+ This revealed 18 significant multicellular structures with major epithelial, stromal and immune-based neighbourhoods (Fig. 2a,b and Extended Data Fig. 2b–d).
+ ![](images/2024-02-13-16-21-36.png)
+ a, Twenty unique intestinal multicellular neighbourhoods were defined by enriched cell types as compared to the overall percentage of cell types in the samples. b, An example in which neighbourhoods mapped back to the tissue show overall tissue structures. Scale bar, 0.5 mm.
+
+ ![](images/2024-02-13-16-20-33.png)
+ B-D) Neighbourhood percentages from CODEX data averaged normalized by B) stromal, C) immune, and D) epithelial compartments. Asterix indicates p-value less than 0.05 difference in cell type percentage from the small bowel (SB) to the colon (CL) by two-sided T test.
+ 
+  Eight neighbourhoods were classified as stromal neighbourhoods and identified major structures within the intestine: micro- and macrovasculature, innervated stroma and smooth muscle, and innate immune hubs within the stroma and smooth muscle areas (Fig. 2a).
+![](images/2024-02-13-16-22-56.png)
+a, Twenty unique intestinal multicellular neighbourhoods were defined by enriched cell types as compared to the overall percentage of cell types in the samples.
+
+Only the Smooth Muscle neighbourhood increased moving from the small intestine to the colon, whereas the innervated and innate immune smooth muscle neighbourhoods did not (Extended Data Fig. 2e and Supplementary Fig. 8a).
+![](images/2024-02-13-16-24-05.png)
+E) Stromal multicellular neighbourhood percentages either as a percent of all neighbourhoods restricted to the Muscularis Externa tissue unit (* p value< 0.05, *** p value < 0.001, n = 8 donors, by two-sided T test,).
+
+![](images/2024-02-13-16-24-43.png)
+Supplemental Figure 8: Multicellular neighborhood percentage analysis from CODEX multiplexed imaging data of the intestine. A) Stromal multicellular neighborhood percentages as a percent of all stromal neighborhoods.
+
+ This further suggests that these dense compartmentalized smooth muscle cell areas (Extended Data Fig. 2f) increase within the colon.
+
+
+![](images/2024-02-13-16-26-16.png)
+F) Quantification of the same-cell density for just smooth muscle cells within different smooth muscle multicellular neighbourhoods (x axis) (n = 32 tissue sections). 
 
 ## Immune multicellular neighbourhoods
 Congruent with our observation of high plasma cell density (Fig. 1g), we observed a Plasma-Cell-Enriched neighbourhood driven by increased density of plasma cells (Fig. 2a). This Plasma-Cell-Enriched neighbourhood also exhibits co-enrichment of CD4+ T cells and antigen-presenting cells such as dendritic cells and macrophages (Fig. 2a) and is localized within the mucosa lamina propria (Extended Data Fig. 2g–i). These observations are consistent with observations suggesting that secretion or ligand engagement of plasma cells from antigen-presenting cells within the bone marrow can maintain long-term survival in plasma-specific niches18,19,20.
