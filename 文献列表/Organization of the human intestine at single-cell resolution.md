@@ -26,16 +26,68 @@ Here, we map many portions of the intestine at the single-cell resolution using 
 We mapped the cell composition, regulatory information and spatial distribution of single cells across the intestines of multiple donors using single-nucleus RNA-seq (snRNA-seq), which measures nuclear RNA transcripts in individual nuclei; snATAC-seq, which measures open chromatin in single cells; and CODEX, which stains the same tissue section with up to 54 antibody probes against different targets (usually proteins). We analysed eight sections from nine individuals: seven individuals of European ancestry (five male and two female) and two African American individuals (one male and one female). Age ranges were from 24 to 78 years. The eight regions (in order of trajectory from the stomach) were as follows: the duodenum, proximal jejunum, mid-jejunum and ileum from the small intestine, and the ascending, transverse, descending and sigmoid regions of the large intestine.
 
 ## Multiplexed imaging of the intestine
-To create a spatial map of the intestine across the eight regions, we used CODEX multiplexed imaging, which enables insights into cellular interactions, composition of multicellular tissue units and spatial relationships to the overall function of the intestine9,10. We first validated and optimized CODEX staining, imaging and image processing for 16-mm2 sections of fresh-frozen samples on one participant (B001) (Supplementary Figs. 1–3). For the other eight donors, we expanded our CODEX antibody panel by adding and validating 17 intestine-specific markers (Supplementary Information 1 and Supplementary Fig. 4) for a total of 54 antibodies that enabled the spatial identification of 25 cell types12 (Extended Data Fig. 1c and Supplementary Figs. 5 and 6).
+To create a spatial map of the intestine across the eight regions, we used CODEX multiplexed imaging, which enables insights into cellular interactions, composition of multicellular tissue units and spatial relationships to the overall function of the intestine9,10. We first validated and optimized CODEX staining, imaging and image processing for 16-mm2 sections of fresh-frozen samples on one participant (B001) (Supplementary Figs. 1–3). 
 
-We used the resultant dataset (a total of 2.7 million cells) to compare the cellular composition and organization across the different tissue regions, normalizing to overall cell grouping (Fig. 1a–c). Within the stromal compartment, moving from the small intestine to the colon, we observed a decrease in endothelial cells and an increase in smooth muscle cells (Fig. 1a and Extended Data Fig. 1d). To verify that this was not an artefact of capturing more muscularis externa within samples of the colon compared with the small intestine, we calculated the percentages of all cell types within the four different pathological compartments of the intestine: the mucosa, muscularis mucosa, submucosa and muscularis externa. Indeed, even when comparing all of the cell types found within the muscularis externa, there was still a significant decrease in endothelial cells and an increase in smooth muscle cells (Extended Data Fig. 1e). Thus, not only is there less vasculature more broadly in the colon, but there is less within the muscularis externa and a higher density of smooth muscle cells.
+![](images/2024-02-13-15-27-51.png)
+Supplemental Figure 1: CODEX multiplexed imaging of first donor B001 for small intestine and colon samples. A) 44 marker antibody base panel used for imaging. B) CODEX imaging of one of the 8 different sites taken from the colon for B001, with 5/44 markers shown (scale bar = 500 µm). Four zoomed in regions (scale bar = 100 µm) with various 5 color combinations of markers from the larger image (denoted by colored outline) with also an H&E image shown for the tissue. C) Multicellular neighborhood map for the same region with both cell type and neighborhood maps zoomed in around immune follicle regions. Representative image taken here is one of 8 taken from donor B001. 
+![](images/2024-02-13-15-30-43.png)
+Supplemental Figure 2: Cell type maps for all 8 regions imaged. For donor 1 (B001) of the small intestine and colon (scale bar = 1 mm). 
+![](images/2024-02-13-15-31-26.png)
+Supplemental Figure 3: Determination of multicellular neighborhoods in CODEX multiplexed imaging for donor 1 across all 8 regions. A) Cell type enrichment score within each neighborhood as represented in the heatmap. B) Cell type mapped back to each individual sample imaged (scale bar = 1 mm). 
 
-![](images/2024-02-08-13-37-57.png)
-a–c, Cell type percentages from CODEX data averaged across eight donors. Cell types are normalized to the stromal (a), immune (b) and epithelial (c) compartments. Statistical analysis was performed using two-sided t-tests comparing the difference in cell type percentage between the small bowel (SB) and the colon (CL); *P < 0.05. ICC, interstitial cells of Cajal; NK, natural killer cells; TA, transit-amplifying cells. d, The percentage of M1 macrophages within the small bowel and colon for all donors plotted versus donor BMI (Pearson correlation r = 0.86). e, Cell type maps of the mid-jejunum from representative individuals (n = 8 donors) with high or low BMI with M1 macrophages (black) highlighted among stromal (light grey) and epithelial (grey) cell types also shown. Scale bar, 250 µm. f, Cell type percentages for endothelial and CD8+ T cells compared for donors with or without a history of hypertension. Statistical analysis was performed using two-sided t-tests; *P = 0.038, ***P = 0.00013. n = 3–5 donors. g, Quantification of the same-cell density measured as an average distance of its five nearest same-cell neighbours divided by the maximal possible same-cell distance within the tissue. n = 64 tissue sections. h, The percentage of macrophage subsets across major intestinal compartments.
+For the other eight donors, we expanded our CODEX antibody panel by adding and validating 17 intestine-specific markers (Supplementary Information 1 and Supplementary Fig. 4) for a total of 54 antibodies that enabled the spatial identification of 25 cell types12 (Extended Data Fig. 1c and Supplementary Figs. 5 and 6).
+![](images/2024-02-13-15-42-05.png)
+C) accompanying cell type map following cell segmentation and unsupervised clustering. 
 
-In the immune compartment, we observed a decrease in CD8+ T cells from the small intestine to the colon (Fig. 1b, Extended Data Fig. 1f and Supplementary Fig. 7a–c), consistent with previous observations13. Conversely, we observed an increase in the percentage of dendritic cells within the colon compared with in the small intestine that is also seen when examining total cell percentages within the mucosa (Fig. 1b and Extended Data Fig. 1f).
+![](images/2024-02-13-15-32-48.png)
+Supplemental Figure 4: CODEX multiplexed imaging with expanded 54 antibody CODEX panel. A) One region of B004 (total of 8) shown with 6 markers shown (Vimentin, CD3, aSMA, CD45, Cytokeratin, and CD31) (scale bar = 500 µm) B) Zoomed in regions with 6 markers each shown for the region highlighted (yellow box) in A with additional markers added to the panel highlighted (scale bar = 100 µm). C)  Cell type by marker heatmap normalized both by column and row to show markers which define cell types from CODEX multiplexed imaging for samples B004,5,6.
+![](images/2024-02-13-15-33-39.png)
+Supplemental Figure 5: Cell type maps for all 8 regions imaged. For donors A) B004, B) B005, and C) B006 of the small intestine and colon (scale bar = 1 mm).
+![](images/2024-02-13-15-34-20.png)
+Supplemental Figure 6: Quantification of cell type percentages for all donors (n=8, error bars indicate standard deviation). A) Cell type percentage separated by donor. B) Cell type percentage grouped by location in the intestine. C) Cell type percent summation graph by location in the intestine with all cell types shown
 
-In the epithelial compartment, we observed a decrease in enterocytes, an increase in secretory enterocytes (goblet cells) and CD66+ enterocytes and an absence of Paneth cells when moving from the small intestine to the colon (Fig. 1c, Extended Data Fig. 1g and Supplementary Fig. 7d). We also detected a rare population of CD57+ enterocytes that is enriched within the duodenum compared with in other areas of the intestine (Extended Data Fig. 1h and Supplementary Fig. 7e). These gastric-like cells are enriched in areas of the duodenum within submucosal glands (Extended Data Fig. 1i and Supplementary Fig. 7f).
+We used the resultant dataset (a total of 2.7 million cells) to compare the cellular composition and organization across the different tissue regions, normalizing to overall cell grouping (Fig. 1a–c). 
+![](images/2024-02-13-15-43-50.png)
+a–c, Cell type percentages from CODEX data averaged across eight donors. Cell types are normalized to the stromal (a), immune (b) and epithelial (c) compartments. Statistical analysis was performed using two-sided t-tests comparing the difference in cell type percentage between the small bowel (SB) and the colon (CL); *P < 0.05. ICC, interstitial cells of Cajal; NK, natural killer cells; TA, transit-amplifying cells.
+
+Within the stromal compartment, moving from the small intestine to the colon, we observed a decrease in endothelial cells and an increase in smooth muscle cells (Fig. 1a and Extended Data Fig. 1d). 
+![](images/2024-02-13-15-44-56.png)
+a–c, Cell type percentages from CODEX data averaged across eight donors. Cell types are normalized to the stromal (a), immune (b) and epithelial (c) compartments. Statistical analysis was performed using two-sided t-tests comparing the difference in cell type percentage between the small bowel (SB) and the colon (CL); *P < 0.05. ICC, interstitial cells of Cajal; NK, natural killer cells; TA, transit-amplifying cells. 
+
+![](images/2024-02-13-15-46-54.png)
+
+D-E) Stromal cell type percentages either as a percent of D) All stromal cells, or E) all cells restricted to the Muscularis Externa tissue unit.
+
+To verify that this was not an artefact of capturing more muscularis externa within samples of the colon compared with the small intestine, we calculated the percentages of all cell types within the four different pathological compartments of the intestine: the mucosa, muscularis mucosa, submucosa and muscularis externa. Indeed, even when comparing all of the cell types found within the muscularis externa, there was still a significant decrease in endothelial cells and an increase in smooth muscle cells (Extended Data Fig. 1e).
+![](images/2024-02-13-15-49-46.png)
+ D-E) Stromal cell type percentages either as a percent of D) All stromal cells, or E) all cells restricted to the Muscularis Externa tissue unit.
+
+ Thus, not only is there less vasculature more broadly in the colon, but there is less within the muscularis externa and a higher density of smooth muscle cells.
+
+
+In the immune compartment, we observed a decrease in CD8+ T cells from the small intestine to the colon (Fig. 1b, Extended Data Fig. 1f and Supplementary Fig. 7a–c), consistent with previous observations13.
+![](images/2024-02-13-15-54-42.png)
+a–c, Cell type percentages from CODEX data averaged across eight donors. Cell types are normalized to the stromal (a), immune (b) and epithelial (c) compartments. Statistical analysis was performed using two-sided t-tests comparing the difference in cell type percentage between the small bowel (SB) and the colon (CL); *P < 0.05. ICC, interstitial cells of Cajal; NK, natural killer cells; TA, transit-amplifying cells.
+
+![](images/2024-02-13-15-51-21.png)
+F) Immune cell type
+
+![](images/2024-02-13-15-52-41.png)
+![](images/2024-02-13-15-53-04.png)
+Supplemental Figure 7: Cell type percentages as determined by CODEX multiplexed imaging. A) Immune cell type percentages as a percent of all immune cells. B) Percentage of CD8+ T cells of all cell types across different areas samples from small intestine to colon. C) Heatmap of p values from Tukey post-test after a significant difference was found using a one-way ANOVA for the percent of CD8+ T cells across different areas of the small intestine and colon.
+
+ Conversely, we observed an increase in the percentage of dendritic cells within the colon compared with in the small intestine that is also seen when examining total cell percentages within the mucosa (Fig. 1b and Extended Data Fig. 1f).
+
+In the epithelial compartment, we observed a decrease in enterocytes, an increase in secretory enterocytes (goblet cells) and CD66+ enterocytes and an absence of Paneth cells when moving from the small intestine to the colon (Fig. 1c, Extended Data Fig. 1g and Supplementary Fig. 7d). 
+![](images/2024-02-13-15-56-37.png)
+a–c, Cell type percentages from CODEX data averaged across eight donors. Cell types are normalized to the stromal (a), immune (b) and epithelial (c) compartments. Statistical analysis was performed using two-sided t-tests comparing the difference in cell type percentage between the small bowel (SB) and the colon (CL); *P < 0.05. ICC, interstitial cells of Cajal; NK, natural killer cells; TA, transit-amplifying cells.
+![](images/2024-02-13-15-58-27.png)
+G) epithelial cell type percentages either as a percent of all cells restricted to the Mucosa tissue unit. 
+
+![](images/2024-02-13-15-59-06.png)
+D) Epithelial cell type percentages as a percent of all epithelial cells. 
+
+We also detected a rare population of CD57+ enterocytes that is enriched within the duodenum compared with in other areas of the intestine (Extended Data Fig. 1h and Supplementary Fig. 7e). These gastric-like cells are enriched in areas of the duodenum within submucosal glands (Extended Data Fig. 1i and Supplementary Fig. 7f).
 
 ## Cell type associations with clinical data
 We also evaluated cell type changes with donor metadata. M1 macrophage levels had the highest correlation with body mass index (BMI) (Fig. 1d) and were restricted to the mucosa (Fig. 1e). M1 macrophages are pro-inflammatory and have been implicated in chronic inflammatory disease, autoimmunity and problems with wound healing in the intestine14,15,16. Similarly, obesity increases the risk of gastrointestinal disorders17. Although the donors did not have histories of gastrointestinal disorders, we found that individuals with a BMI characterized as overweight (25–29.9) have a fivefold increase in M1 macrophages and individuals with obesity (BMI > 30) have an eightfold increase compared with individuals who are normal weight (18.5–25). We also observe decreases in endothelial cells (from 25% to 20%) and CD8+ T cells (from 42% to 25%) in donors with a history of hypertension (Fig. 1f). High pressure due to a lower ratio of total vasculature is expected, but a substantial decrease in CD8+ T cells is surprising (Supplementary Fig. 7a).
