@@ -237,28 +237,152 @@ C) Epithelial neighborhood percentages as a percent of epithelial neighborhoods.
 
 
 ## Intestinal crypt neighbourhoods
-As we observed differences in neighbourhood cell type conservation, we performed neighbourhood analysis on each individual region of the intestine separately and then concatenated the results. All aggregated neighbourhoods (Fig. 2a) were identified (Extended Data Fig. 3d). We also identified two unique neighbourhoods: Neuroendocrine-Enriched, which was found only in the colon, and Neutrophil-Enriched, which was found throughout the intestine but enriched in the colon (Fig. 2c and Extended Data Fig. 3e,f). The Neutrophil-Enriched neighbourhood was characterized by a high density of neutrophils associated with vasculature and innate immune cells, found often within stromal and smooth muscle areas (Extended Data Fig. 3d). The Neuroendocrine-Enriched neighbourhood had a mixture of epithelial and immune cell types enriched (Extended Data Fig. 3d).
+As we observed differences in neighbourhood cell type conservation, we performed neighbourhood analysis on each individual region of the intestine separately and then concatenated the results. All aggregated neighbourhoods (Fig. 2a) were identified (Extended Data Fig. 3d).
 
-The identification of the Neuroendocrine-Enriched neighbourhood suggested differential organization of neuroendocrine cells in the small intestine compared with in the colon. Indeed, neuroendocrine cells were found to be denser within the colon compared with in the small intestine (Fig. 2d). Furthermore, neuroendocrine cells are most dense within the Neuroendocrine-Enriched neighbourhood as compared to neuroendocrine cells in other epithelial neighbourhoods (Fig. 2e), and the density decreases with the maturity of the epithelial cell types that define these epithelial neighbourhoods (Fig. 2e). This suggests that the Neuroendocrine-Enriched neighbourhood represents the colon crypt neighbourhood, which is confirmed by its localization near the muscularis mucosa (Fig. 2f).
+![](images/2024-02-13-17-12-03.png)
+D) 22 unique intestinal multicellular neighbourhoods (y axis of heatmap) were defined by enriched cell types (x axis of heatmap) as compared to overall percentage of cell types in the samples with 2 unique neighbourhoods not identified with overall neighbourhood analysis. 
 
-Identification of this crypt environment only within the colon and not in the small intestine is consistent with our finding of variation in early epithelial environments in our first neighbourhood analysis (Extended Data Fig. 3c), and Paneth-Cell-Enriched neighbourhoods are observed only within the small intestine (Extended Data Fig. 3e). Indeed, Paneth cells are known to be restricted to the small intestine and also to be enriched within the intestinal crypt. As a consequence, to understand whether the Neuroendocrine-Enriched neighbourhood was similar to the small intestine crypt environment, we examined the neighbours surrounding Paneth cells with increasing window size (Fig. 2g). This analysis revealed that there was a high enrichment of neuroendocrine cells, but it also underscored that interstitial cells of Cajal, CD4+ T cells and CD8+ T cells were enriched within the local microenvironment (Fig. 2h–j). This agrees with enrichment of CD4+ T cells and interstitial cells of Cajal found within the Neuroendocrine-Enriched neighbourhood (Extended Data Fig. 3d).
+ We also identified two unique neighbourhoods: Neuroendocrine-Enriched, which was found only in the colon, and Neutrophil-Enriched, which was found throughout the intestine but enriched in the colon (Fig. 2c and Extended Data Fig. 3e,f).
+
+![](images/2024-02-13-17-12-58.png)
+E) Epithelial neighbourhood percentages as a percent of epithelial neighbourhoods from multicellular analysis performed on each individual region of the intestine separately. F) Immune neighbourhood percentages as a percent of immune neighbourhoods from multicellular analysis performed on each individual region of the intestine separately. (* p value< 0.05, ** p value< 0.01, *** p value < 0.001 by two-sided T test, n = 8 donors). 
+ 
+ The Neutrophil-Enriched neighbourhood was characterized by a high density of neutrophils associated with vasculature and innate immune cells, found often within stromal and smooth muscle areas (Extended Data Fig. 3d). The Neuroendocrine-Enriched neighbourhood had a mixture of epithelial and immune cell types enriched (Extended Data Fig. 3d).
+
+![](images/2024-02-13-17-13-44.png)
+D) 22 unique intestinal multicellular neighbourhoods (y axis of heatmap) were defined by enriched cell types (x axis of heatmap) as compared to overall percentage of cell types in the samples with 2 unique neighbourhoods not identified with overall neighbourhood analysis. 
+
+The identification of the Neuroendocrine-Enriched neighbourhood suggested differential organization of neuroendocrine cells in the small intestine compared with in the colon. Indeed, neuroendocrine cells were found to be denser within the colon compared with in the small intestine (Fig. 2d).
+
+![](images/2024-02-13-17-15-03.png)
+(d) or the epithelial neighbourhoods as determined by individually characterizing cellular neighbourhoods by region (n = 64 tissue sections) 
+
+
+Furthermore, neuroendocrine cells are most dense within the Neuroendocrine-Enriched neighbourhood as compared to neuroendocrine cells in other epithelial neighbourhoods (Fig. 2e), and the density decreases with the maturity of the epithelial cell types that define these epithelial neighbourhoods (Fig. 2e).
+
+![](images/2024-02-13-17-15-55.png)
+(e). Avg., average; max., maximum.
+
+ This suggests that the Neuroendocrine-Enriched neighbourhood represents the colon crypt neighbourhood, which is confirmed by its localization near the muscularis mucosa (Fig. 2f).
+
+![](images/2024-02-13-17-16-36.png)
+f, A subset of epithelial neighbourhoods mapped back to a representative magnified region (n = 8 donors) of the mucosa of a transverse colon section. Scale bar, 250 µm.
+
+Identification of this crypt environment only within the colon and not in the small intestine is consistent with our finding of variation in early epithelial environments in our first neighbourhood analysis (Extended Data Fig. 3c), and Paneth-Cell-Enriched neighbourhoods are observed only within the small intestine (Extended Data Fig. 3e).
+
+![](images/2024-02-13-17-18-00.png)
+(c) and tissue units (based on clustering communities)
+
+![](images/2024-02-13-17-18-33.png)
+e, Tissue hierarchy graph of the multilevel network of the tissue comprised of the different structures. Shapes correspond to structural level (cell type, neighbourhoods, communities, tissue units); colours represent individual categories as indicated in a–d; the size of shapes represents the percentage of tissue; and the size of connected lines represents the overall contribution to the next level of the structure when moving down the graph in increasing tissue structural hierarchy. The black rectangles highlight a single trajectory highlighted within this Article. The red bracket indicates separation of stromal tissue units from the mucosal tissue units.
+
+
+Indeed, Paneth cells are known to be restricted to the small intestine and also to be enriched within the intestinal crypt. As a consequence, to understand whether the Neuroendocrine-Enriched neighbourhood was similar to the small intestine crypt environment, we examined the neighbours surrounding Paneth cells with increasing window size (Fig. 2g).
+
+![](images/2024-02-13-17-20-08.png)
+g,h, The approach to calculate concentric increasing neighbourhoods around a Paneth cell (g) to generate cellular neighbourhoods for Paneth cells at increasing radii 
+
+This analysis revealed that there was a high enrichment of neuroendocrine cells, but it also underscored that interstitial cells of Cajal, CD4+ T cells and CD8+ T cells were enriched within the local microenvironment (Fig. 2h–j).
+
+![](images/2024-02-13-17-20-53.png)
+(h). i,j, Schematic (i) and CODEX fluorescence data illustrating a representative (1 of 32 sections from 8 donors) magnified portion of the proximal jejunum depicting colocalization of Paneth cells (DEFA5, green) and CD8+ T cells (CD8, cyan) and CD4+ T cells (CD4, yellow) in the intestinal crypt environment (j). Scale bar, 50 µm.
+
+
+This agrees with enrichment of CD4+ T cells and interstitial cells of Cajal found within the Neuroendocrine-Enriched neighbourhood (Extended Data Fig. 3d).
+
+![](images/2024-02-13-17-22-01.png)
+D) 22 unique intestinal multicellular neighbourhoods (y axis of heatmap) were defined by enriched cell types (x axis of heatmap) as compared to overall percentage of cell types in the samples with 2 unique neighbourhoods not identified with overall neighbourhood analysis. 
+
+
 
 ## Hierarchical structural organization
 Multicellular neighbourhood analysis revealed key differences in the structural composition across the intestine as well as in the composition of these neighbourhoods, particularly with relation to the adaptive immune system and the intestinal crypt. However, how these multicellular neighbourhoods interact with one another, and how they are spatially structured in the tissue is unclear. Understanding how multicellular groups are related is key to both defining the hierarchy of tissue organization, as well as defining key functional tissue interfaces.
 
-We investigated higher-order structural organization using several methods. First, we clustered windows of neighbourhood compositions in a manner similar to how we clustered windows of cell types (Fig. 3a) to define neighbourhoods (Fig. 3b). This generated communities of neighbourhoods (Fig. 3c and Extended Data Fig. 4a–c), which we then leveraged to identify major tissue units such as the muscularis mucosa (Fig. 3d and Supplementary Fig. 10). The Paneth-Cell-Enriched neighbourhood was enriched within the Adaptive-Immune-Enriched community (Extended Data Fig. 4a). Indeed, concentric neighbourhood environments surrounding the Paneth-Cell-Enriched neighbourhood also showed colocalization with Outer Follicle and Adaptive-Immune-Enriched neighbourhoods (Extended Data Fig. 4d). These results support the idea that the adaptive immune system forms a conserved niche with the intestinal crypt.
-![](images/2024-02-08-13-43-19.png)
-a–d, Representation of multiple levels of hierarchical description: cell type (a), multicellular neighbourhood (b), community (based on clustering windows of cell neighbourhoods) (c) and tissue units (based on clustering communities) (d) comparing the small bowel with the colon for two representative tissue sections (from a total of 64 sections from 8 donors). Scale bar, 1 mm. e, Tissue hierarchy graph of the multilevel network of the tissue comprised of the different structures. Shapes correspond to structural level (cell type, neighbourhoods, communities, tissue units); colours represent individual categories as indicated in a–d; the size of shapes represents the percentage of tissue; and the size of connected lines represents the overall contribution to the next level of the structure when moving down the graph in increasing tissue structural hierarchy. The black rectangles highlight a single trajectory highlighted within this Article. The red bracket indicates separation of stromal tissue units from the mucosal tissue units. f, Magnified mucosal area of a colon community map shown within c. Scale bar, 100 µm. g, The spatial-context maps of the colon highlighting relationships of communities across the entire sample. This structure is defined by the number of unique communities required to make up at least 85% in a given window. The circles represent the number of cells represented by a given structure. The green rectangle highlights a structure discussed in this Article and maps this structure back to g. The colours are as indicated in c. h, The cell type percentage of immune cells shown for each community ordered in relative order of general increasing proximity to the lumen on the basis of community spatial-context analysis.
+We investigated higher-order structural organization using several methods. First, we clustered windows of neighbourhood compositions in a manner similar to how we clustered windows of cell types (Fig. 3a) to define neighbourhoods (Fig. 3b).
 
-To relate the various levels of spatial organization, we created a hierarchical structure network graph (Fig. 3e and Supplementary Fig. 11). Each level of this graph is connected to the next by its major contributors. Using this intuitive formalism, we can observe many levels of intestinal cell and tissue-structure organization. For example, we observed crosstalk between stromal and smooth muscle cell types and structures, which are in turn isolated from epithelial and immune components that are more entwined with one another (Fig. 3e (red bracket)).
+![](images/2024-02-13-17-23-58.png)
+a–d, Representation of multiple levels of hierarchical description: cell type (a), multicellular neighbourhood (b), community (based on clustering windows of cell neighbourhoods)
+
+This generated communities of neighbourhoods (Fig. 3c and Extended Data Fig. 4a–c), which we then leveraged to identify major tissue units such as the muscularis mucosa (Fig. 3d and Supplementary Fig. 10).
+
+![](images/2024-02-13-17-25-22.png)
+(c) and tissue units (based on clustering communities) (d) comparing the small bowel with the colon for two representative tissue sections (from a total of 64 sections from 8 donors). Scale bar, 1 mm.
+
+![](images/2024-02-13-17-26-17.png)
+![](images/2024-02-13-17-26-31.png)
+A) Community analysis was done by taking a window across neighbourhood maps and vectorizing the number of each neighbourhood type in each window, clustering windows, and assigning clusters as multi-neighbourhood communities of the intestine. 10 unique intestinal multi-neighbourhood communities (y axis of heatmap) were defined by enriched neighbourhood types (x axis of heatmap) as compared to overall percentage of neighbourhood types in the samples. B) Quantification of neighbourhood types across each section of the intestine (colour legend within panel A). C) Community percentages as a percent of all communities for small intestine and colon (* p value< 0.05, ** p value< 0.01, *** p value < 0.001, n = 8 donors).
+
+![](images/2024-02-13-17-28-07.png)
+Supplemental Figure 10: Overall tissue unit represented on all 8 sections. From donors B008-B012 (scale bar = 100 µm).
+
+The Paneth-Cell-Enriched neighbourhood was enriched within the Adaptive-Immune-Enriched community (Extended Data Fig. 4a).
+
+![](images/2024-02-13-17-28-59.png)
+A) Community analysis was done by taking a window across neighbourhood maps and vectorizing the number of each neighbourhood type in each window, clustering windows, and assigning clusters as multi-neighbourhood communities of the intestine. 10 unique intestinal multi-neighbourhood communities (y axis of heatmap) were defined by enriched neighbourhood types (x axis of heatmap) as compared to overall percentage of neighbourhood types in the samples.
+
+Indeed, concentric neighbourhood environments surrounding the Paneth-Cell-Enriched neighbourhood also showed colocalization with Outer Follicle and Adaptive-Immune-Enriched neighbourhoods (Extended Data Fig. 4d). These results support the idea that the adaptive immune system forms a conserved niche with the intestinal crypt.
+
+![](images/2024-02-13-17-29-48.png)
+D) Concentric multi-neighbourhood analysis surrounding only neighbourhoods labelled as Paneth Cell Enriched neighbourhoods, with number of nearest neighbours for a given row in the heatmap.
+
+
+To relate the various levels of spatial organization, we created a hierarchical structure network graph (Fig. 3e and Supplementary Fig. 11).
+
+![](images/2024-02-13-17-31-30.png)
+e, Tissue hierarchy graph of the multilevel network of the tissue comprised of the different structures. Shapes correspond to structural level (cell type, neighbourhoods, communities, tissue units); colours represent individual categories as indicated in a–d; the size of shapes represents the percentage of tissue; and the size of connected lines represents the overall contribution to the next level of the structure when moving down the graph in increasing tissue structural hierarchy. The black rectangles highlight a single trajectory highlighted within this Article. The red bracket indicates separation of stromal tissue units from the mucosal tissue units.
+
+![](images/2024-02-13-17-32-05.png)
+Supplemental Figure 11: Graph of multi-level structure of the tissue as broken down by the different structures. Shapes correspond to structural level, colors represent individual categories, size of shapes represents the percent contribution to tissue, and the size of connected lines represents the overall contribution to the next level of structure as moving down the graph in increasing tissue structural hierarchy. These are separated either by small bowel (SB) or colon (CL).
+
+Each level of this graph is connected to the next by its major contributors. Using this intuitive formalism, we can observe many levels of intestinal cell and tissue-structure organization. For example, we observed crosstalk between stromal and smooth muscle cell types and structures, which are in turn isolated from epithelial and immune components that are more entwined with one another (Fig. 3e (red bracket)).
+
 
 Using this graph structure, we can also observe multilevel relationships between the structures. For example, Paneth cells (Fig. 3e (green circle)) are a rare cell subset (size) and are primarily enriched within Paneth-Cell-Enriched neighbourhoods (Fig. 3e (light blue square)), which are enriched in the Adaptive-Immune-Enriched community (Fig. 3e (orange triangle)) that, in turn, is enriched within the muscularis mucosa tissue unit (Fig. 3e (red diamond)). This relationship can be seen within the tissue, where we see the Adaptive-Immune-Enriched community localized to the bottom of the colon crypt (Fig. 3f).
 
-Visualizing the communities also revealed spatial layering of the intestine, moving from the smooth muscle, stroma and particularly within epithelial areas (Fig. 3f). To formalize these observations of intercommunity-level spatial interactions, we created27 a spatial context map27 (Methods) that revealed major structural relationships between communities within the colon (Fig. 3g). For example, moving from left to right in the spatial context map parallels tissue organization in a cross-section of the intestine moving from the muscularis externa to the top of the mucosa (Fig. 3f,g). In brief, the Smooth Muscle community (red triangle) is often found alone (size of circle), indicating its compartmentalization from other communities (Fig. 3g). However, it is found next to the Stromal community (grey triangle), with which it forms an interface (grey and red triangle combination) (Fig. 3g (yellow highlighted edge)). This then forms a trio interface with the Adaptive-Immune-Enriched community (orange triangle). Moving to the right, we observe another trio that involves the Smooth Muscle, Adaptive-Immune-Enriched and Secretory Epithelial communities (Fig. 3g (green box)). This pattern continues across the Plasma-Cell-Enriched community (yellow triangle) and then the Mature and CD66+ Epithelial community (teal triangle) (Fig. 3g).
+![](images/2024-02-13-17-33-04.png)
+f, Magnified mucosal area of a colon community map shown within c. Scale bar, 100 µm. 
 
-We confirmed these community–community interactions using an established method for identifying two-combination community motifs27 (Methods). Significant associations with just the Adaptive-Immune-Enriched community shared across the intestine demonstrate that there are connections to the Plasma-Cell-Enriched, Smooth Muscle, Secretory Epithelial, Stromal and Follicle communities but not to the Mature Epithelial community (Extended Data Fig. 5b and Supplementary Fig. 12), which aligns with our previous analyses (Fig. 3f,g). Similarly, analysis of other shared significant motifs shows that the Plasma-Cell-Enriched community intersects with both the Secretory Epithelial and Mature Epithelial communities (Extended Data Fig. 5c). We created a spatial context map for just the cells found in the mucosa (Extended Data Fig. 5d–f) and, again, observed a high-frequency intersection between the Plasma-Cell-Enriched, Secretory Epithelial and Transit-Amplifying Zone neighbourhoods (Extended Data Fig. 5f (red box)) with many connections to the Plasma-Cell-Enriched neighbourhood, implicating an important role in overall intestinal tissue structure.
+Visualizing the communities also revealed spatial layering of the intestine, moving from the smooth muscle, stroma and particularly within epithelial areas (Fig. 3f). To formalize these observations of intercommunity-level spatial interactions, we created27 a spatial context map27 (Methods) that revealed major structural relationships between communities within the colon (Fig. 3g).
 
-In summary, these results indicate that immune-cell-enriched neighbourhoods have important roles in intestinal tissue organization. Indeed, we found enrichment of cell types moving from the smooth muscle community to the lumen (Fig. 3h and Extended Data Fig. 5g,h), which shows an increase in adaptive immune cells in the base of the crypt, restricted zones of plasma cells, and an increase in innate immune cells and CD8+ T IELs towards the top of the intestine (Fig. 3h). In conclusion, our hierarchical mapping data further confirm compositional differences in multicellular structures between the small intestine and colon but also highlight conserved multicellular structure interactions and an important distribution of distinct cell types in subregions of the intestine.
+![](images/2024-02-13-17-33-42.png)
+g, The spatial-context maps of the colon highlighting relationships of communities across the entire sample. This structure is defined by the number of unique communities required to make up at least 85% in a given window. The circles represent the number of cells represented by a given structure. The green rectangle highlights a structure discussed in this Article and maps this structure back to g. The colours are as indicated in c.
+
+For example, moving from left to right in the spatial context map parallels tissue organization in a cross-section of the intestine moving from the muscularis externa to the top of the mucosa (Fig. 3f,g). In brief, the Smooth Muscle community (red triangle) is often found alone (size of circle), indicating its compartmentalization from other communities (Fig. 3g). However, it is found next to the Stromal community (grey triangle), with which it forms an interface (grey and red triangle combination) (Fig. 3g (yellow highlighted edge)). This then forms a trio interface with the Adaptive-Immune-Enriched community (orange triangle). Moving to the right, we observe another trio that involves the Smooth Muscle, Adaptive-Immune-Enriched and Secretory Epithelial communities (Fig. 3g (green box)). This pattern continues across the Plasma-Cell-Enriched community (yellow triangle) and then the Mature and CD66+ Epithelial community (teal triangle) (Fig. 3g).
+
+![](images/2024-02-13-17-34-40.png)
+ f, Magnified mucosal area of a colon community map shown within c. Scale bar, 100 µm. g, The spatial-context maps of the colon highlighting relationships of communities across the entire sample. This structure is defined by the number of unique communities required to make up at least 85% in a given window. The circles represent the number of cells represented by a given structure. The green rectangle highlights a structure discussed in this Article and maps this structure back to g. The colours are as indicated in c. 
+
+We confirmed these community–community interactions using an established method for identifying two-combination community motifs27 (Methods). Significant associations with just the Adaptive-Immune-Enriched community shared across the intestine demonstrate that there are connections to the Plasma-Cell-Enriched, Smooth Muscle, Secretory Epithelial, Stromal and Follicle communities but not to the Mature Epithelial community (Extended Data Fig. 5b and Supplementary Fig. 12), which aligns with our previous analyses (Fig. 3f,g).
+
+![](images/2024-02-13-17-36-14.png)
+B-C) Community-community motifs that are significantly enriched in both the small intestine and colon as compared to a null distribution of motif instances created from random permutation of tissue graph labels, where B) shows only those motifs that interact with the Adaptive Immune Enriched community and
+
+![](images/2024-02-13-17-36-48.png)
+Supplemental Figure 12: Multi-community interaction motifs highlight organization of communities within the intestine. A-B) Community-community motifs that are significantly enriched as compared to a null distribution of motif instances created from random permutation of tissue graph labels, where A) shows motifs that are significant in the colon and B) shows motifs that are significant in the small bowel (p values were Bonferroni corrected by multiplying by twice the number of tests conducted in each comparison group).
+
+
+
+Similarly, analysis of other shared significant motifs shows that the Plasma-Cell-Enriched community intersects with both the Secretory Epithelial and Mature Epithelial communities (Extended Data Fig. 5c).
+
+![](images/2024-02-13-17-37-55.png)
+C) shows all other shared motifs between the SB and CL. Motifs indicated by shape and colour indicate those motifs that have significant p value versus those that are indicated with an x in the graph; p values were Bonferroni corrected by multiplying by twice the number of tests conducted in each comparison group. Colour legend is also the same as panel B. 
+
+ We created a spatial context map for just the cells found in the mucosa (Extended Data Fig. 5d–f) and, again, observed a high-frequency intersection between the Plasma-Cell-Enriched, Secretory Epithelial and Transit-Amplifying Zone neighbourhoods (Extended Data Fig. 5f (red box)) with many connections to the Plasma-Cell-Enriched neighbourhood, implicating an important role in overall intestinal tissue structure.
+
+![](images/2024-02-13-17-38-39.png)
+D) Representative neighbourhood map (one of 64 tissue sections from 8 donors) with (scale bar = 500 µm) E) Region magnified as in the main figure of the mucosal area of a colon community map, but this time with the multicellular neighbourhoods coloured (see panel D for legend) (scale bar = 100 µm). F) Spatial context maps of the CL highlighting relationships of multicellular neighbourhoods across just the neighbourhoods found within the tissue unit Mucosa. This structure is defined by the number of unique neighbourhoods required to make up at least 85% in a given window. Circles represent the number of cells represented by a given structure. Red rectangle highlights a structure discussed in the manuscript and maps this structure back to panel K. Colour legend is also the same as panel D.
+
+
+
+In summary, these results indicate that immune-cell-enriched neighbourhoods have important roles in intestinal tissue organization. Indeed, we found enrichment of cell types moving from the smooth muscle community to the lumen (Fig. 3h and Extended Data Fig. 5g,h), which shows an increase in adaptive immune cells in the base of the crypt, restricted zones of plasma cells, and an increase in innate immune cells and CD8+ T IELs towards the top of the intestine (Fig. 3h).
+
+![](images/2024-02-13-17-40-29.png)
+h, The cell type percentage of immune cells shown for each community ordered in relative order of general increasing proximity to the lumen on the basis of community spatial-context analysis.
+
+![](images/2024-02-13-17-39-42.png)
+G-H) Cell type percentage of G) epithelial and H) stromal cells shown for each community ordered in relative order of general increasing proximity to the lumen based on community spatial context analysis.
+
+In conclusion, our hierarchical mapping data further confirm compositional differences in multicellular structures between the small intestine and colon but also highlight conserved multicellular structure interactions and an important distribution of distinct cell types in subregions of the intestine.
 
 ## Single-nucleus RNA and chromatin atlas
 The CODEX experiments revealed distinct cellular arrangements across intestinal regions, but included only 54 probes, potentially limiting both the number and complexity of cell types identified. To overcome these limitations, we performed 10x multiome sequencing analysis of intestinal regions from six donors and separate 10x snRNA-seq and snATAC-seq analysis of intestine regions from three additional donors (Fig. 4a, Methods and Extended Data Fig. 6a, b).
