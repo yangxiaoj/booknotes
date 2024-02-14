@@ -154,15 +154,87 @@ Supplemental Figure 8: Multicellular neighborhood percentage analysis from CODEX
 F) Quantification of the same-cell density for just smooth muscle cells within different smooth muscle multicellular neighbourhoods (x axis) (n = 32 tissue sections). 
 
 ## Immune multicellular neighbourhoods
-Congruent with our observation of high plasma cell density (Fig. 1g), we observed a Plasma-Cell-Enriched neighbourhood driven by increased density of plasma cells (Fig. 2a). This Plasma-Cell-Enriched neighbourhood also exhibits co-enrichment of CD4+ T cells and antigen-presenting cells such as dendritic cells and macrophages (Fig. 2a) and is localized within the mucosa lamina propria (Extended Data Fig. 2g–i). These observations are consistent with observations suggesting that secretion or ligand engagement of plasma cells from antigen-presenting cells within the bone marrow can maintain long-term survival in plasma-specific niches18,19,20.
+Congruent with our observation of high plasma cell density (Fig. 1g), we observed a Plasma-Cell-Enriched neighbourhood driven by increased density of plasma cells (Fig. 2a).
 
-Notably, despite their relatively low density in the intestine, CD8+ T cells were enriched in two major neighbourhoods (Fig. 2a). One neighbourhood (CD8+ T Cell-Enriched IEL (intraepithelial lymphocyte)) exhibits enrichment of both epithelial cell types and CD8+ T cells. Thus, the neighbourhood analysis was able to separate the CD8+ T cells that are intraepithelial lymphocytes, which are critical for rapid immunological responses against infection21 and maintenance of epithelial integrity22. This CD8+ T Cell-Enriched IEL neighbourhood was one of the neighbourhoods of which the prevalence changed from the small intestine (~30%) to the colon (~3%) (Extended Data Figs. 2c and 3a and Supplementary Fig. 8a). This is the spatial compartment from which we observed a global decrease in CD8+ T cell percentage (Fig. 1b) and also significantly decreases with a history of hypertension (Extended Data Fig. 3b). We suggest that the ability of CD8+ T cells to survive or locate within intraepithelial spaces is negatively affected by hypertension.
+![](images/2024-02-13-16-47-34.png)
+g, Quantification of the same-cell density measured as an average distance of its five nearest same-cell neighbours divided by the maximal possible same-cell distance within the tissue. n = 64 tissue sections.
 
-The decrease in the CD8+ T Cell-Enriched IEL neighbourhood is met with an increase in the Plasma-Cell-Enriched neighbourhood within the colon (Extended Data Figs. 2c and 3a). In particular, there is a significant decrease in Plasma-Cell-Enriched neighbourhoods within the ileum as compared to the colon (Supplementary Fig. 7c–d). By contrast, there is also an increase in the Adaptive-Immune-Enriched neighbourhood within the ileum as compared to the colon (Supplementary Fig. 7e–f). Notably, although proximal to the colon, the ileum has the most distinct immune microenvironment from the colon.
+![](images/2024-02-13-16-48-32.png)
+a, Twenty unique intestinal multicellular neighbourhoods were defined by enriched cell types as compared to the overall percentage of cell types in the samples. 
 
-CD4+ T cells contributed to five diverse multicellular neighbourhoods (Fig. 2a). This broad neighbourhood membership is fitting, given that CD4+ T cells coordinate innate and adaptive immune responses. CD4+ T cell, B cell and dendritic cell membership defined two different follicle-based structures. The first of these structures, which exists in outer regions of the follicle, exhibited higher enrichment of CD4+ T cells, whereas inner regions of the follicle were enriched for B cells (Fig. 2a). The presence of the Inner Follicle (that is, the germinal centre) neighbourhood was dependent on a fully mature lymphoid follicle like a Peyer’s patch within the image (Fig. 2b). However, the Outer Follicle neighbourhood was found across the intestine irrespective of the presence of a fully mature follicle. Out of the 64 tissues that we imaged, 11 had mature follicles that we segmented for comparison (Supplementary Fig. 9a–b). The cell type and neighbourhood compositions differed between each follicle irrespective of location, driven primarily by percentage of dense B cells (Supplementary Fig. 9a), found within the Inner Follicle neighbourhood (Supplementary Fig. 9b). The variation in the ratio of Inner Follicle neighbourhood to Outer Follicle neighbourhood across the intestine suggests a continuum of lymphoid tissues within the intestine23,24,25,26.
+ This Plasma-Cell-Enriched neighbourhood also exhibits co-enrichment of CD4+ T cells and antigen-presenting cells such as dendritic cells and macrophages (Fig. 2a) and is localized within the mucosa lamina propria (Extended Data Fig. 2g–i).
+ ![](images/2024-02-13-16-50-02.png)
+ G-H) Cell type maps for a region of the small intestine (one of 64 tissue sections imaged from 8 donors) with G) all cell types plotted for the whole tissue (scale bar = 500 µm), H) cells contained within the plasma cell neighbourhood (scale bar = 500 µm), and a magnified area of denoted by rectangle showing subset of cell types (scale bar = 50 µm). I) CODEX fluorescent imaging with subset of fluorescent markers overlaid for the same tissue as G (Hoechst=Blue, CD4=Green, CD68=magenta, CD38=yellow, CD206=cyan, CD138=grey), (scale bar = 500 µm with magnified insert scale bar = 100 µm).
 
-Variation in the multicellular composition of cellular neighbourhoods may indicate a core functionality as well as a need for compositional flexibility based on anatomical location. We compared the cell type compositions in the small intestine versus the colon for all neighbourhoods and found that both inner and outer follicle structures are less conserved, whereas stromal neighbourhoods are more conserved (Extended Data Fig. 3c). We observed differences in neighbourhood composition in Paneth-Cell-Enriched (significantly less abundant in the colon than the small bowel) and Transit-Amplifying-Zone (not different in terms of abundance) neighbourhoods that are both enriched for early epithelial progenitor cells, potentially indicating different crypt microenvironments across the intestine (Extended Data Fig. 2d and Supplementary Fig. 9c,d).
+
+These observations are consistent with observations suggesting that secretion or ligand engagement of plasma cells from antigen-presenting cells within the bone marrow can maintain long-term survival in plasma-specific niches18,19,20.
+
+Notably, despite their relatively low density in the intestine, CD8+ T cells were enriched in two major neighbourhoods (Fig. 2a). One neighbourhood (CD8+ T Cell-Enriched IEL (intraepithelial lymphocyte)) exhibits enrichment of both epithelial cell types and CD8+ T cells. Thus, the neighbourhood analysis was able to separate the CD8+ T cells that are intraepithelial lymphocytes, which are critical for rapid immunological responses against infection21 and maintenance of epithelial integrity22. This CD8+ T Cell-Enriched IEL neighbourhood was one of the neighbourhoods of which the prevalence changed from the small intestine (~30%) to the colon (~3%) (Extended Data Figs. 2c and 3a and Supplementary Fig. 8a).
+![](images/2024-02-13-16-54-53.png)
+B-D) Neighbourhood percentages from CODEX data averaged normalized by B) stromal, C) immune, and D) epithelial compartments. Asterix indicates p-value less than 0.05 difference in cell type percentage from the small bowel (SB) to the colon (CL) by two-sided T test. 
+
+![](images/2024-02-13-16-55-46.png)
+A) Immune neighbourhood percentages as a percent of immune neighbourhoods. 
+
+![](images/2024-02-13-16-56-31.png)
+A) Immune neighbourhood percentages as a percent of immune neighbourhoods. 
+
+ This is the spatial compartment from which we observed a global decrease in CD8+ T cell percentage (Fig. 1b) and also significantly decreases with a history of hypertension (Extended Data Fig. 3b). We suggest that the ability of CD8+ T cells to survive or locate within intraepithelial spaces is negatively affected by hypertension.
+
+![](images/2024-02-13-16-58-14.png)
+a–c, Cell type percentages from CODEX data averaged across eight donors. Cell types are normalized to the stromal (a), immune (b) and epithelial (c) compartments. Statistical analysis was performed using two-sided t-tests comparing the difference in cell type percentage between the small bowel (SB) and the colon (CL); *P < 0.05. ICC, interstitial cells of Cajal; NK, natural killer cells; TA, transit-amplifying cells
+
+![](images/2024-02-13-16-57-15.png)
+B) Neighbourhood percentages for Microvasculature and CD8+ T cell IEL neighbourhoods compared for donors with or without a history of hypertension (Microvasculature p value = 0.0065<, CD8+ T Enriched IEL p value = 0.0017 by two-sided T test, n = 3-5 donors).
+
+
+
+The decrease in the CD8+ T Cell-Enriched IEL neighbourhood is met with an increase in the Plasma-Cell-Enriched neighbourhood within the colon (Extended Data Figs. 2c and 3a).
+![](images/2024-02-13-17-00-48.png)
+B-D) Neighbourhood percentages from CODEX data averaged normalized by B) stromal, C) immune, and D) epithelial compartments. Asterix indicates p-value less than 0.05 difference in cell type percentage from the small bowel (SB) to the colon (CL) by two-sided T test. 
+
+![](images/2024-02-13-17-01-40.png)
+A) Immune neighbourhood percentages as a percent of immune neighbourhoods. 
+
+ In particular, there is a significant decrease in Plasma-Cell-Enriched neighbourhoods within the ileum as compared to the colon (Supplementary Fig. 7c–d).
+ 
+![](images/2024-02-13-17-02-34.png)
+C) Heatmap of p values from Tukey post-test after a significant difference was found using a one-way ANOVA for the percent of CD8+ T cells across different areas of the small intestine and colon. D) Epithelial cell type percentages as a percent of all epithelial cells. 
+ 
+ By contrast, there is also an increase in the Adaptive-Immune-Enriched neighbourhood within the ileum as compared to the colon (Supplementary Fig. 7e–f).
+
+![](images/2024-02-13-17-03-22.png)
+E) Heatmap of p values from Tukey post-test after a significant difference was found using a one-way ANOVA for the percent of CD8+ T cells across different areas of the small intestine and colon.  F) Power analysis for cell types that were significantly different from the small intestine to the colon using a power of 0.8 and alpha of 0.05. (* p value< 0.05, ** p value< 0.01, *** p value < 0.001, n=8 donors, by two-sided T test). All boxplots in figures are plotted as minimum, 25 percentile, median, 75 percentile, maximum, and outliers as points outside 1.5 the interquartile range.
+
+Notably, although proximal to the colon, the ileum has the most distinct immune microenvironment from the colon.
+
+CD4+ T cells contributed to five diverse multicellular neighbourhoods (Fig. 2a). This broad neighbourhood membership is fitting, given that CD4+ T cells coordinate innate and adaptive immune responses. CD4+ T cell, B cell and dendritic cell membership defined two different follicle-based structures. The first of these structures, which exists in outer regions of the follicle, exhibited higher enrichment of CD4+ T cells, whereas inner regions of the follicle were enriched for B cells (Fig. 2a). The presence of the Inner Follicle (that is, the germinal centre) neighbourhood was dependent on a fully mature lymphoid follicle like a Peyer’s patch within the image (Fig. 2b).
+
+![](images/2024-02-13-17-04-37.png)
+b, An example in which neighbourhoods mapped back to the tissue show overall tissue structures. Scale bar, 0.5 mm. 
+
+ However, the Outer Follicle neighbourhood was found across the intestine irrespective of the presence of a fully mature follicle. Out of the 64 tissues that we imaged, 11 had mature follicles that we segmented for comparison (Supplementary Fig. 9a–b).
+
+![](images/2024-02-13-17-05-39.png)
+Supplemental Figure 9: Changes in neighborhood composition from the small bowel (SB) to colon (CL). A) Cell type percentage and B) multicellular neighborhood percentage for each follicle region segmented out from individual sections (11/64) imaged by CODEX multiplexed imaging. 
+
+The cell type and neighbourhood compositions differed between each follicle irrespective of location, driven primarily by percentage of dense B cells (Supplementary Fig. 9a), found within the Inner Follicle neighbourhood (Supplementary Fig. 9b). The variation in the ratio of Inner Follicle neighbourhood to Outer Follicle neighbourhood across the intestine suggests a continuum of lymphoid tissues within the intestine23,24,25,26.
+
+Variation in the multicellular composition of cellular neighbourhoods may indicate a core functionality as well as a need for compositional flexibility based on anatomical location. We compared the cell type compositions in the small intestine versus the colon for all neighbourhoods and found that both inner and outer follicle structures are less conserved, whereas stromal neighbourhoods are more conserved (Extended Data Fig. 3c).
+
+![](images/2024-02-13-17-07-05.png)
+C) Difference in composition in neighbourhood by cell type for all neighbourhoods based on subtracting the log2 fold enrichment of each cell type found within that neighbourhood compared to average percentages in the tissue in SB from CL. Neighbourhoods and cell types are ordered by summing the absolute value of all rows and columns to denote conservation of a neighbourhood. 
+
+
+ We observed differences in neighbourhood composition in Paneth-Cell-Enriched (significantly less abundant in the colon than the small bowel) and Transit-Amplifying-Zone (not different in terms of abundance) neighbourhoods that are both enriched for early epithelial progenitor cells, potentially indicating different crypt microenvironments across the intestine (Extended Data Fig. 2d and Supplementary Fig. 9c,d).
+
+![](images/2024-02-13-17-09-34.png)
+D) 22 unique intestinal multicellular neighbourhoods (y axis of heatmap) were defined by enriched cell types (x axis of heatmap) as compared to overall percentage of cell types in the samples with 2 unique neighbourhoods not identified with overall neighbourhood analysis. 
+
+![](images/2024-02-13-17-10-14.png)
+C) Epithelial neighborhood percentages as a percent of epithelial neighborhoods. D) Power analysis for multicellular neighborhoods that were significantly different from the small intestine to the colon using a power of 0.8 and alpha of 0.05. (* p value< 0.05, ** p value< 0.01, *** p value < 0.001 by two-sided T test, n=8 donors).
+
+
 
 ## Intestinal crypt neighbourhoods
 As we observed differences in neighbourhood cell type conservation, we performed neighbourhood analysis on each individual region of the intestine separately and then concatenated the results. All aggregated neighbourhoods (Fig. 2a) were identified (Extended Data Fig. 3d). We also identified two unique neighbourhoods: Neuroendocrine-Enriched, which was found only in the colon, and Neutrophil-Enriched, which was found throughout the intestine but enriched in the colon (Fig. 2c and Extended Data Fig. 3e,f). The Neutrophil-Enriched neighbourhood was characterized by a high density of neutrophils associated with vasculature and innate immune cells, found often within stromal and smooth muscle areas (Extended Data Fig. 3d). The Neuroendocrine-Enriched neighbourhood had a mixture of epithelial and immune cell types enriched (Extended Data Fig. 3d).
