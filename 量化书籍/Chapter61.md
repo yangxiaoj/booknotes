@@ -120,6 +120,7 @@ prices = prices.shift(-1)
 ```
 
 至此，我们完成了股票因子值数据和交易价格数据的整理。
+
 ### 2. 用get_clean_factor_and_forward_returns函数来预处理因子数据
 接下来我们需要调用Alphalens的get_clean_factor_and_forward_returns函数，得到符合Alphalens需要的数据格式。代码如下：
 
