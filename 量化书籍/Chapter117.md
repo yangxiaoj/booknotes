@@ -1,119 +1,108 @@
 # 量化实战入门117—波动性指标详解：布林带 / 唐奇安通道 / Holt-Winter Channel 
 
-本文介绍以下几个技术指标：Acceleration Bands（加速带）、Elder's Thermometer、 Ulcer Index（溃疡指数）。这几个指标都属于波动性（Volatility）指标，波动性指标主要用于衡量金融证券的价格变动幅度和速度，可以帮助投资者理解市场的稳定性和可能的风险。
+本文介绍以下几个技术指标：Bollinger Bands（布林带）、Donchian Channel（唐奇安通道）、Holt-Winter Channel。这几个指标都属于波动性（Volatility）指标，波动性指标主要用于衡量金融证券的价格变动幅度和速度，可以帮助投资者理解市场的稳定性和可能的风险。
 
 本系列中的各项指标都可以通过调用 Pandas TA 库来实现，Pandas TA 库的使用详见《量化宝藏工具箱：技术指标库 Pandas TA 教程》一文。
-## 1. Acceleration Bands（加速带，accbands）
-Acceleration Bands（加速带指标）用于测量价格趋势的加速度。
+## 1. Bollinger Bands（布林带，bbands）
 
-Acceleration Bands 指标的核心思想是，当价格以加速的趋势向上或向下运动时，价格会趋向于触及其对应的上线或下线。
+布林带 (Bollinger Bands，简称 BBANDS) 是由 John Bollinger 提出的一种流行的波动性指标，主要用来衡量价格的高低程度以及波动性。布林带由三条线组成：中线是移动平均线，上线和下线则是在中线的基础上加减标准差得到的。
 
-Acceleration Bands 的计算方法：
+布林带的计算公式如下：
 
-Acceleration Bands 指标包含上线UPPER、中线MID和下线LOWER三条线，它们分别由以下公式计算：
+1）计算收盘价序列的移动平均线（MID）。
 
+2）计算收盘价序列的标准差（stdev）：
+
+3）计算布林带的上线和下线：
 
 ```python 
 
-HL_RATIO = c * (high - low) / (high + low)
-LOW = low * (1 - HL_RATIO)
-HIGH = high * (1 + HL_RATIO)
-# 计算下线LOWER
-LOWER = MA(LOW, length)
-# 计算中线MID
-MID = MA(close, length)
-# 计算上线UPPER
-UPPER = MA(HIGH, length)
+LOWER = MID - std * stdev
+UPPER = MID + std * stdev
+
 ```
 
+4）计算布林带的宽度和价格在布林带中的位置：
 
-以下是Acceleration Bands主要的用法：
+```python 
 
-1）趋势判断：当股价在上线（UPPER）和下线（LOWER）之间波动时，一般被认为市场处于无明显趋势的盘整阶段。当股价突破上线或下线，可能表示市场开始形成新的上升或下降趋势。
+BANDWIDTH = 100 * (UPPER - LOWER) / MID
+PERCENT = (close - LOWER) / (UPPER - LOWER)
 
-2）买卖信号：在某些策略中，股价突破上线（UPPER）可能被视作买入信号，因为这可能表示价格开始加速上升。相反，股价跌破下线（LOWER）可能被视作卖出信号，因为这可能表示价格开始加速下跌。
+```
 
-3）过度买卖判断：如果股价长时间在上线（UPPER）之上或下线（LOWER）之下运行，可能表示市场已经过度买入或过度卖出，市场可能会发生反转，这就需要投资者密切关注后续的价格走势。
+以下是布林带一些主要的应用方法：
+
+1）波动性度量：当布林带的宽度（上线与下线之间的距离）扩大时，表示市场波动性增大，可能预示着价格大幅波动的可能性增加；当布林带的宽度收窄时，表示市场波动性减小，可能预示着市场即将进入平静期。
+
+2）超买超卖判断：布林带的上线和下线可被视为价格的相对高点和低点，通常，当价格触及上线时，市场可能处于超买状态，可能存在回落的可能性；反之，当价格触及下线时，市场可能处于超卖状态，可能存在反弹的可能性。
+
+3）趋势判断：价格在布林带的中线上方运动，通常被认为是上升趋势；在中线下方运动，则可能表示下降趋势。
+
+4）突破信号：当价格突破上线或者下线，特别是伴随着交易量的放大，可能预示着价格趋势的改变。但这种信号需要谨慎处理，因为有可能是假突破。
 
 该指标在 Pandas TA 库中的函数是：
 
 ```python 
 
-accbands(high, low, close, length=None, c=None, drift=None, mamode=None, offset=None, **kwargs)
+bbands(close, length=None, std=None, ddof=0, mamode=None, talib=None, offset=None, **kwargs)
 
 ```
 
-## 2. Elder's Thermometer（thermo）
 
-Elder's Thermometer 是一种测量价格波动性的技术指标，由四个数据组成：thermo、thermo_ma、thermo_long、thermo_short
+## 2. Donchian Channel（唐奇安通道，donchian）
+唐奇安通道 (Donchian Channels，简称 donchian) 是一种用于度量市场波动性的技术分析工具，与布林带和凯特纳通道类似，唐奇安通道由上、中、下三条线组成。
 
-Elder's Thermometer 的计算过程如下：
+唐奇安通道的计算公式如下：
 
-1）计算 thermoL，即前一期的最低价与当前最低价的差值的绝对值。
+1）计算下线 LOWER，即过去若干个周期内的最低价。
 
-2）计算 thermoH，即当前最高价与前一期最高价的差值的绝对值。
+2）计算上线 UPPER，即过去若干个周期内的最高价。
+## 3. 计算中线 MID，为上线和下线的平均值。
 
-3）thermo 为 thermoH 和 thermoL 中的较大者。
+以下是唐奇安通道的一些主要的应用方法：
 
-4）对 thermo 序列进行指数移动平均（EMA），得到 thermo_ma。
+1）趋势判断：价格在唐奇安通道的中线上方运动，通常被认为是上升趋势；在中线下方运动，则可能表示下降趋势。
 
-5）thermo_long 为 thermo 小于 thermo_ma 乘以长期因子时的情况，返回布尔值序列。
+2）突破信号：当价格突破上线或者下线，特别是伴随着交易量的放大，可能预示着价格趋势的改变。这种突破通常被认为是买入或卖出的信号。但请注意，有可能出现假突破的情况。
 
-6）thermo_short 为 thermo 大于 thermo_ma 乘以短期因子时的情况，返回布尔值序列。
+3）波动性度量：当通道（上线与下线之间的距离）扩大时，表示市场波动性增大，可能预示着价格大幅波动的可能性增加；当通道收窄时，表示市场波动性减小，可能预示着市场即将进入平静期。
 
-Elder's Thermometer 指标的含义是：
-
-1）thermo：这是 Elder's Thermometer 的原始计算值，它反映的是价格波动性的原始度量。
-
-2）thermo_ma：这是对 thermo 序列进行指数移动平均（EMA）后的结果，它可以被视为价格波动性的平滑度量。
-
-3）thermo_long：这是一个二值序列，当 thermo 小于 thermo_ma 乘以买入因子时，对应的值为 1，否则为 0。这可以被视为一个买入信号，当它为 1 时，表示价格波动性较低，可能是买入的好时机。
-
-4）thermo_short：这也是一个二值序列，当 thermo 大于 thermo_ma 乘以卖出因子时，对应的值为 1，否则为 0。这可以被视为一个卖出信号，当它为 1 时，表示价格波动性较高，可能是卖出的好时机。
-
-Elder's Thermometer 的用法有：
-
-1）确定市场波动性：thermo 的值反映了市场的波动程度。更高的 thermo 值通常表示更大的市场波动性，而更低的 thermo 值表示较低的市场波动性。
-
-2）产生交易信号：当 thermo_long 会为真，这可能是一个买入信号，因为这表示当前的市场波动性较低。相反，当 thermo_short 会为真，这可能是一个卖出信号，因为这表示当前的市场波动性较高。
-
-3）结合其他指标使用：thermo 指标通常和其他技术分析指标如趋势线、移动平均线、相对强弱指数 (RSI) 等一起使用，以提高交易的准确性。例如，当 thermo_long 为真，且价格突破了一个重要的趋势线或移动平均线时，这可能是一个强烈的买入信号。
+4）支撑和阻力：在某些情况下，上线和下线可以作为短期的阻力和支撑线。价格可能会在接触到这些线后反弹。
 
 该指标在 Pandas TA 库中的函数是：
 
 ```python 
 
-thermo(high, low, length=None, long=None, short=None, mamode=None, drift=None, offset=None, **kwargs)
+donchian(high, low, lower_length=None, upper_length=None, offset=None, **kwargs)
 
 ```
 
-## 3. Ulcer Index（溃疡指数，ui）
-Ulcer Index（UI，或称溃疡指数）是一种衡量价格下行波动性或者说市场风险的指标。这是一种重点强调大幅度回撤的衡量方法，因为它使用的计算方式使得大的回撤对最终结果的影响更大。
+## 4. Holt-Winter Channel（Holt-Winter通道，hwc）
+Holt-Winter通道（Holt-Winter Channel，HWC）是一种趋势追踪和波动率指标，它的上线、下线和中线提供了股票或其他金融资产价格的可能运动范围。
 
-Ulcer Index 的计算方法如下：
+Holt-Winter通道是一种基于Holt-Winter移动平均 (HWMA) 的通道指标。HWMA 是一种通过Holt-Winter方法计算的三参数移动平均。
 
-1）计算过去 length 期的最高收盘价（Highest Close，简称 HC）。
+Holt-Winter移动平均（HWMA）是一种由Holt-Winter模型（Holt-Winters model）派生的时间序列平滑方法。Holt-Winter模型是一种可以处理季节性变化的指数平滑方法，它是由两个分别考虑趋势因素和季节性因素的加权平均组成。HWMA既考虑了趋势变化，又考虑了季节性因素，使得它能更好地捕捉和平滑时间序列数据的动态变化。
 
-2）计算每个交易日的收盘价 (close) 与其过去 length 期的最高收盘价 (HCN) 的差值的比例，然后乘以 scalar。这个值被称为 DOWNSIDE。
+Holt-Winter通道的上线和下线是通过考虑当前的Holt-Winter移动平均值（HWMA）和价格的波动程度（即标准差）来计算的。通道的上线（Upper）和下线（Lower）则分别是在当前的HWMA上加或减去scalar倍的标准差。这样，Holt-Winter通道的上线和下线就能够描述价格在特定时间范围内的可能波动范围，进一步帮助投资者理解市场的波动性和未来可能的价格走向。
 
-3）如果 everget 参数为 True，则计算 DOWNSIDE 的平方的 length 期简单移动平均（SMA），然后除以 length，最后取平方根。这个值就是 Ulcer Index。
+以下是如何使用这个指标的一些基本原则：
 
-4）如果 everget 参数为 False，则计算 DOWNSIDE 的平方的 length 期求和，然后除以 length，最后取平方根。这个值就是 Ulcer Index。
+1）判断趋势：中线（HWMA）可以被视为资产的平均价格或趋势线。如果资产价格上穿中线，那么可能是一个上涨趋势的信号；反之，如果资产价格下穿中线，那么可能是一个下跌趋势的信号。
 
-以下是 Ulcer Index 的一些主要用途：
+2）判断波动性：通道的宽度（即上线和下线之间的距离）反映了市场的波动性。通道越宽，市场的波动性越大；通道越窄，市场的波动性越小。因此，如果通道开始扩大，那可能意味着市场波动性正在增加，投资者应该更加谨慎；反之，如果通道开始收窄，那可能意味着市场波动性正在减小，投资者可能可以考虑更积极的投资策略。
 
-1）衡量风险：Ulcer Index 的主要用途是作为风险度量。较高的 Ulcer Index 值表示投资组合或者资产的下行风险较大，也就是说，投资组合或者资产的价格下跌的幅度和频率较大。相反，较低的 Ulcer Index 值则表示下行风险较小。
+3）判断超买或超卖状态：如果资产价格接近或触及上线，那可能意味着该资产被超买，即价格可能过高，有回落的风险；反之，如果资产价格接近或触及下线，那可能意味着该资产被超卖，即价格可能过低，有反弹的可能。
 
-2）比较投资组合：Ulcer Index 可以用来比较不同投资组合的风险性。例如，如果两个投资组合的收益率相同，那么 Ulcer Index 较低的投资组合风险就较小。
-
-3）调整投资策略：投资者可以根据 Ulcer Index 的值来调整他们的投资策略。例如，如果 Ulcer Index 的值较高，投资者可能会选择减小投资仓位或者增加对冲，以降低风险。
-
-4.）止损点的确定：Ulcer Index 可以用来帮助确定止损点。如果 Ulcer Index 的值超过了投资者的风险承受能力，那么投资者可能需要考虑止损。
+4）生成交易信号：当资产价格从通道的一侧穿越到另一侧时，可能是一个交易信号。具体来说，如果资产价格从下线穿越到上线，那可能是一个买入信号；反之，如果资产价格从上线穿越到下线，那可能是一个卖出信号。
 
 该指标在 Pandas TA 库中的函数是：
 
 ```python 
 
-ui(close, length=None, scalar=None, offset=None, **kwargs)
+hwc(close, na=None, nb=None, nc=None, nd=None, scalar=None, channel_eval=None, offset=None, **kwargs)
 
 ```
+
+未完待续……
