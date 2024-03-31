@@ -44,3 +44,22 @@ The distinct subpopulations of T cells identified in late-relapsed HCC samples h
 
 
 
+
+![](images/2024-03-30-16-51-29.png)
+
+
+
+
+### Figure Description
+
+
+"A heatmap delineates the expression of canonical markers across T cell subpopulations, including CD8+ T cells, CD4+ T cells, and gamma delta (γδ) T cells. This visual representation highlights the differential expression patterns of key immunological markers, providing insights into the unique functional roles and activation states of these subpopulations within the hepatocellular carcinoma (HCC) context."
+
+
+### Figure Results
+
+
+The differentially expressed genes (DEGs) and marker genes，asshown in the tSNE plots, confirmed the accuracy of cell identity
+
+
+![](images/2024-03-31-09-28-07.png)
