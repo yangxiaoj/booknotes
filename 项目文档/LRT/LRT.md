@@ -223,3 +223,18 @@ Neutrophils, traditionally viewed as a homogenous population in the context of i
 
 
 
+### Figure Description
+
+PHN , LRN , PHT and LRT preference of Neutrophil cell clusters in HCC, revealed by Ro/e (ratio of observed cell number to expected cell number).
+
+odds ratio value > 3 means significant enrichment; odds ratio value < 3 and > 1.5 means moderate enrichment;
+
+### Figure Results
+
+
+#### Results:
+Our analysis revealed a specific enrichment pattern of neutrophil subpopulations across different tissue types in hepatocellular carcinoma (HCC). Specifically, the neutrophil marker Neu_07_APOA2 showed significant enrichment in both primary hepatocellular carcinoma tumor (PHT) and late relapsed hepatocellular carcinoma tumor (LRT) samples. Interestingly, PHT and LRT samples exhibited a similar neutrophil composition, underscoring a consistent immune landscape in tumor environments at different stages of recurrence. In contrast, adjacent normal tissues from primary (PHN) and late relapsed (LRN) samples demonstrated distinct neutrophil subpopulation enrichments. PHN tissues were characterized by the presence of Neu_10_SPP1, Neu_08_CD74, Neu_11_CCL4, Neu_09_IFIT1, and Neu_05_ELL2. On the other hand, LRN tissues showed enrichment for Neu_02_S100A12, Neu_06_PTGS2, Neu_03_ISG15, and Neu_04_TXNIP, indicating a divergent neutrophilic response in the microenvironment surrounding the tumor at different stages.
+
+#### Biological Explanation:
+The observed enrichment patterns suggest a dynamic and evolving immune landscape within and around HCC tumors, influenced by the stage of the disease. The consistent neutrophil signature between PHT and LRT indicates that neutrophils play a sustained role in the tumor microenvironment, potentially contributing to tumor progression and the immune response to relapse. The differential enrichment of neutrophil subpopulations in adjacent normal tissues (PHN vs. LRN) hints at a localized immune response that varies significantly with the tumor's progression and recurrence. These neutrophil markers, associated with inflammation, tissue remodeling, and immune regulation, may reflect the tissue's evolving needs for immune surveillance and response to tumor-derived signals. Understanding these complex interactions is crucial for developing targeted therapies aimed at modulating the immune microenvironment to combat HCC effectively.
+
