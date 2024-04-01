@@ -330,7 +330,63 @@ Our differential gene expression (DEG) analysis comparing primary hepatocellular
 The enrichment of DEGs in the negative regulation of immune system processes suggests a potential mechanism by which late-relapsed HCC evades the host's immune surveillance. This evasion could facilitate tumor growth and progression by dampening the immune system's ability to recognize and eliminate tumor cells. Additionally, the regulation of protein serine/threonine kinase activity is pivotal for various cellular functions, including cell cycle control, apoptosis, and cellular differentiation. Alterations in this pathway could lead to aberrant cell proliferation and survival, characteristics commonly associated with cancer cells. These findings underscore the complexity of the tumor microenvironment in late-relapsed HCC and highlight the adaptive changes in tumor cells that may contribute to recurrence and resistance to therapy. Understanding these molecular underpinnings could pave the way for developing more effective treatments targeting these specific pathways.
 
 
+## LRN_Neutrophiles_DEGsGOEnrichmentDotPlot
 
-## LRT_Neutrophiles_DEGsGOEnrichmentDotPlot
+![](images/2024-03-31-18-01-51.png)
 
-![](images/2024-03-31-17-57-40.png)
+
+### Figure Description:
+
+Enrichment dot plot of enriched GO gene sets in differentially expressed genes (DEGs) between PHN and LRN neutrophiles cells. x-axis: gene ratio, the ratio of the number of genes in the gene set to the total number of genes in the gene set. the color represents the p adjusted value of the enrichment analysis. dot size represents the number of genes in the gene set
+
+cell type: Neutrophiles (ALL)
+
+dataset: scRNA-seq
+
+algorithm: DEGs and GO enrichment analysis
+
+group of DEGs: PHN vs LRN, this shows the LRN DEGs enriched GO gene sets.
+
+###  Figure Results:
+
+
+
+#### Results:
+Differential expression gene (DEG) analysis was conducted between adjacent primary hepatocellular carcinoma normal tissue (PHN) and adjacent late-relapsed hepatocellular carcinoma normal tissue (LRN). This analysis identified a distinct set of DEGs in the LRN group. Subsequent gene ontology (GO) gene set enrichment analysis of these DEGs revealed significant enrichment in three key pathways: the negative regulation of phosphate metabolic process, the negative regulation of phosphorus metabolic process, and the positive regulation of cytokine production.
+
+#### Biological Explanation:
+The enrichment of DEGs in the pathways related to the negative regulation of phosphate and phosphorus metabolic processes suggests a shift in the metabolic landscape of the liver microenvironment in late-relapsed hepatocellular carcinoma (HCC). These changes may reflect an adaptive response to altered nutrient availability or tumor-induced metabolic reprogramming, affecting the proliferation and survival of tumor cells. On the other hand, the positive regulation of cytokine production highlights an activated immune response, possibly as a reaction to tumor recurrence. This activation may be part of the body's defense mechanism attempting to control or eliminate the relapsed tumor. Together, these findings underline the complex interplay between metabolic reprogramming and immune response in the context of late-relapsed HCC, offering new insights into the underlying mechanisms of tumor recurrence and persistence.
+
+
+## PHN_Neutrophiles_DEGsGOEnrichmentDotPlot
+
+![](images/2024-03-31-18-04-45.png)
+
+### Figure Description
+
+Enrichment dot plot of enriched GO gene sets in differentially expressed genes (DEGs) between PHN and LRN neutrophiles cells. x-axis: gene ratio, the ratio of the number of genes in the gene set to the total number of genes in the gene set. the color represents the p adjusted value of the enrichment analysis. dot size represents the number of genes in the gene set
+
+cell type: Neutrophiles (ALL)
+
+dataset: scRNA-seq
+
+algorithm: DEGs and GO enrichment analysis
+
+group of DEGs: PHN vs LRN, this shows the PHN DEGs enriched GO gene sets.
+
+### Figure Results
+
+#### Results:
+Differential gene expression (DEG) analysis was conducted between primary hepatocellular carcinoma normal tissue (PHN) and late relapsed hepatocellular carcinoma normal tissue (LRN), leading to the identification of DEGs predominantly in the PHN group. Subsequent Gene Ontology (GO) gene set enrichment analysis of these genes revealed significant enrichment in three key pathways: production of molecular mediators of immune response, adaptive immune response based on somatic recombination of immune receptors constructed from immunoglobulin superfamily domains, and both lymphocyte-mediated and leukocyte-mediated immunity.
+
+#### Biological Explanation:
+The enrichment of DEGs in these specific immune-related pathways in the PHN group versus the LRN group underscores the complex interplay between the host's immune system and the tumor microenvironment, particularly in the context of hepatocellular carcinoma (HCC) recurrence. The highlighted pathways are integral to the body's defense mechanism against malignancies, indicating a more active or altered immune response in the microenvironment surrounding primary HCC compared to that of late-relapsed HCC. 
+
+1. **Production of molecular mediators of immune response** reflects the initial stages of immune activation, where various signaling molecules orchestrate the immune system's response to cancer cells.
+
+2. **Adaptive immune response based on somatic recombination**, signifies the generation of diverse immune receptors that allow for a highly specific response to tumor antigens. This process is crucial for identifying and eliminating cancer cells that may express novel or mutated antigens.
+
+3. **Lymphocyte-mediated and leukocyte-mediated immunity** point towards the direct engagement and destruction of tumor cells by specific immune cells. Lymphocytes (including T cells and B cells) play roles in both recognizing cancer cells and signaling other parts of the immune system, while leukocytes (such as macrophages) can directly attack tumor cells.
+
+These findings suggest a dynamic immune landscape in the tissue surrounding HCC tumors, with implications for understanding the mechanisms of tumor recurrence and the potential for therapeutic interventions aimed at harnessing the immune system to prevent or treat recurrent HCC.
+
