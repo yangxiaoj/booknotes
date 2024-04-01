@@ -238,3 +238,99 @@ Our analysis revealed a specific enrichment pattern of neutrophil subpopulations
 #### Biological Explanation:
 The observed enrichment patterns suggest a dynamic and evolving immune landscape within and around HCC tumors, influenced by the stage of the disease. The consistent neutrophil signature between PHT and LRT indicates that neutrophils play a sustained role in the tumor microenvironment, potentially contributing to tumor progression and the immune response to relapse. The differential enrichment of neutrophil subpopulations in adjacent normal tissues (PHN vs. LRN) hints at a localized immune response that varies significantly with the tumor's progression and recurrence. These neutrophil markers, associated with inflammation, tissue remodeling, and immune regulation, may reflect the tissue's evolving needs for immune surveillance and response to tumor-derived signals. Understanding these complex interactions is crucial for developing targeted therapies aimed at modulating the immune microenvironment to combat HCC effectively.
 
+## NeutrophilCellProportionBarPlot
+
+
+![](images/2024-03-31-16-35-01.png)
+
+
+### Figure Description
+
+
+Barplot proportions of neutrophil subpopulations within all the Neutrophiles across different tissue types. x-axis: tissue type (PHT, LRT, PHN, LRN) y-axis: proportion of cell type within Neutrophil cells .
+
+
+### Figure Results 
+
+
+
+#### Results:
+
+
+Bar plot analysis revealed distinct expression patterns of specific markers in late-relapsed hepatocellular carcinoma (LRHCC) and primary hepatocellular carcinoma (PHCC) tissues, alongside their adjacent normal tissues (LRN and PHN, respectively). Specifically, the expression of Neu_02_S100A12 was significantly higher in LRN compared to PHN. Conversely, Neu_08_CD74 showed a higher expression in PHN than in LRN. Furthermore, Neu_06_PTGS2 was predominantly expressed in LRN and LRHCC tissues, contrasting with its minimal expression in PHCC and PHT. In contrast, Neu_07_APOA2 demonstrated a higher expression in LRHCC and PHCC tissues, with an inverse expression pattern observed in LRN and PHN.
+
+Biological Explanation:
+The differential expression of these markers underscores the complexity of the tumor microenvironment in hepatocellular carcinoma, especially in the context of recurrence. S100A12, a calcium-binding protein involved in inflammatory processes, shows increased expression in adjacent normal tissues of late-relapsed HCC, suggesting a heightened inflammatory response that may contribute to tumor recurrence or progression. The decreased presence of CD74 in LRN, a molecule important for antigen presentation and immune response activation, could indicate an impaired immune surveillance in the liver microenvironment following recurrence. PTGS2 (or COX-2), highly expressed in LRN and LRHCC, is known for its role in inflammation and carcinogenesis, pointing towards an ongoing inflammatory state and possibly enhanced tumor-promoting pathways in late relapse. APOA2, part of the high-density lipoprotein (HDL) complex, known for its role in lipid metabolism, exhibits varied expression indicative of metabolic reprogramming within the tumor and surrounding tissues, affecting both primary and relapsed HCC. These findings highlight the altered inflammatory and immune landscape, as well as metabolic adaptations, associated with HCC recurrence, offering insights into potential targets for therapeutic intervention.
+
+#### Biological Explanation:
+
+
+## PHT_Neutrophiles_DEGsGOEnrichmentDotPlot
+
+
+![](images/2024-03-31-16-55-30.png)
+
+
+### Figure Description
+
+Enrichment dot plot of enriched GO gene sets in differentially expressed genes (DEGs) between PHT and LRT neutrophiles cells. x-axis: gene ratio, the ratio of the number of genes in the gene set to the total number of genes in the gene set. the color represents the p adjusted value of the enrichment analysis. dot size represents the number of genes in the gene set
+
+cell type: Neutrophiles (ALL)
+
+dataset: scRNA-seq
+
+algorithm: DEGs and GO enrichment analysis
+
+group of DEGs: PHT vs LRT, this shows the PHT DEGs enriched GO gene sets.
+
+
+### Figure Results
+
+
+
+Jerry写的: We first performed DEGs analysis between LRT and PHT. 
+we identified DEGs of PHT group. We then performed GO gene set enrichment analysis on these genes. We found these genes are highly enriched in the three pathways: regulation of pattern recognition rector signaling pathway, response to unfolded protein and negative regualtion of secretion by cell.
+
+
+#### Results:
+
+Differential expression analysis was conducted to compare late-relapsed hepatocellular carcinoma (LRT) with primary hepatocellular carcinoma (PHT) tissue samples. This analysis identified differentially expressed genes (DEGs) predominantly in the PHT group. Subsequent Gene Ontology (GO) gene set enrichment analysis of these DEGs revealed significant enrichment in three critical biological pathways: regulation of the pattern recognition receptor signaling pathway, response to unfolded protein, and negative regulation of secretion by cells.
+
+#### Biological Explanation:
+The enrichment of DEGs in these pathways highlights several key aspects of tumor biology and immune response mechanisms in primary HCC. The regulation of pattern recognition receptor signaling pathway is crucial for innate immunity, enabling the body to detect and respond to pathogens and abnormal cells, including tumor cells. This pathway's activation suggests an immune surveillance mechanism actively identifying and combating tumor cells in primary HCC. The response to unfolded protein pathway is indicative of cellular stress, particularly in the endoplasmic reticulum (ER), which is often elevated in cancer cells due to the high demand for protein synthesis and folding. This stress response can lead to the activation of survival and apoptotic pathways, influencing tumor progression and response to therapy. Lastly, the negative regulation of secretion by cells could reflect a mechanism by which tumor cells modulate their microenvironment, potentially affecting tumor proliferation, invasion, and evasion of the immune response. Together, these enriched pathways underscore the complex interplay between tumor cells, their microenvironment, and the host immune response, offering insights into potential therapeutic targets and biomarkers for primary HCC.
+
+
+## LRT_Neutrophiles_DEGsGOEnrichmentDotPlot
+
+
+![](images/2024-03-31-17-31-35.png)
+
+
+### Figure Description:
+
+Enrichment dot plot of enriched GO gene sets in differentially expressed genes (DEGs) between PHT and LRT neutrophiles cells. x-axis: gene ratio, the ratio of the number of genes in the gene set to the total number of genes in the gene set. the color represents the p adjusted value of the enrichment analysis. dot size represents the number of genes in the gene set
+
+cell type: Neutrophiles (ALL)
+
+dataset: scRNA-seq
+
+algorithm: DEGs and GO enrichment analysis
+
+group of DEGs: PHT vs LRT, this shows the PHT DEGs enriched GO gene sets.
+
+
+### Figure Results:
+
+
+
+#### Results:
+Our differential gene expression (DEG) analysis comparing primary hepatocellular carcinoma tumor (PHT) samples with late-relapsed tumor (LRT) samples highlighted distinct genetic profiles between these groups. Specifically, the LRT group demonstrated significant DEGs. Subsequent Gene Ontology (GO) gene set enrichment analysis of these DEGs revealed a pronounced enrichment in three critical pathways: negative regulation of the immune system process, and regulation of protein serine/threonine kinase activity.
+
+#### Biological Explanation:
+The enrichment of DEGs in the negative regulation of immune system processes suggests a potential mechanism by which late-relapsed HCC evades the host's immune surveillance. This evasion could facilitate tumor growth and progression by dampening the immune system's ability to recognize and eliminate tumor cells. Additionally, the regulation of protein serine/threonine kinase activity is pivotal for various cellular functions, including cell cycle control, apoptosis, and cellular differentiation. Alterations in this pathway could lead to aberrant cell proliferation and survival, characteristics commonly associated with cancer cells. These findings underscore the complexity of the tumor microenvironment in late-relapsed HCC and highlight the adaptive changes in tumor cells that may contribute to recurrence and resistance to therapy. Understanding these molecular underpinnings could pave the way for developing more effective treatments targeting these specific pathways.
+
+
+
+## LRT_Neutrophiles_DEGsGOEnrichmentDotPlot
+
+![](images/2024-03-31-17-57-40.png)
