@@ -45,7 +45,7 @@ The distinct subpopulations of T cells identified in late-relapsed HCC samples h
 
 
 
-## TcellSubpopulationProportionBarPlot
+## TcellSubpopulationMarkerHeatmap
 
 ![](images/2024-03-30-16-51-29.png)
 
@@ -55,17 +55,16 @@ The distinct subpopulations of T cells identified in late-relapsed HCC samples h
 ### Figure Description
 
 
-"A heatmap delineates the expression of canonical markers across T cell subpopulations, including CD8+ T cells, CD4+ T cells, and gamma delta (γδ) T cells. This visual representation highlights the differential expression patterns of key immunological markers, providing insights into the unique functional roles and activation states of these subpopulations within the hepatocellular carcinoma (HCC) context."
-
+A heatmap delineates the expression of canonical markers across T cell subpopulations, including CD8+ T cells, CD4+ T cells, and gamma delta (γδ) T cells.
 
 ### Figure Results
 
 
-The differentially expressed genes (DEGs) and marker genes，asshown in the tSNE plots, confirmed the accuracy of cell identity
+The differentially expressed canonical markers，as shown in the Heatmap, confirmed the accuracy of cell identity
 
 
 
-## TumorCellBySampleIdUMAP
+## TcellSubpopulationProportionBarPlot
 
 
 ![](images/2024-03-31-09-28-07.png)
@@ -89,7 +88,7 @@ Conversely, the increased presence of CD8T_11_SLC4A10 and gdT_03_KLRD1 cells in 
 These findings underscore the dynamic interplay between tumor cells and the immune system in HCC, revealing how immune cell compositions differ markedly between tumor and normal tissues. This heterogeneity within the immune landscape offers critical insights into mechanisms of tumor immune evasion, the role of specific T cell subpopulations in cancer immunity, and potential targets for immunotherapy in HCC.
 
 
-## UMAPByScissorStatusUMAP
+## TumorCellBySampledUMAP
 
 ![](images/2024-03-31-10-21-27.png)
 
@@ -103,7 +102,7 @@ These findings underscore the dynamic interplay between tumor cells and the immu
 
 
 
- ### Results:
+### Results:
 
 Uniform Manifold Approximation and Projection (UMAP) analysis revealed that tumor cell clusters exhibit a patient-specific tendency, indicating distinct cellular architectures within tumors from different individuals.
 
@@ -113,7 +112,7 @@ The observed patient-specific clustering of tumor cells suggests a high degree o
 
 
 
-
+## UMAPByScissorStatusUMAP
 
 ![](images/2024-03-31-10-49-21.png)
 
@@ -128,15 +127,16 @@ dataset: scRNA-seq
 
 algorithm: Scissor
 
-
-
-
-
+In this study, we present a Uniform Manifold Approximation and Projection (UMAP) visualization based on single-cell RNA sequencing (scRNA-seq) data, highlighting the distribution of cancer cell types stratified by the Scissor algorithm. The visualization distinctly marks cells deemed Scissor-positive (Scissor+), associated with poor survival outcomes, with red dots. Conversely, cells identified as Scissor-negative (Scissor-) or Neutral, which correlate with better survival prospects, are denoted by blue dots. This method provides a nuanced understanding of the cellular heterogeneity within cancer populations, offering insights into the prognostic significance of distinct cell types identified through our Scissor algorithm.
 
 
 ### Figure Results:
 
+#### Results:
+Analysis across all cancer cell populations revealed the presence of poor survival signatures within every analyzed cancer cell, underscoring a universal characteristic of aggressiveness and potential resistance to treatment in hepatocellular carcinoma (HCC) cells from both primary and late-relapsed tumors.
 
+#### Biological Explanation:
+The identification of poor survival signatures in all cancer cells suggests a fundamental aspect of HCC biology that transcends the initial and relapsed stages of the disease. These signatures, typically encompassing a set of genes associated with proliferation, invasion, and resistance to apoptosis, may be indicative of the intrinsic capacity of HCC cells to promote tumor growth, evade immune detection, and resist conventional therapies. The presence of these signatures across both primary and late-relapsed HCC samples highlights the persistent and evolving threat posed by these tumors, emphasizing the need for novel therapeutic approaches that target these deeply ingrained survival mechanisms. This finding underscores the challenges in treating HCC and the importance of understanding the molecular underpinnings that contribute to the poor prognosis associated with this disease.
 
 ## VocalnoPlotByScissorPoorSurvivalvsOthers
 
@@ -149,7 +149,7 @@ Volcano plot of differential gene expressions in Scissor+ (Poor Survival) cancer
 ### Figure Results:
 
 
-As a result, genes were differentially expressed in Scissor+ cells (poorsurvival)over Scissor− cells(good survival) .  For example，MT-CO1 ，TF，CD74，FN1，SPP1，CYP2E1,CES1, FOS , AOX1 and ATF3 are enriched in the poorsurvival column.
+ As a result, genes were differentially expressed in Scissor+ cells (poorsurvival)over other cells.For example，MT-CO1 ，TF，CD74，FN1，SPP1，CYP2E1,CES1, FOS , AOX1 and ATF3 are enriched in the poorsurvival column.
 
 
 #### Results:
@@ -281,7 +281,7 @@ The enrichment of DEGs in oxidative phosphorylation and xenobiotic metabolism ha
 
 ### Figure Description
 
-Figure Description:
+
 Analysis of myeloid cell cluster distribution across different hepatocellular carcinoma (HCC) sample types, including late-relapsed normal tissue (LRN), primary hepatocellular carcinoma normal tissue (PHN), primary hepatocellular carcinoma tumor tissue (PHT), and late-relapsed tumor tissue (LRT), was performed utilizing the Ro/e metric (the ratio of observed cell number to expected cell number). This approach facilitated the identification of preferential myeloid cell cluster presence within these distinct HCC contexts, elucidating the variances in immune cell landscape associated with tumor progression and relapse.
 
 ### Figure Results
