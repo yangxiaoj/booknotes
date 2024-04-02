@@ -264,6 +264,7 @@ Enrichment dot plot of enriched hallmark gene sets in differentially expressed g
 ### Figure Results
 
 
+
 #### Results:
 Comparative analysis between late relapsed hepatocellular carcinoma (LRT) and primary hepatocellular carcinoma (PH) revealed that differentially expressed genes (DEGs) in LRT are significantly enriched in hallmark gene sets associated with oxidative phosphorylation and xenobiotic metabolism.
 
@@ -287,11 +288,13 @@ Analysis of myeloid cell cluster distribution across different hepatocellular ca
 ### Figure Results
 
 #### Results:
-Our single-cell RNA sequencing analysis identified distinct immune cell subpopulations enriched in various tissue types from hepatocellular carcinoma (HCC) patients. In adjacent late-relapsed normal tissue (LRN), we observed an enrichment of Mono-like_02_CD16, DC_02_CD1C, Mono-like_01_CD14, DC_01_CLEC9A, and C_04_CD207. For primary hepatocellular carcinoma adjacent normal tissue (PHN), the enriched subpopulations include Mph_01_MARCO, Mono-like_03_CD14CD16, and Mph_02_CCL20. In primary hepatocellular carcinoma tumor tissue (PHT), we found an enrichment of Mph_03_SPP1, Mph_07_SLC40A1, and Mph_05_IL1B. Lastly, in late-relapsed hepatocellular carcinoma tumor tissue (LRT), the enriched cell subpopulations are Mph_08_APOE, Mph_06_CXCL9, and Mph_04_TREM2.
 
-#### Biological Explanation:
-The enrichment of specific immune cell subpopulations in different tissue types reflects the dynamic immune landscape associated with HCC progression and recurrence. The presence of Mono-like and DC (Dendritic Cell) subpopulations in LRN suggests an active immune surveillance mechanism in adjacent normal tissues, potentially resisting tumor invasion or recurrence. The enrichment of macrophage subpopulations (Mph) in PHN and PHT, characterized by markers such as MARCO, SPP1, and IL1B, indicates a pro-inflammatory environment that may support tumor growth and metastasis. Conversely, the distinct macrophage signatures in LRT, including APOE, CXCL9, and TREM2, point towards a unique immune microenvironment in late-relapsed tumors, possibly contributing to tumor immune evasion or modulating the response to therapy. This intricate interplay between tumor cells and the immune microenvironment underscores the necessity of considering the immune contexture in therapeutic strategies for HCC, highlighting potential targets for immunotherapy in both primary and relapsed HCC.
 
+Our single-cell RNA sequencing (scRNA-seq) and single-cell ATAC sequencing (scATAC-seq) analysis of primary hepatocellular carcinoma (HCC) and late-relapsed HCC revealed distinct immune cell compositions across different tissue samples. In late-relapsed normal adjacent tissue (LRN), we observed a significant enrichment of immune cell subtypes such as Mono-like_02_CD16, Mph_01_MARCO, DC_02_CD1C, Mono-like_01_CD14, DC_01_CLEC9A, DC_05_LILRA4M, Mo_02_CD16, DC_04_CD207, Mo_01_CD14, and DC_06_STMN1. Notably, Mo_02_CD16, DC_04_CD207, and Mo_01_CD14 showed a particularly high enrichment in LRN compared to other groups. In primary HCC normal adjacent tissue (PHN), cell subtypes including Mono-like_03_CD14CD16 and Mph_02_CCL20 were distinctly enriched, with Mono-like_03_CD14CD16 and Mph_02_CCL20 showing a specific enhancement. The primary hepatocellular carcinoma tumor (PHT) displayed a notable enrichment for Mph_O8_APOE, Mph_06_CXCL9, Mph_03_SPP1, Mph_O7_SLC40A1, Mph_05_IL1B, and Mph_09_STMN1, with Mph_03_SPP1, Mph_O7_SLC40A1, Mph_05_IL1B, and Mph_09_STMN1 being particularly abundant. Meanwhile, late-relapsed HCC tumor (LRT) samples showed a unique accumulation of Mph_04_TREM2, DC_03_LAMP3, and Mast cells, distinguishing them from other groups.
+
+#### Biological explanation:
+
+The immune landscape of HCC, particularly in late-relapsed cases, is markedly complex and heterogeneous. The enrichment of specific immune cell subtypes in different tissue contexts reflects the intricate interplay between the tumor and its microenvironment. In LRN, the presence of Mo_02_CD16, DC_04_CD207, and Mo_01_CD14 suggests an ongoing immune response, potentially involving monocyte and dendritic cell-mediated antigen presentation and inflammation. The distinct immune signature in PHN, highlighted by Mono-like_03_CD14CD16 and Mph_02_CCL20, indicates a different aspect of immune modulation, possibly related to the recruitment and activation of immune cells. The enriched macrophage populations in PHT, characterized by pro-inflammatory and tissue remodeling markers, suggest an environment conducive to tumor progression and evasion. Finally, the specific enrichment of Mph_04_TREM2, DC_03_LAMP3, and Mast cells in LRT points towards a unique immune evasion strategy and a microenvironment that may support tumor relapse and resistance. Understanding these diverse immune landscapes opens new avenues for targeted immunotherapies in HCC, particularly in addressing the challenge of late recurrence.
 
 
 
@@ -307,6 +310,7 @@ The enrichment of specific immune cell subpopulations in different tissue types 
 The UMAP of Neutrophil cells from different Neutrophil subpopulations. Each dot represents a cell, and the color represents the subpopulation.
 
 ### Figure Results
+
 
 
 ## NeutrophilCellBySubpopulationMarkerHeatmap
@@ -509,4 +513,51 @@ The enrichment of DEGs in these specific immune-related pathways in the PHN grou
 3. **Lymphocyte-mediated and leukocyte-mediated immunity** point towards the direct engagement and destruction of tumor cells by specific immune cells. Lymphocytes (including T cells and B cells) play roles in both recognizing cancer cells and signaling other parts of the immune system, while leukocytes (such as macrophages) can directly attack tumor cells.
 
 These findings suggest a dynamic immune landscape in the tissue surrounding HCC tumors, with implications for understanding the mechanisms of tumor recurrence and the potential for therapeutic interventions aimed at harnessing the immune system to prevent or treat recurrent HCC.
+
+## Macrophages
+
+## MacrophageCelltypeProportionBarPlot
+
+![](images/2024-04-02-12-20-17.png)
+
+### Figure Description
+
+
+x-axis: tissue type (PHT, LRT, PHN, LRN) y-axis: proportion of cell type within Macrophage cells Barplot proportions of Macrophage subpopulations within all the Macrophages across different tissue types.
+
+
+### Figure Results:
+
+
+#### Results:
+Our analysis revealed distinct macrophage subpopulations (Mph) with varying prevalences across different tissue types in hepatocellular carcinoma (HCC). Specifically, Mph_01_MARCO, Mph_02_CCL20, and Mph_04_TREM2 were found in higher proportions in normal adjacent tissues (LRN and PHN) when compared to late-relapsed tumor (LRT) and primary tumor (PHT) samples. Notably, Mph_01_MARCO and Mph_04_TREM2 showed exceptionally high levels in LRN compared to other groups. In contrast, Mph_08_APOE, Mph_07_SLC40A1, and Mph_05_IL1B were significantly more prevalent in tumor samples (LRT and PHT) than in normal tissues. Among these, Mph_08_APOE was particularly elevated in LRT, whereas Mph_07_SLC40A1 and Mph_05_IL1B were predominantly found in PHT. Additionally, Mph_02_CCL20 was exceptionally high in PHN compared to other tissue types.
+
+#### Biological Explanation:
+This differential distribution of macrophage subpopulations suggests a nuanced role of the tumor microenvironment in modulating immune cell composition and function. The elevated levels of Mph_01_MARCO and Mph_04_TREM2 in normal adjacent tissues may reflect a protective or homeostatic immune response, aiming to maintain tissue integrity in the face of potential tumor spread. These macrophages could be involved in anti-tumor responses or in tissue repair and remodeling processes. On the other hand, the increased presence of Mph_08_APOE, Mph_07_SLC40A1, and Mph_05_IL1B within tumor sites suggests an adaptation of the immune landscape in favor of tumor growth and progression. These macrophages might contribute to the immunosuppressive tumor microenvironment, facilitating tumor evasion from immune surveillance. The distinct macrophage profiles between LRT and PHT further indicate that the immune contexture of late-relapsed HCC might diverge significantly from primary tumors, possibly due to different mechanisms underlying tumor recurrence and the influence of prior immune encounters. Understanding these dynamics is crucial for devising more effective immunotherapeutic strategies against HCC recurrence.
+
+
+
+
+## LRTDEGsGOEnrichmentDotPlot
+
+![](images/2024-04-02-12-55-23.png)
+
+
+### Figure Description
+
+Enrichment dot plot of enriched GO gene sets in differentially expressed genes (DEGs) between PHN and LRN Macrophagescells. x-axis: gene ratio, the ratio of the number of genes in the gene set to the total number of genes in the gene set. the color represents the p adjusted value of the enrichment analysis. dot size represents the number of genes in the gene set
+
+
+cell type: Macrophages (ALL)
+
+dataset: scRNA-seq
+
+algorithm: DEGs and GO enrichment analysis
+
+group of DEGs: PHN vs LRN, this shows the LRT DEGs enriched GO gene sets.
+
+### Figure Results
+
+
+
 
