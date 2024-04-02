@@ -210,6 +210,44 @@ The genes identified as being upregulated in late-relapsed HCC patients are like
 
 
 
+## NeutrophilCellUMAPByMarkers
+
+
+![](images/2024-04-01-18-18-57.png)
+
+
+### Figure Description
+
+UMAP visualization of Neutrophil cells colored by the expression of canonical marker genes.
+
+
+
+### Figure Result 
+
+
+
+
+
+## NeutrophilPseudotimeTrajectory
+
+
+![](images/2024-04-01-18-31-39.png)
+
+
+### Figure Description
+
+
+Pseudotime trajectory of Neutrophil cells colored by pseudotime values. The color represents the pseudotime values of the cells, and the cells are ordered along the trajectory.
+
+Root cells: Neu_02_S100A12
+
+End cells: Neu_10_SPP1 and Neu_11_CCL4
+
+### Figure Results
+
+
+
+
 ## LRTDEGsHallmarkEnrichmentDotPlot
 
 ![](images/2024-03-31-11-10-28.png)
