@@ -1,5 +1,31 @@
 
 
+
+# Global cells analysis
+
+## GlobalCelltypeLevel1CellCountBarplot
+
+
+![](images/2024-04-04-13-07-10.png)
+
+
+
+### Figure Description
+
+Barplot of the number of cells in each cell type at the level 1 cell type annotation.
+
+
+### Figure Results
+
+
+we performed scRNA-seq analysis of 49 samples of 30
+patients, a total of
+6 cell clusters ( 5，605 B cells ， 174，963 Myeloid cellls，  49，150 NK cells， 12，260 Stromal cells， 110，237 T cells and 35，351 Tumber cells ) were identified among 387，566 cells obtained.
+
+
+
+
+
 ## VolcanoPlot
 
 
@@ -42,6 +68,23 @@ The distinct subpopulations of T cells identified in late-relapsed HCC samples h
 
 
 "To investigate the diversity and distribution of T cell subpopulations within hepatocellular carcinoma (HCC), we employed Uniform Manifold Approximation and Projection (UMAP) for dimensionality reduction and visualization. This analysis facilitated the identification and representation of distinct T cell subsets, specifically CD8+ T cells, CD4+ T cells, and gamma delta (γδ) T cells, across the collected HCC samples. UMAP plots were generated to illustrate the intricate patterns of these subpopulations, offering insights into their spatial distribution and relative abundance."
+
+
+## TcellLevel3CellCountBarPlot
+
+
+![](images/2024-04-03-20-42-32.png)
+
+
+### Figure Description
+
+Barplot of the number of T cells in each cell type at the level 1 cell type annotation.
+
+### Figure Results
+
+A total of 28 cell clusters were identified among  110，237 cells obtained.
+
+
 
 
 
@@ -137,6 +180,57 @@ Analysis across all cancer cell populations revealed the presence of poor surviv
 
 #### Biological Explanation:
 The identification of poor survival signatures in all cancer cells suggests a fundamental aspect of HCC biology that transcends the initial and relapsed stages of the disease. These signatures, typically encompassing a set of genes associated with proliferation, invasion, and resistance to apoptosis, may be indicative of the intrinsic capacity of HCC cells to promote tumor growth, evade immune detection, and resist conventional therapies. The presence of these signatures across both primary and late-relapsed HCC samples highlights the persistent and evolving threat posed by these tumors, emphasizing the need for novel therapeutic approaches that target these deeply ingrained survival mechanisms. This finding underscores the challenges in treating HCC and the importance of understanding the molecular underpinnings that contribute to the poor prognosis associated with this disease.
+
+
+
+
+
+
+## TcellScissorPoorSurvivalEnrichmentBarplot
+
+
+
+![](images/2024-04-04-15-26-28.png)
+
+
+
+
+### Figure Description
+
+Bar plot shows the enrichment of Scissor+ Tcells in different clusters. 
+
+
+### Figure Results
+
+The poor survival enrichment  were mainly from CD4T_11_FOXP3_STMN1，CD8T_13_STMN1 and CD4T_08_STMN1.
+
+
+
+
+In the study, the bar plot illustrates the enrichment of Scissor+ T cells across various clusters, revealing significant findings pertinent to survival outcomes in hepatocellular carcinoma (HCC). Notably, clusters identified as CD4T_11_FOXP3_STMN1, CD8T_13_STMN1, and CD4T_08_STMN1 demonstrated pronounced enrichment for poor survival rates. These results suggest a distinct association between specific T cell subpopulations and the prognosis of HCC patients. The presence of Scissor+ T cells in these clusters underscores their potential role in modulating tumor microenvironment and influencing patient survival. This observation warrants further investigation into the mechanisms by which these T cell subsets contribute to the progression and relapse of hepatocellular carcinoma, offering new avenues for targeted therapies and prognostic markers.
+
+BIOLOGICAL MEANING:
+
+The findings highlight the role of specific T cell subsets, identified by their expression of FOXP3 and STMN1, in the context of hepatocellular carcinoma (HCC). The clusters CD4T_11_FOXP3_STMN1, CD8T_13_STMN1, and CD4T_08_STMN1 are indicative of different T cell types: CD4+ T cells expressing FOXP3, a marker for regulatory T cells (Tregs), and STMN1, a marker associated with cell proliferation and migration, as well as CD8+ T cells expressing STMN1. The enrichment of these subsets in the context of poor survival suggests a complex interplay in the tumor microenvironment, where Tregs could be contributing to immune evasion by the tumor, and the presence of STMN1 might indicate a higher degree of cellular activity associated with tumor aggression and metastasis. Understanding these dynamics is crucial for developing targeted immunotherapies and improving patient prognostication in HCC.
+
+## TumorScissorBarPlot
+
+![](images/2024-04-03-20-44-48.png)
+
+
+### Figure Description
+
+Barplot of the proportion of Scissor+ (Poor Survival) and Others (Good Survival and Neutral) cancer cells in different samples.
+
+### Figure Results
+
+
+
+The bar plot illustrates the distribution of Scissor+ cells, indicative of poor survival, across various samples derived from both primary hepatocellular carcinoma (PHT and PH for scRNA-seq and scATAC-seq data, respectively) and late relapsed tumors (LRT and LR). Additionally, it includes adjacent normal tissues from primary (PHN) and late relapsed cases (LRN). Notably, Scissor+ cells, which are associated with a poor prognosis, were identified in all patient samples under study. This observation underscores the pervasive presence of these prognostically significant cells within both cancerous and adjacent normal tissues, highlighting their potential role in the progression and recurrence of hepatocellular carcinoma.
+
+BIOLOGICAL MEANING:
+
+The presence of Scissor+ cells across all samples, including primary tumors, relapsed tumors, and adjacent normal tissues, suggests a fundamental biological insight into the nature of hepatocellular carcinoma (HCC) progression and recurrence. These cells, characterized by a gene expression profile predictive of poor survival, may serve as key players in the oncogenic process, contributing to tumor aggressiveness and the potential for relapse. Their detection in adjacent normal tissues could indicate a pre-malignant state or the existence of a microenvironment conducive to cancer initiation and progression. Furthermore, the ubiquitous presence of Scissor+ cells in both early and late stages of HCC underscores the need for targeted therapeutic strategies aimed at eradicating or modulating these cells to improve patient outcomes. This finding could propel further research into the molecular mechanisms underlying the poor prognostic signature of Scissor+ cells, offering new avenues for the development of prognostic markers and personalized treatments for hepatocellular carcinoma.
 
 ## VocalnoPlotByScissorPoorSurvivalvsOthers
 
@@ -274,6 +368,28 @@ The enrichment of DEGs in oxidative phosphorylation and xenobiotic metabolism ha
 
 
 
+## PHTLRTTumorScissorSignatureViolinPlot
+
+![](images/2024-04-04-16-05-01.png)
+
+
+### Figure Description
+
+Violin plots of expression levels of selected upregulated genes in Scissor+ (Poor Survival) cells.
+
+
+### Figure Results
+
+
+
+In our analysis, we focused on the expression levels of genes that were identified as upregulated in Scissor+ cells, which are associated with poor survival outcomes. The violin plots generated from our single-cell RNA sequencing data reveal a distinct expression pattern for these genes across different groups. Notably, we found a significantly higher expression of these selected genes in the primary hepatocellular carcinoma tumor (PHT) group compared to the late relapsed hepatocellular carcinoma tumor (LRT) group. This observation suggests a differential regulatory landscape in primary versus late-stage relapsed tumors, which may underlie the aggressive nature and poor prognosis associated with Scissor+ cells in primary tumors.
+
+Biological meaning:
+
+This finding has profound implications for understanding the progression and prognosis of hepatocellular carcinoma (HCC). The higher expression of upregulated genes in Scissor+ cells within primary tumors (PHT) compared to late relapsed tumors (LRT) suggests that these genes might play a critical role in the initial stages of tumor development and aggression. Scissor+ cells are indicative of a poor survival phenotype, which means that their presence and the heightened expression of associated genes in primary tumors could be markers for tumor aggressiveness and potential resistance to treatments. This differential expression pattern offers insights into the molecular mechanisms driving early tumor progression in HCC and highlights the potential of targeting these upregulated genes in Scissor+ cells as a therapeutic strategy for improving outcomes in patients with primary hepatocellular carcinoma.
+
+
+
 
 ## MyeloidCellOddsRatioHeatmap
 
@@ -297,9 +413,32 @@ Our single-cell RNA sequencing (scRNA-seq) and single-cell ATAC sequencing (scAT
 The immune landscape of HCC, particularly in late-relapsed cases, is markedly complex and heterogeneous. The enrichment of specific immune cell subtypes in different tissue contexts reflects the intricate interplay between the tumor and its microenvironment. In LRN, the presence of Mo_02_CD16, DC_04_CD207, and Mo_01_CD14 suggests an ongoing immune response, potentially involving monocyte and dendritic cell-mediated antigen presentation and inflammation. The distinct immune signature in PHN, highlighted by Mono-like_03_CD14CD16 and Mph_02_CCL20, indicates a different aspect of immune modulation, possibly related to the recruitment and activation of immune cells. The enriched macrophage populations in PHT, characterized by pro-inflammatory and tissue remodeling markers, suggest an environment conducive to tumor progression and evasion. Finally, the specific enrichment of Mph_04_TREM2, DC_03_LAMP3, and Mast cells in LRT points towards a unique immune evasion strategy and a microenvironment that may support tumor relapse and resistance. Understanding these diverse immune landscapes opens new avenues for targeted immunotherapies in HCC, particularly in addressing the challenge of late recurrence.
 
 
+## MyeloidCellCountBarPlot
+
+![](images/2024-04-04-16-15-28.png)
+
+
+### Figure Description
+
+Barplot of the number of cells in each Myeloid cell type at the level 2 cell type annotation.
+
+
+### Figure Results
+
+
+自己写的：A total of 7 cell clusters in each Myeloid cell type ： DC	(12，700) ，Macrophage	(74，879)
+，Mast cells	（4，550），Mono-like	（30，099），MonoDC	（6，467）
+，Monocyte	（6，561），Neutrophiles	（39，707），they were identified among 174，963 cells obtained.
 
 
 
+
+In the investigation of Myeloid cell populations, a comprehensive analysis revealed a total of 174,963 cells segregated into seven distinct clusters corresponding to specific Myeloid cell types. The distribution of cells across these clusters was as follows: Dendritic cells (DC) comprised 12,700 cells, Macrophages accounted for the largest group with 74,879 cells, Mast cells were identified with a count of 4,550 cells, cells resembling Monocytes (Mono-like) totaled 30,099, MonoDC, a subcategory combining features of Monocytes and Dendritic Cells, included 6,467 cells, Monocytes were slightly more numerous at 6,561 cells, and Neutrophils were represented by 39,707 cells. This detailed enumeration of Myeloid cell types at the level 2 cell type annotation highlights the cellular heterogeneity within the studied samples and provides a foundation for further biological interpretation.
+
+The biological significance of these findings underscores the diverse roles that Myeloid cells play in both health and disease, particularly in the context of hepatocellular carcinoma (HCC). Dendritic cells are pivotal in antigen presentation and initiating immune responses, while Macrophages are essential for tissue homeostasis, inflammation, and response to pathogens. Mast cells play roles in allergy and inflammation, and Monocytes, including their subtypes Mono-like and MonoDC, are key players in immune surveillance and inflammation. Neutrophils are critical for rapid response to infection. The variance in cell counts among these types reflects their differing roles and abundances in the tumor microenvironment and adjacent normal tissues in primary and late-relapsed HCC. Understanding these distributions is crucial for comprehending the immune landscape of HCC, potentially guiding therapeutic strategies targeting these cells.
+
+
+# Neutrophils
 ## NeutrophilCellUMAP
 
 ![](images/2024-03-31-15-22-21.png)
@@ -338,6 +477,36 @@ The heatmap analysis distinctly demonstrates that each neutrophil subpopulation 
 Neutrophils, traditionally viewed as a homogenous population in the context of innate immunity, actually comprise diverse subpopulations with specialized functions, as revealed by the expression of specific canonical markers. This diversity suggests a more nuanced role of neutrophils in immune responses, including inflammation, pathogen clearance, and modulation of the adaptive immune system. The identification of these subpopulations through their unique gene expression profiles indicates potential functional specialization, which could be linked to different pathways of neutrophil development, activation states, or responses to various microenvironmental cues. Understanding the complexity and functional diversity of neutrophil subpopulations opens new avenues for targeted therapeutic strategies in diseases where neutrophils play a critical role.
 
 
+## NeutrophilCellCountLevel3BarPlot
+
+![](images/2024-04-04-16-27-24.png)
+
+
+### Figure Description
+
+Barplot of the number of cells in each Neutrophil cell type at the level 3 cell type annotation.
+
+
+### Figure Results
+
+Summary of the total number of cells in each Neutrophil cell type at the level 3 cell type annotation.
+
+
+
+## NeutrophilCellUMAPByMarkers
+
+
+![](images/2024-04-04-16-31-20.png)
+
+## Figure Description
+
+UMAP visualization of Neutrophil cells colored by the expression of canonical marker genes.
+
+
+### Figure Results
+
+
+According to the expression of canonical marker genes,Neutrophil cell subclusters were designated as  S100A12，lSG15 ，ELL2,IFIT1，MMP8，SPP1，CCL4，CD74，PTGS2 and APOA2. 
 
 
 ## NeutrophilCellOddsRatioHeatmap
@@ -388,6 +557,71 @@ The differential expression of these markers underscores the complexity of the t
 
 #### Biological Explanation:
 
+
+
+
+## NeuDiffusionMap
+
+
+![](images/2024-04-03-20-08-36.png)
+
+
+### Figure Description
+
+The trajectory analysis of Mφ in LUAD and LUSC revealed distinct features. a, b Differentiation trajectory of Mφ in all lung samples, with
+each point colored by pseudotime (a) and Mφ subtype (b) (bottom) which was divided into two branches. 
+
+
+### Figure Results
+
+We applied Monocle2 to reconstruct
+the pseudotemporal trajectory inference of all acquired macrophages (Fig. 6a, b and Supplementary Fig. 7a). The Mφ trajectory
+yielded five developmental hierarchies (State 1–5) where the
+FABP4-Mφ cluster was located at the starting point of cell
+evolution on this map (Fig. 6a, b, Supplementary Fig. 7a, b), and
+suggested a binary branched structure (Fig. 6b): FABP4-Mφ as the
+root, SPP1-Mφ at the end state of branch 1, and SPP1-Mφ and
+FCN1-Mφ clusters at the end state of branch 2. Notably, the novel
+subcluster SELENOP-Mφ existed throughout the developmental
+trajectory and accumulated mainly at the end of branch 2 (Fig. 6b
+and Supplementary Fig. 7a). 
+
+
+## Neutrophil_DEGsGOEnrichmentDotPlot
+
+![](images/2024-04-03-20-09-42.png)
+
+
+### Figure Description
+
+
+Enrichment dot plot of enriched GO gene sets in differentially expressed genes (DEGs) among PHT，LRT，PHN and PHT neutrophiles cells. x-axis: gene ratio, the ratio of the number of genes in the gene set to the total number of genes in the gene set.  dot size represents the number of genes in the gene set
+
+cell type: Neutrophiles (ALL)
+
+dataset: scRNA-seq
+
+algorithm: DEGs and GO enrichment analysis
+
+group of DEGs:  LRN，LRT， PHN and PHT.
+
+
+
+### Figure Results
+
+
+
+In this study, we conducted an enrichment analysis to explore the biological functions of differentially expressed genes (DEGs) within neutrophil cells across various conditions associated with hepatocellular carcinoma (HCC), utilizing scRNA-seq datasets. Our analysis encompasses primary HCC tumor (PHT), late relapsed HCC tumor (LRT), and their adjacent normal tissues (PHN and LRN, respectively).
+
+For neutrophils in the LRN group, enriched Gene Ontology (GO) gene sets include components involved in the content of ficolin-1-rich granules, the structure of secretory granule membranes, and processes negatively regulating phosphorus and phosphate metabolic processes, alongside components of tertiary granules. These findings suggest a focus on granule composition and metabolic regulation in the normal tissue adjacent to late relapsed tumors.
+
+In LRT neutrophils, we observed enrichment in gene sets related to the positive regulation of responses to external stimuli and reactive oxygen species, the presence of tertiary granules, regulation of protein serine/threonine kinase activity, and negative regulation of the immune system process. This indicates an active response to oxidative stress and a nuanced regulation of immune responses in the tumor microenvironment of late relapsed HCC.
+
+Neutrophils from PHN showed enrichment in gene sets associated with the adaptive immune response, notably those requiring somatic recombination of receptors built from immunoglobulin superfamily domains, immunoglobulin production, molecular mediators of immune response, immunoglobulin complex formation, and antigen binding. This highlights the involvement of adaptive immune processes in the normal tissue adjacent to primary tumors.
+
+Lastly, PHT neutrophils exhibited enrichment in gene sets related to the regulation of the pattern recognition receptor signaling pathway, the secretory granule membrane, ubiquitin-like protein ligase binding, ubiquitin protein ligase binding, and protein folding chaperone. These results underscore the regulatory mechanisms of innate immunity and protein homeostasis within primary HCC tumors.
+
+Biological Interpretation: The differential enrichment of GO gene sets across the groups reflects distinct immune and metabolic states of neutrophils in the context of HCC progression and its microenvironment. In LRN and PHN (adjacent normal tissues), the focus on granular content and metabolic processes versus adaptive immune responses suggests a differential baseline state of immune readiness and metabolic regulation in response to tumor presence. For tumor-associated neutrophils (LRT and PHT), the emphasis shifts towards managing oxidative stress, regulating immune responses, and ensuring protein homeostasis, indicating an adaptive response to tumor growth and potential therapeutic targeting points. These findings contribute to our understanding of the dynamic interplay between neutrophils and the HCC tumor microenvironment, offering insights into potential biomarkers and therapeutic targets.
 
 ## PHT_Neutrophiles_DEGsGOEnrichmentDotPlot
 
@@ -651,7 +885,7 @@ The analysis elucidates the predilection of B cell clusters within hepatocellula
 
 
 
-In an examination of B cell cluster preferences within hepatocellular carcinoma (HCC) contexts, as disclosed by the ratio of observed to expected cell numbers, notable distinctions emerged across various sample types. Specifically, clusters B_04_STMN1 and B_03_MZB1 demonstrated a pronounced enrichment within primary hepatocellular carcinoma tumor (PHT) and adjacent primary normal tissue (PHN). Conversely, B_01_MS4A1 and B_02_MS4A1_CD83 clusters were predominantly found in samples from adjacent late relapsed normal tissue (LRN) and late relapsed tumors (LRT).
+第一种解读：In an examination of B cell cluster preferences within hepatocellular carcinoma (HCC) contexts, as disclosed by the ratio of observed to expected cell numbers, notable distinctions emerged across various sample types. Specifically, clusters B_04_STMN1 and B_03_MZB1 demonstrated a pronounced enrichment within primary hepatocellular carcinoma tumor (PHT) and adjacent primary normal tissue (PHN). Conversely, B_01_MS4A1 and B_02_MS4A1_CD83 clusters were predominantly found in samples from adjacent late relapsed normal tissue (LRN) and late relapsed tumors (LRT).
 
 A detailed comparison across all groups highlighted that the B_04_STMN1 cluster was most abundantly represented in PHT samples, indicating a potential association with primary tumor biology. The B_01_MS4A1 cluster showed a significant presence in LRN, suggesting a unique role or alteration in the late relapse normal tissue environment. The B_02_MS4A1_CD83 cluster was predominantly observed in LRT, hinting at its involvement in the relapsed tumor's microenvironment. Finally, the B_03_MZB1 cluster was most enriched in PHN and PHT, which could reflect its importance in the primary tumor and adjacent normal tissue context.
 
@@ -680,7 +914,7 @@ B_02_MS4A1_CD83  were especially enriched in LRT.
 B_03_MZB1 were especially enriched in PHT and PHN.
 
 
-RESULTS OUTPUT:
+第二种解读：RESULTS OUTPUT:
 
 In our comprehensive analysis, B cells were categorized into four distinct subsets, demonstrating a significant separation and preference based on specific hepatocellular carcinoma conditions. This segregation highlights the unique B cell landscapes across various hepatocellular carcinoma stages and adjacent normal tissues.
 
@@ -693,4 +927,5 @@ In our comprehensive analysis, B cells were categorized into four distinct subse
 Biological Implication:
 
 This intricate pattern of B cell subset enrichment across different stages of hepatocellular carcinoma (HCC) and adjacent normal tissues underscores the dynamic role of B cells in the tumor microenvironment. The specific enrichment of B cell subsets in primary tumors, late relapsed tumors, and adjacent normal tissues suggests that B cells may contribute to the immune landscape in a context-dependent manner, potentially affecting tumor progression, immune surveillance, and the response to therapy. The detailed analysis of B cell preferences offers valuable insights into the immune mechanisms at play in HCC, opening avenues for targeted immunotherapies that leverage the unique immune profiles of HCC patients at different stages of the disease.
+
 
