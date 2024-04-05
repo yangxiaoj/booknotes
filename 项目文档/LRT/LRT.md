@@ -3,6 +3,62 @@
 
 # Global cells analysis
 
+
+## GlobalCelltypeMarkerHeatmap
+
+
+![](images/2024-04-05-11-10-09.png)
+
+
+### Figure Description
+
+
+Heatmap showing marker genes for each cell clusters.
+
+
+### Figure Results
+
+
+
+
+##  CellCellInteractionLREnrichmentHeatmap
+
+
+
+![](images/2024-04-05-11-35-39.png)
+
+
+
+### Figure Description
+
+
+Heatmap showing LR o/e enrichment in different tissue groups. 
+
+### Figure Results
+
+
+The figure results highlight a comprehensive enrichment analysis across different tissue groups derived from hepatocellular carcinoma (HCC) and adjacent normal tissues, utilizing single-cell RNA sequencing (scRNA-seq) data. The analysis reveals distinct gene enrichment patterns in primary hepatocellular carcinoma tumor (PHT), late relapsed hepatocellular carcinoma tumor (LRT), and their adjacent normal tissues (PHN and LRN), indicating the molecular diversity and the potential mechanisms influencing tumor progression and tissue specificity.
+
+In LRN tissues, genes related to chemokine signaling pathways, including CCR1_CCL14, CCR3_CCL8, and others, are significantly enriched. This suggests an active chemotactic environment potentially facilitating tumor cell migration and invasion. Additionally, enrichment of genes like BMPR1A_BMPR2_BMP8A indicates active bone morphogenetic protein signaling, which could influence tissue remodeling and cancer metastasis.
+
+PHT tissues show enrichment in genes associated with cell adhesion and signaling, such as NECTIN2_NECTIN3 and TIGIT_NECTIN, which may play roles in tumor cell proliferation and interaction with the tumor microenvironment. Enrichments in pathways like EFNB2_EPHA4 and WNT1_FZD3 hint at the involvement of ephrin and Wnt signaling in tumor progression and cell-to-cell communication within the tumor microenvironment.
+
+PHN tissues exhibit a distinct enrichment profile, with a significant presence of genes involved in immune modulation and response, such as HLA-G_LILRB2 and PDGFB_PDGFRB. This reflects the complex interplay between the tumor and immune system in adjacent normal tissues, potentially influencing immune evasion and tumor growth.
+
+For LRN tissues, there is a notable enrichment of genes related to collagen formation and integrin signaling pathways, including COL4A3_a2b1_complex and COL6A2_a2b1_complex, which suggests an active extracellular matrix remodeling process that may contribute to the unique tissue architecture and possibly facilitate late relapse tumor cell migration and invasion.
+
+Overall, these results underscore the diverse molecular landscapes across different tissue groups associated with primary and late relapsed hepatocellular carcinoma, offering insights into the complex biology of tumor development, progression, and the tumor microenvironment. Understanding these patterns can provide valuable clues for identifying potential therapeutic targets and biomarkers for HCC management and treatment.
+
+
+
+
+## CellCellInteractionLRCircos
+
+
+
+
+
+
 ## GlobalCelltypeLevel1CellCountBarplot
 
 
@@ -560,7 +616,7 @@ The differential expression of these markers underscores the complexity of the t
 
 
 
-## NeuDiffusionMap
+## ? NeuDiffusionMap  
 
 
 ![](images/2024-04-03-20-08-36.png)
@@ -568,23 +624,33 @@ The differential expression of these markers underscores the complexity of the t
 
 ### Figure Description
 
-The trajectory analysis of Mφ in LUAD and LUSC revealed distinct features. a, b Differentiation trajectory of Mφ in all lung samples, with
-each point colored by pseudotime (a) and Mφ subtype (b) (bottom) which was divided into two branches. 
+Monocle trajectories of neutrophils coloured by pseudotime values. Each dots represents the pseudotime values of the cells, and the cells are ordered along the trajectory.
+
+Root cells: Neu_02_S100A12
+
+End cells: Neu_10_SPP1 and Neu_11_CCL4 for cluster identities . 
 
 
 ### Figure Results
 
-We applied Monocle2 to reconstruct
-the pseudotemporal trajectory inference of all acquired macrophages (Fig. 6a, b and Supplementary Fig. 7a). The Mφ trajectory
-yielded five developmental hierarchies (State 1–5) where the
-FABP4-Mφ cluster was located at the starting point of cell
-evolution on this map (Fig. 6a, b, Supplementary Fig. 7a, b), and
-suggested a binary branched structure (Fig. 6b): FABP4-Mφ as the
-root, SPP1-Mφ at the end state of branch 1, and SPP1-Mφ and
-FCN1-Mφ clusters at the end state of branch 2. Notably, the novel
-subcluster SELENOP-Mφ existed throughout the developmental
-trajectory and accumulated mainly at the end of branch 2 (Fig. 6b
-and Supplementary Fig. 7a). 
+
+
+## ?NeutrophilPseudotimeTrajectory
+
+![](images/2024-04-04-18-08-06.png)
+
+
+### Figure Description
+
+Pseudotime trajectory of Neutrophil cells colored by pseudotime values. The color represents the pseudotime values of the cells, and the cells are ordered along the trajectory.
+
+Root cells: Neu_02_S100A12
+
+End cells: Neu_10_SPP1 and Neu_11_CCL4
+
+### Figure Results
+
+
 
 
 ## Neutrophil_DEGsGOEnrichmentDotPlot
@@ -748,7 +814,140 @@ The enrichment of DEGs in these specific immune-related pathways in the PHN grou
 
 These findings suggest a dynamic immune landscape in the tissue surrounding HCC tumors, with implications for understanding the mechanisms of tumor recurrence and the potential for therapeutic interventions aimed at harnessing the immune system to prevent or treat recurrent HCC.
 
-## Macrophages
+
+
+
+## NeuScissorUMAP
+
+![](images/2024-04-04-18-23-16.png)
+
+
+
+### Figure Description
+
+
+UMAP visualization of the Scissor-selected cancer cells. The red dots are Scissor+ (poor survival) and blue dot represents Scissor- (good survival) or Neutral cells, respectively.
+
+cell type: Neutrophil cells
+
+dataset: scRNA-seq
+
+algorithm: Scissor
+
+### Figure Results
+
+
+RESULTS OUTPUT:
+
+Analysis of Neutrophil cell populations across the study revealed a consistent signature of poor survival within all examined Neutrophil cells. This finding highlights a pervasive feature of aggressiveness and a potential for treatment resistance in hepatocellular carcinoma (HCC) cells derived from both primary and late-relapsed tumors. Such uniformity in the survival-associated signatures across Neutrophil cells from different HCC contexts underscores the intrinsic aggressive nature of the disease and suggests a fundamental role of these cells in the tumor's progression and resistance mechanisms.
+
+Biological Meaning:
+
+The result indicates that Neutrophil cells, regardless of being from primary hepatocellular carcinoma (PHT and PHN) or late relapsed hepatocellular carcinoma (LRT and LRN), consistently exhibit molecular markers associated with poor patient survival. This suggests that Neutrophil cells may play a crucial role in the aggressiveness of HCC, possibly contributing to the tumor's ability to resist therapy. The presence of such markers in cells from both primary and late-relapsed tumors points towards a fundamental biological characteristic of Neutrophil cells in the context of HCC, emphasizing their potential impact on the disease's progression and outcomes. This understanding could guide future research on targeting Neutrophil cells as part of therapeutic strategies in HCC.
+
+## NeutrophilesScissorVolcanoPlot
+
+![](images/2024-04-04-18-24-22.png)
+
+
+### Figure Description
+
+Volcano plot of differential gene expressions in Scissor+ (Poor Survival) Neutrophiles versus all other Neutrophiles.
+
+
+
+### Figure Results
+
+
+In our study, we meticulously examined the gene expression patterns within neutrophils characterized by the presence (Scissor+) or absence (Scissor−) of a specific marker linked to survival outcomes in hepatocellular carcinoma. Our findings reveal a pronounced differential expression of genes between these two subpopulations. Remarkably, genes such as S100A9, S100A1, TPM3, S100A8, PFN1, and ZFP36 emerged as significantly upregulated in the Scissor+ neutrophils, which are associated with poor survival outcomes. This enhancement suggests a distinct genetic signature that could underpin the aggressive nature and survival prognosis of hepatocellular carcinoma influenced by these neutrophils.
+
+Biological Meaning of the Figure Results:
+
+The differential gene expression observed underscores the complex role of neutrophils in the tumor microenvironment of hepatocellular carcinoma. The upregulated genes in Scissor+ neutrophils highlight their potential involvement in pro-tumorigenic processes. For instance, S100A9 and S100A8 are known for their role in inflammation and have been implicated in cancer progression through the modulation of the immune response and tumor cell migration. Similarly, TPM3, involved in cytoskeletal functions, might influence the invasive capacity of tumor cells. PFN1 plays a crucial role in cell motility and could therefore contribute to tumor spread. ZFP36, a regulator of mRNA stability, might affect the expression levels of various oncogenes or tumor suppressors. The enrichment of these genes in Scissor+ cells suggests a phenotype that could support tumor growth, immune evasion, and metastasis, ultimately correlating with the poor survival outcomes observed. This genetic signature offers insights into the mechanistic pathways through which neutrophils could influence tumor behavior and patient prognosis, presenting potential targets for therapeutic intervention in hepatocellular carcinoma.
+
+
+
+
+## NeuScissorDEGsSurvivalCurve
+
+
+![](images/2024-04-04-18-24-57.png)
+
+
+### Figure Description
+
+Kaplan–Meier survival curves show the clinical relevance of the HCC . Tick marks indicate censoring events. The statistical P values were determined by the two-tailed log rank sum test.
+
+### Figure Results
+
+
+In our study, Kaplan–Meier survival curves were employed to ascertain the clinical significance of hepatocellular carcinoma (HCC), with censoring events denoted by tick marks. Analysis of the survival data revealed that patients exhibiting elevated signature scores experienced notably diminished survival times in comparison to those with lower signature scores. This outcome was statistically validated through the application of a two-tailed log rank sum test, indicating a significant disparity in survival outcomes between the two patient cohorts.
+
+Biological Interpretation of the Figure Results:
+
+The figure results demonstrate a clear correlation between the signature scores derived from the analysis and the clinical prognosis of patients with hepatocellular carcinoma. Signature scores are typically based on the expression levels of a set of genes or the presence of certain genomic features that have been identified as relevant to the disease's pathology. High signature scores may reflect a more aggressive form of the cancer, characterized by rapid growth or a greater propensity for metastasis, thereby leading to poorer survival outcomes. Conversely, lower signature scores suggest a less aggressive cancer phenotype, which is associated with a better prognosis for the patient. This relationship underscores the potential of molecular signatures as prognostic tools in clinical oncology, offering insights into the tumor's biological behavior and guiding personalized treatment strategies.
+
+
+## NeuScissorSurvivalForest
+
+![](images/2024-04-04-18-25-45.png)
+
+
+
+### Figure Description
+
+Forest plots show the hazard ratios and 95% confidence intervals for HCC additional clinical features according to the univariate Cox model. 
+
+### Figure Results
+
+
+In our analysis, we focused on exploring the impact of pathological group, sex, and age at diagnosis on patient survival within a dataset. Utilizing univariate Cox survival analyses, we identified a significant association between the pathological group and patient survival outcomes. This finding underscores the potential prognostic value of the pathological group in predicting patient survival, highlighting its importance in the context of hepatocellular carcinoma (HCC). Further research is needed to elucidate the biological mechanisms underlying this association and to evaluate the potential of integrating pathological classifications into personalized treatment strategies for HCC patients.
+
+Biological Meaning of the Figure Results:
+
+The figure results suggest that the classification of hepatocellular carcinoma (HCC) patients into different pathological groups (primary tumor vs. late relapse, and adjacent normal tissues) has a significant impact on survival outcomes. This implies that the molecular and cellular characteristics defining these groups are closely linked to the aggressiveness of the cancer and its response to treatment. The differences in survival between groups could be attributed to variations in tumor biology, such as genetic mutations, tumor microenvironment, or epigenetic modifications, which influence cancer progression and resistance to therapy. Understanding these associations can provide insights into the mechanisms of HCC pathogenesis and inform the development of targeted therapeutic approaches that improve patient prognosis.
+
+
+## NeuScissorGOEnrichmentDotPlot
+
+
+![](images/2024-04-04-18-27-42.png)
+
+
+### Figure Description
+
+Enrichment dot plot of enriched GO gene sets in neutrophiles Scissor cells. x-axis: gene ratio, the ratio of the number of genes in the gene set to the total number of genes in the gene set. the color represents the p adjusted value of the enrichment analysis. dot size represents the number of genes in the gene set
+
+cell type: Neutrophiles (ALL)
+
+dataset: scRNA-seq
+
+algorithm: GO gene enrichment analysis
+
+
+
+### Figure Results
+
+
+
+In our study, we conducted a Gene Ontology (GO) gene set enrichment analysis focusing on Neutrophiles Scissor cells derived from scRNA-seq data. This analysis revealed a significant enrichment of genes within several pivotal biological pathways. Notably, these pathways include "maintenance of location in cell," "maintenance of location," "actin polymerization or depolymerization," and "defense response to fungus" as well as "response to fungus." These findings underscore the multifaceted roles that these genes play in cellular localization and integrity, the dynamic remodeling of the cytoskeleton, and the innate immune response to fungal pathogens. The enriched pathways illuminate the intricate biological processes and defensive mechanisms operational in Neutrophiles Scissor cells, offering valuable insights into their functional contributions in both normal and disease states.
+
+Biological Meaning:
+
+The results from the GO gene set enrichment analysis highlight several critical biological processes and pathways activated in Neutrophiles Scissor cells:
+
+1. **Maintenance of Location in Cell and Maintenance of Location**: These pathways suggest a regulated mechanism for cellular components to remain in specific locations within the cell or the organism. This is crucial for cellular function, signaling, and interaction with other cells, indicating that Neutrophiles Scissor cells have specialized roles in maintaining tissue structure and function.
+
+2. **Actin Polymerization or Depolymerization**: This pathway points to the dynamic restructuring of the actin cytoskeleton, a process vital for cell shape, motility, and division. The involvement of Neutrophiles Scissor cells in this process underscores their capacity for rapid response to environmental cues, facilitating migration, and potentially contributing to immune surveillance and response.
+
+3. **Defense Response to Fungus and Response to Fungus**: These enriched pathways highlight the role of Neutrophiles Scissor cells in the immune response to fungal infections. By participating in recognizing and responding to fungal pathogens, these cells contribute to the body's first line of defense, underscoring their importance in maintaining health and combating infectious diseases.
+
+Overall, the enriched GO gene sets in Neutrophiles Scissor cells reveal their essential roles in cellular localization, cytoskeletal dynamics, and the innate immune response, providing a deeper understanding of their biological significance and potential implications in health and disease.
+
+
+
+
+# Macrophages
 
 ## MacrophageCelltypeProportionBarPlot
 
@@ -768,6 +967,34 @@ Our analysis revealed distinct macrophage subpopulations (Mph) with varying prev
 
 #### Biological Explanation:
 This differential distribution of macrophage subpopulations suggests a nuanced role of the tumor microenvironment in modulating immune cell composition and function. The elevated levels of Mph_01_MARCO and Mph_04_TREM2 in normal adjacent tissues may reflect a protective or homeostatic immune response, aiming to maintain tissue integrity in the face of potential tumor spread. These macrophages could be involved in anti-tumor responses or in tissue repair and remodeling processes. On the other hand, the increased presence of Mph_08_APOE, Mph_07_SLC40A1, and Mph_05_IL1B within tumor sites suggests an adaptation of the immune landscape in favor of tumor growth and progression. These macrophages might contribute to the immunosuppressive tumor microenvironment, facilitating tumor evasion from immune surveillance. The distinct macrophage profiles between LRT and PHT further indicate that the immune contexture of late-relapsed HCC might diverge significantly from primary tumors, possibly due to different mechanisms underlying tumor recurrence and the influence of prior immune encounters. Understanding these dynamics is crucial for devising more effective immunotherapeutic strategies against HCC recurrence.
+
+
+## MacrophageCellCellCountLevel3BarPlot
+
+![](images/2024-04-04-18-30-36.png)
+
+
+### Figure Description
+
+Barplot of the number of cells in each Macrophage cell type at the level 3 cell type annotation.
+
+
+### Figure Results
+
+Summary of the total number of cells in each Macrophage cell type at the level 3 cell type annotation.
+
+
+level3	total_cell_number
+Mph_01_MARCO	10805
+Mph_02_CCL20	9551
+Mph_03_SPP1	10220
+Mph_04_TREM2	23048
+Mph_05_IL1B	15431
+Mph_06_CXCL9	7914
+Mph_07_SLC40A1	37634
+Mph_08_APOE	10066
+Mph_09_STMN1	7799
+Total	132468
 
 
 
