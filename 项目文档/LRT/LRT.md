@@ -1,6 +1,66 @@
 
 
 
+
+# High-resolution scRNA-seq and scATAC-seq revealed the landscape of primary and late-relapsed HCC
+
+
+We collected 22 pairs of fresh, surgically excised tumors and matched adjacent tissues from primary and late-relapsed HCC patients to explore the featured cell components of LRT. All LRT patients were recurrence-free for at least two years after the initial surgery. $\mathrm{CD} 45^{+}$and
+
+cells from each sample were isolated by fluorescence-activated cell sorting, and the two parts were mixed in a 2:1 ratio for further analysis. We performed droplet-based scRNA-seq, scTCR-seq, and scATACseq on eleven PHTs and seven LRTs. In parallel, we performed scRNA-seq and scTCRseq on the adjacent normal samples of PHT and LRT (named as PHN and LRN, respectively). Additionally, bulk whole-exome sequencing (WES) and RNA-seq data were generated from the tumor and adjacent normal tissue to identify the genomic and transcriptomic alterations typical for HCC (Figure ABC).
+
+We collected scRNA-seq profiles from 387,566 cells, {PHT cell percentage} of which were from PHT, {} LRT, {} PHN, and the remaining {} were from LRN (GlobalCelltypeLevel1CellCountBarplot).
+
+We identified highly-confident cell clusters assigned to known cell lineages using graphbased uniform manifold approximation and projection (UMAP) ([GlobalCelltypeImmuneUMAP], [GlobalCelltypeStromalUMAP], [GlobalCelltypeEpithelialUMAP]).
+
+Six major cell types were identified based on the expression of canonical genes:
+
+myeloid cells (expressing {}),
+
+T cells (expressing {}),
+
+natural killer (NK) cells (expressing {}),
+
+B cells (expressing {}),
+
+Epithelial cells
+
+Stromal cells
+
+(GlobalCelltypeMarkerHeatmap)
+
+ScRNA-seq revealed distinct constitutions of infiltrating immune cells in the TME of PHT, LRT, and their adjacent normal tissues.
+
+A total of {total cell subpopulations number} TIME cell clusters were identified from immune, epithelial and stromal major cell types.
+
+Immune cells included {} subpopulations of T cells, {} subpopulations of B cells, {} subpopulations of NK cells, and {} subpopulations of myeloid cells.
+
+Epithelial cells included {} subpopulations of cancer cells.
+
+Stromal cells included {} subpopulations of stromal cells.
+Global cells analysis
+
+
+
+
+The common markers of each cell type are visualized as
+a heatmap GlobalCelltypeMarkerHeatmap  and the top  marker genes of each cell type ([GlobalCelltypeLevel1CellCountBarplot](LRT.md#GlobalCelltypeLevel1CellCountBarplot)) are listed in {}.
+
+
+Next, we elucidated the fraction of immune cell types in
+different disease types and each patient {}. Based on comparisons of Adjacent and tumor tissues of all
+immune cells in each patient, B cells, , and mast cells were
+predominant in tumor tissues, while NK cells and Gran were
+prevalent in NL tissues, and each cell type included cells from
+more than one patient (Fig. 1e). The fraction of immune cell types
+in LUAD, NL(AD), LUSC, and NL(SC) tissues showed similar
+distributions (Fig. 1e), but we also found that some cell types
+varied significantly among these disease types, such as B cells,
+Tregs, and mast cells (Supplementary Fig. 1f). To avoid the
+influence of library size on the results, the frequency we calculated
+was the proportion of each cell type in different tumor types.
+
+
 # Global cells analysis
 
 
@@ -211,6 +271,46 @@ The observed patient-specific clustering of tumor cells suggests a high degree o
 
 
 
+## PHTLRTAntigenGeneExpressionViolinPlot
+
+
+![](images/2024-04-08-11-45-10.png)
+
+
+### Figure Description
+
+
+### Figure Results
+
+
+
+## PHTLRTChemokinGeneExpressionMatrixPlot
+
+
+
+![](images/2024-04-08-11-23-08.png)
+
+
+
+### Figure Description
+
+The expression of specific cytokines, chemokines in tumour cells
+
+
+### Figure Results
+
+
+
+In the study, we analyzed the expression of specific cytokines and chemokines within tumor cells derived from single-cell RNA sequencing (scRNA-seq) and single-cell ATAC sequencing (scATAC-seq) data across different sample groups of hepatocellular carcinoma (HCC). Our findings reveal distinct expression patterns of cytokines and chemokines, which are critical mediators of the immune response and inflammation within the tumor microenvironment.
+
+For the primary hepatocellular carcinoma tumor (PHT) scRNA-seq data, we observed the expression of a wide array of cytokines and chemokines, including CXCL9, CXCL10, CXCL11, CCL2, CCL3, CCL4 , CXCL1, CXCL2, CXCL3, IL18, and CCL16. This diversity in cytokine and chemokine expression suggests a complex interplay of immune responses within primary HCC tumors, potentially reflecting mechanisms of tumor immune evasion or the recruitment of immune cells to the tumor site.
+
+In contrast, the late relapsed hepatocellular carcinoma tumor (LRT) scRNA-seq data showed expression of a different set of cytokines and chemokines, specifically CXCL5, CXCL8, IL1B, and CCL15. The variation between PHT and LRT tumor cells in the cytokine and chemokine expression profiles indicates changes in the tumor microenvironment and immune landscape that may contribute to tumor progression and relapse.
+
+Biological Significance:
+
+The distinct cytokine and chemokine profiles observed in PHT and LRT tumor cells highlight the dynamic nature of the tumor microenvironment in hepatocellular carcinoma. Cytokines and chemokines play pivotal roles in regulating immune responses, including the recruitment and activation of various immune cells. The presence of specific cytokines and chemokines in tumor cells can influence the behavior of the tumor, including growth, spread, and the tumor's ability to evade the immune system. Furthermore, the differences in expression profiles between primary and relapsed tumors could provide insights into the mechanisms underlying tumor relapse and resistance to therapy. These findings underscore the importance of understanding the tumor microenvironment's complexity in developing effective cancer treatments and potentially identifying biomarkers for disease progression and therapeutic response.
+
 ## UMAPByScissorStatusUMAP
 
 ![](images/2024-03-31-10-49-21.png)
@@ -236,10 +336,6 @@ Analysis across all cancer cell populations revealed the presence of poor surviv
 
 #### Biological Explanation:
 The identification of poor survival signatures in all cancer cells suggests a fundamental aspect of HCC biology that transcends the initial and relapsed stages of the disease. These signatures, typically encompassing a set of genes associated with proliferation, invasion, and resistance to apoptosis, may be indicative of the intrinsic capacity of HCC cells to promote tumor growth, evade immune detection, and resist conventional therapies. The presence of these signatures across both primary and late-relapsed HCC samples highlights the persistent and evolving threat posed by these tumors, emphasizing the need for novel therapeutic approaches that target these deeply ingrained survival mechanisms. This finding underscores the challenges in treating HCC and the importance of understanding the molecular underpinnings that contribute to the poor prognosis associated with this disease.
-
-
-
-
 
 
 ## TcellScissorPoorSurvivalEnrichmentBarplot
@@ -269,6 +365,73 @@ BIOLOGICAL MEANING:
 
 The findings highlight the role of specific T cell subsets, identified by their expression of FOXP3 and STMN1, in the context of hepatocellular carcinoma (HCC). The clusters CD4T_11_FOXP3_STMN1, CD8T_13_STMN1, and CD4T_08_STMN1 are indicative of different T cell types: CD4+ T cells expressing FOXP3, a marker for regulatory T cells (Tregs), and STMN1, a marker associated with cell proliferation and migration, as well as CD8+ T cells expressing STMN1. The enrichment of these subsets in the context of poor survival suggests a complex interplay in the tumor microenvironment, where Tregs could be contributing to immune evasion by the tumor, and the presence of STMN1 might indicate a higher degree of cellular activity associated with tumor aggression and metastasis. Understanding these dynamics is crucial for developing targeted immunotherapies and improving patient prognostication in HCC.
 
+
+
+
+
+
+
+
+# Tumor cell analysis
+
+
+## PHTLRTDEGsHallmarkEnrichmentDotPlot
+
+![](images/2024-04-08-11-48-57.png)
+
+![](images/2024-04-08-11-49-12.png)
+
+
+### Figure Description
+
+Enrichment Dot plot of enriched DEGS Hallmark in PHT and LRT.
+
+
+
+### Figure Results
+
+
+自己写的：PHT DEGS HALLmark enrichment : HALLMARK INTERFERON GAMMA RESPONSE，HALLMARK TNFA SIGNALING VIA NFKB，HALLMARK P53 PATHWAY，HALLMARK ALL OGRAFT REJECTION and HALLMARK COMPL EMENT.
+
+LRT DEGS HALLmark enrichment: HALL _MARK OXIDATIVE PHOSPHORYLATION，HALLMARK XENOBIOTIC METABOLISM and HALLMARK HYPOXIA.
+
+
+In the study, differential gene expression analysis was conducted on single-cell RNA sequencing data from primary and late relapsed hepatocellular carcinoma tissues and their adjacent normal tissues. The enrichment dot plot highlights significant pathways in the primary hepatocellular carcinoma tumor (PHT) and the late relapsed hepatocellular carcinoma tumor (LRT) groups through the investigation of differentially expressed genes (DEGs).
+
+For the PHT group, the analysis revealed a pronounced enrichment in several key cellular pathways including the Interferon Gamma Response, TNFα Signaling via NFκB, the p53 Pathway, Allograft Rejection, and the Complement System. These pathways are indicative of a heightened immune response, stress signaling, and tumor surveillance mechanisms in primary hepatocellular carcinoma tumors.
+
+Conversely, the LRT group showed enrichment in pathways such as Oxidative Phosphorylation, Xenobiotic Metabolism, and Hypoxia. This suggests a metabolic adaptation of the cancer cells in late relapsed tumors, which may contribute to tumor progression and resistance to therapy by enhancing energy production, metabolizing drugs and other foreign compounds, and surviving in low-oxygen conditions.
+
+These findings illuminate the dynamic changes in cellular processes and signaling pathways associated with hepatocellular carcinoma progression and relapse, offering insights into the molecular mechanisms driving these processes. Understanding these pathways in depth could pave the way for the development of targeted therapies aimed at interrupting these mechanisms in different stages of hepatocellular carcinoma.
+
+
+
+##  PHLREuclideanDistanceBoxplot
+
+
+![](images/2024-04-08-12-53-48.png)
+
+
+
+### Figure Description
+
+
+Boxplot shows the comparisong using Manhattan distances between pairs of patient-matched samples
+
+### Figure Results
+
+
+
+
+The boxplot analysis, employing Manhattan distances to assess the similarity between patient-matched samples, reveals insightful contrasts across different hepatocellular carcinoma (HCC) stages and tissue types. Specifically, when examining single-cell RNA sequencing (scRNA-seq) and single-cell ATAC sequencing (scATAC-seq) data, distinct patterns emerge.
+
+For the scRNA-seq group, we analyzed primary hepatocellular carcinoma tumor (PHT) data and its adjacent normal tissue (PHN), alongside late relapsed hepatocellular carcinoma tumor (LRT) data and its adjacent normal tissue (LRN). Similarly, in the scATAC-seq group, primary hepatocellular carcinoma tumor (PH) data and late relapsed tumor (LR) data were evaluated.
+
+The boxplot centered on Euclidean distances distinctly shows that the Euclidean distance between the primary hepatocellular carcinoma tumor (PHT) and its adjacent normal tissue (PHN) is significantly larger compared to the Euclidean distance between the late relapsed tumor (LRT) and its adjacent normal tissue (LRN). This indicates a greater divergence in gene expression and chromatin accessibility patterns between the tumor and normal tissue in primary HCC compared to the late relapsed stage.
+
+Biological Significance:
+This observed difference in Euclidean distances reflects the underlying biological and molecular processes differentiating primary HCC from its late relapsed counterpart. The greater distance between PHT and PHN suggests a more pronounced genetic and epigenetic alteration in primary tumors, which could be indicative of the initial oncogenic transformation processes that are more aggressive or distinct compared to those in late relapsed tumors. On the other hand, the smaller distance between LRT and LRN could imply that late relapsed tumors, despite being malignant, share more similarities with their adjacent normal tissue, possibly due to a selection of less aggressive clones or the presence of residual treatment effects that modulate gene expression and chromatin states closer to a 'normal' baseline. This nuanced understanding of HCC progression and relapse could inform more targeted therapeutic strategies, emphasizing the importance of considering the stage-specific molecular landscape in treatment design.
+
 ## TumorScissorBarPlot
 
 ![](images/2024-04-03-20-44-48.png)
@@ -287,6 +450,33 @@ The bar plot illustrates the distribution of Scissor+ cells, indicative of poor 
 BIOLOGICAL MEANING:
 
 The presence of Scissor+ cells across all samples, including primary tumors, relapsed tumors, and adjacent normal tissues, suggests a fundamental biological insight into the nature of hepatocellular carcinoma (HCC) progression and recurrence. These cells, characterized by a gene expression profile predictive of poor survival, may serve as key players in the oncogenic process, contributing to tumor aggressiveness and the potential for relapse. Their detection in adjacent normal tissues could indicate a pre-malignant state or the existence of a microenvironment conducive to cancer initiation and progression. Furthermore, the ubiquitous presence of Scissor+ cells in both early and late stages of HCC underscores the need for targeted therapeutic strategies aimed at eradicating or modulating these cells to improve patient outcomes. This finding could propel further research into the molecular mechanisms underlying the poor prognostic signature of Scissor+ cells, offering new avenues for the development of prognostic markers and personalized treatments for hepatocellular carcinoma.
+
+
+
+
+## TumorCellBySampleIdUMAP
+
+
+![](images/2024-04-08-13-00-31.png)
+
+
+### Figure Description
+
+This is the UMAP of tumor cells from different samples. Each dot represents a cell, and the color represents the sample ID.
+
+
+### Figure Results
+
+The UMAP shows that tumour cell clusters tended to be patient specific.
+
+RESULTS OUTPUT:
+
+The Uniform Manifold Approximation and Projection (UMAP) visualization illustrates the distribution of tumor cells across different samples, where each dot on the plot represents an individual cell, and the distinct colors denote the sample identity. Notably, the UMAP reveals a pattern of clustering that appears to be specific to each patient. This observation suggests a high degree of inter-patient heterogeneity in the tumor cell populations, indicating that the cellular composition and genetic characteristics of tumors can vary significantly from one patient to another. Such patient-specific clustering patterns underscore the importance of personalized approaches in the treatment and understanding of hepatocellular carcinoma, as the diversity in tumor cell profiles may influence disease progression, treatment response, and relapse mechanisms.
+
+Biological Meaning:
+The results depicted in the UMAP suggest that tumor cells within individuals harbor unique features that lead to the formation of distinct clusters, which are not observed in cells from other patients. This patient-specific clustering could be attributed to genetic, epigenetic, and environmental differences that influence tumor biology at the cellular level. The presence of unique tumor cell populations in individual patients highlights the complexity of cancer and the challenge it poses for developing universal treatment strategies. This diversity also points to the potential for developing personalized medicine approaches that target the specific characteristics of each patient's tumor, improving treatment efficacy and outcomes. Additionally, understanding the basis of this heterogeneity could provide insights into mechanisms of tumor evolution, metastasis, and resistance to therapy.
+
+
 
 ## VocalnoPlotByScissorPoorSurvivalvsOthers
 
@@ -358,42 +548,6 @@ Our analysis established a clear correlation between the expression levels of sp
 Biological Explanation:
 The genes identified as being upregulated in late-relapsed HCC patients are likely involved in key pathways that promote tumor aggressiveness, metastasis, and resistance to therapy. High expression of these genes might enhance the cancer cells' ability to proliferate, evade immune detection, or sustain in harsh microenvironmental conditions. This genomic signature could serve as a prognostic marker, indicating not only a worse prognosis but also highlighting potential targets for therapeutic intervention. Understanding the role of these genes in HCC progression and their impact on patient survival underscores the importance of integrating multi-omic data to unveil molecular mechanisms driving late recurrence and to tailor more effective treatment strategies for HCC.
 
-
-
-## NeutrophilCellUMAPByMarkers
-
-
-![](images/2024-04-01-18-18-57.png)
-
-
-### Figure Description
-
-UMAP visualization of Neutrophil cells colored by the expression of canonical marker genes.
-
-
-
-### Figure Result 
-
-
-
-
-
-## NeutrophilPseudotimeTrajectory
-
-
-![](images/2024-04-01-18-31-39.png)
-
-
-### Figure Description
-
-
-Pseudotime trajectory of Neutrophil cells colored by pseudotime values. The color represents the pseudotime values of the cells, and the cells are ordered along the trajectory.
-
-Root cells: Neu_02_S100A12
-
-End cells: Neu_10_SPP1 and Neu_11_CCL4
-
-### Figure Results
 
 
 
@@ -635,12 +789,33 @@ End cells: Neu_10_SPP1 and Neu_11_CCL4 for cluster identities .
 
 
 
-## ?NeutrophilPseudotimeTrajectory
 
-![](images/2024-04-04-18-08-06.png)
+## NeutrophilCellUMAPByMarkers
+
+
+![](images/2024-04-01-18-18-57.png)
 
 
 ### Figure Description
+
+UMAP visualization of Neutrophil cells colored by the expression of canonical marker genes.
+
+
+
+### Figure Result 
+
+
+
+
+
+## NeutrophilPseudotimeTrajectory
+
+
+![](images/2024-04-01-18-31-39.png)
+
+
+### Figure Description
+
 
 Pseudotime trajectory of Neutrophil cells colored by pseudotime values. The color represents the pseudotime values of the cells, and the cells are ordered along the trajectory.
 
@@ -649,6 +824,10 @@ Root cells: Neu_02_S100A12
 End cells: Neu_10_SPP1 and Neu_11_CCL4
 
 ### Figure Results
+
+
+
+
 
 
 
