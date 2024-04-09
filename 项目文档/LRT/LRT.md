@@ -57,6 +57,8 @@ predominant in tumor tissues.
 UMAP analysis revealed that tumor cell clusters exhibit a patient-specific tendency, indicating distinct cellular architectures within tumors from different individuals.
 ([TumorCellBySampledUMAP](LRT.md#TumorCellBySampledUMAP))
 
+Analysis across all cancer cell populations revealed the presence of poor survival signatures within every analyzed cancer cell, underscoring a universal characteristic of aggressiveness and potential resistance to treatment in hepatocellular carcinoma (HCC) cells from both primary and late-relapsed tumors.
+([UMAPByScissorStatusUMAP](LRT.md#UMAPByScissorStatusUMAP))
 
 level1	total_cell_number
 B cells	5605
