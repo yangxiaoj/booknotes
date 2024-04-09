@@ -15,29 +15,28 @@ We identified highly-confident cell clusters assigned to known cell lineages usi
 
 Six major cell types were identified based on the expression of canonical genes:
 
-myeloid cells (expressing {}),
+myeloid cells (expressing {CD4,CD14,CD68,CD163,LAMP3,TPSAB1,CSF3R,S100A8.}),
 
-T cells (expressing {}),
+T cells (expressing {CD3D,CD8A,FOXP3.}),
 
-natural killer (NK) cells (expressing {}),
+natural killer (NK) cells (expressing {NKG7}),
 
-B cells (expressing {}),
+B cells (expressing {CD79A,MS4A1,CD1C.}),
 
-Epithelial cells
+Tumor cells expressing ALB and EPCAM.
 
-Stromal cells
+Stromal cells expressing VWF and COL1A1.
 
 (GlobalCelltypeMarkerHeatmap)
 
 ScRNA-seq revealed distinct constitutions of infiltrating immune cells in the TME of PHT, LRT, and their adjacent normal tissues.
 
-A total of {total cell subpopulations number} TIME cell clusters were identified from immune, epithelial and stromal major cell types.
 
-Immune cells included {} subpopulations of T cells, {} subpopulations of B cells, {} subpopulations of NK cells, and {} subpopulations of myeloid cells.
 
-Epithelial cells included {} subpopulations of cancer cells.
+Immune cells included 28 subpopulations of T cells, 4 subpopulations of B cells, 7 subpopulations of NK cells, and 21 subpopulations of myeloid cells.
 
-Stromal cells included {} subpopulations of stromal cells.
+
+Stromal cells included 17 subpopulations of stromal cells.
 Global cells analysis
 
 
@@ -50,16 +49,23 @@ a heatmap GlobalCelltypeMarkerHeatmap  and the top  marker genes of each cell ty
 Next, we elucidated the fraction of immune cell types in
 different disease types and each patient {}. Based on comparisons of Adjacent and tumor tissues of all
 immune cells in each patient, B cells, , and mast cells were
-predominant in tumor tissues, while NK cells and Gran were
-prevalent in NL tissues, and each cell type included cells from
-more than one patient (Fig. 1e). The fraction of immune cell types
-in LUAD, NL(AD), LUSC, and NL(SC) tissues showed similar
-distributions (Fig. 1e), but we also found that some cell types
-varied significantly among these disease types, such as B cells,
-Tregs, and mast cells (Supplementary Fig. 1f). To avoid the
-influence of library size on the results, the frequency we calculated
-was the proportion of each cell type in different tumor types.
+predominant in tumor tissues. 
 
+
+
+
+UMAP analysis revealed that tumor cell clusters exhibit a patient-specific tendency, indicating distinct cellular architectures within tumors from different individuals.
+([TumorCellBySampledUMAP](LRT.md#TumorCellBySampledUMAP))
+
+
+level1	total_cell_number
+B cells	5605
+Myeloid cells	174963
+NK cells	49150
+Stromal cells	12260
+T cells	110237
+Tumor	35351
+Total	387566
 
 # Global cells analysis
 
@@ -112,11 +118,7 @@ Overall, these results underscore the diverse molecular landscapes across differ
 
 
 
-## CellCellInteractionLRCircos
-
-
-
-
+# CellCellInteractionLRCircos
 
 
 ## GlobalCelltypeLevel1CellCountBarplot
@@ -1367,3 +1369,39 @@ Biological Implication:
 This intricate pattern of B cell subset enrichment across different stages of hepatocellular carcinoma (HCC) and adjacent normal tissues underscores the dynamic role of B cells in the tumor microenvironment. The specific enrichment of B cell subsets in primary tumors, late relapsed tumors, and adjacent normal tissues suggests that B cells may contribute to the immune landscape in a context-dependent manner, potentially affecting tumor progression, immune surveillance, and the response to therapy. The detailed analysis of B cell preferences offers valuable insights into the immune mechanisms at play in HCC, opening avenues for targeted immunotherapies that leverage the unique immune profiles of HCC patients at different stages of the disease.
 
 
+## CellInCD45ProportionBoxplot
+
+![](images/2024-04-08-20-37-25.png)
+
+
+![](images/2024-04-08-20-38-35.png)
+
+
+![](images/2024-04-08-20-38-51.png)
+
+![](images/2024-04-08-20-39-02.png)
+
+
+
+# scTCR Part
+
+## CloneProportionBySampleBarplot
+
+![](images/2024-04-08-20-39-44.png)
+
+Figure Description
+
+The TCR distribution of T cells in different samples. Unique (n = 1), and clonal (n = 2, n > 2) TCRs are labeled with different colors.
+Figure Results
+
+the TCR clonotype fraction was highly diverse
+
+Generally, CD8+ T cells got a significantly higher proportion of clonal cells than CD4+ T cells
+
+Mucosa-associated invariant T cell (MAIT), CD8-C1, CD8-C2, and CD4-C3 showed significantly diminished clonal expansion in PHT but not LRT (Figure S7C and D). Nonetheless, CD4-C2 (Treg) showed significant clonal expansion in both PHT and LRT compared to the corresponding adjacent normal tissues
+. Consistent with the result from scRNA-seq (Figure 3D), the TCR clonal expansion of CD8-C5 in LRT was significantly decreased than that of LRN
+
+, and there were no significant differences between PHT and PHN (Figure S7C).
+
+Although most
+cells had unique TCRs, we detecteld TCR sequences shared among all $\mathrm{CD} 4^{+}$and cell subpopulations (Figure S7E). The number of clones shared between CD8-C4 and CD8-C1 ranked top of all shared clones of CD8-C4, further supporting the conclusion that CD8-C1 was the potential origin of exhausted cells. We also noticed that shared with some cells from , confirming that naive cells encompassed a small proportion of cells, as revealed by scRNA-seq analysis. In addition, shared clones with CD4-C1 and CD8-C1, in agreement with the developmental trajectory that CD8$\mathrm{C} 5$ originated from naïve cells and transited through CD8-C1 to CD8-C4. Thus, our scTCR-seq data demonstrated that cells of different subpopulations were not completely independent but had undergone an extensive state transition.
