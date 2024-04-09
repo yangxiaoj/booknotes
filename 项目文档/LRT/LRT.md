@@ -60,6 +60,14 @@ UMAP analysis revealed that tumor cell clusters exhibit a patient-specific tende
 Analysis across all cancer cell populations revealed the presence of poor survival signatures within every analyzed cancer cell, underscoring a universal characteristic of aggressiveness and potential resistance to treatment in hepatocellular carcinoma (HCC) cells from both primary and late-relapsed tumors.
 ([UMAPByScissorStatusUMAP](LRT.md#UMAPByScissorStatusUMAP))
 
+
+The bar plot illustrates the distribution of Scissor+ cells, indicative of poor survival, across various samples derived from both primary hepatocellular carcinoma (PHT and PH for scRNA-seq and scATAC-seq data, respectively) and late relapsed tumors (LRT and LR). Additionally, it includes adjacent normal tissues from primary (PHN) and late relapsed cases (LRN). Notably, Scissor+ cells, which are associated with a poor prognosis, were identified in all patient samples under study. This observation underscores the pervasive presence of these prognostically significant cells within both cancerous and adjacent normal tissues, highlighting their potential role in the progression and recurrence of hepatocellular carcinoma.
+([TumorScissorBarPlot](LRT.md#TumorScissorBarPlot))
+
+
+
+
+
 level1	total_cell_number
 B cells	5605
 Myeloid cells	174963
