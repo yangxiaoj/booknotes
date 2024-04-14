@@ -145,8 +145,72 @@ Overall, these results underscore the diverse molecular landscapes across differ
 
 
 
+# 
+## CellCellInteractionLRCircos
 
-# CellCellInteractionLRCircos
+![](images/2024-04-14-11-05-39.png)
+![](images/2024-04-14-11-05-51.png)
+![](images/2024-04-14-11-06-04.png)
+![](images/2024-04-14-11-06-17.png)
+
+
+
+### Figure Description
+
+
+Chord diagrams showing the interactions within each cell type population  mediated by specific L-R pairs.
+
+
+### Figure results
+
+
+### Rewritten Figure Results:
+
+In our study, we analyzed Cell-Cell Interactions (CCIs) across various tissue samples using scRNA-seq data. Our findings reveal distinct patterns of cellular communication in primary and late relapsed hepatocellular carcinoma (HCC) samples, as well as in their corresponding normal adjacent tissues.
+
+In the primary hepatocellular carcinoma (PHT) samples, CCIs are primarily characterized by interactions within the CD4T_04_BAG3 cell population. This suggests a robust immune engagement mediated by these cells in the primary tumor environment.
+
+Conversely, in the late relapsed HCC (LRT) samples, the intensity of CCIs is notably reduced, with the predominant interactions occurring within the CD8T_10_PDCD1 cell population. This indicates a potential shift toward immune exhaustion or suppression in the relapsed tumor scenario.
+
+When comparing the normal adjacent tissues, the late relapsed normal tissue (LRN) exhibits more pronounced CCIs compared to the primary HCC normal tissue (PHN). Specifically, in PHN, interactions are mainly seen in the Mph_03_SPP1 cell population, whereas in LRN, the dominant interactions are within the CD4T_11_FOXP3_STMN1 cell population, suggesting a heightened regulatory environment in the normal tissue adjacent to the relapsed tumor.
+
+### Biological Meaning OUTPUT:
+
+The observed differences in Cell-Cell Interactions (CCIs) across different HCC conditions and their adjacent normal tissues reflect significant shifts in immune landscape and cellular dynamics due to cancer progression and relapse. 
+
+In the primary tumor environment (PHT), the prominence of CCIs in CD4T_04_BAG3 cells points to an active immune response potentially geared towards combating tumor growth or responding to tumor-induced stress. The CD4T_04_BAG3 subset typically involves T helper cells which can enhance immune activation.
+
+In contrast, the reduced CCI intensity in the late relapsed tumors (LRT), predominantly involving CD8T_10_PDCD1 cells, suggests an immune milieu leaning towards exhaustion or immune checkpoint engagement, commonly associated with PD-1 pathways. This shift is indicative of an adaptive tumor environment that suppresses effective immune surveillance, potentially due to long-term interaction with the immune system or prior treatments.
+
+For the adjacent normal tissues, the differences in CCI patterns between PHN and LRN highlight how the immune environment adapts over time. The shift from Mph_03_SPP1 predominant interactions in PHN to CD4T_11_FOXP3_STMN1 in LRN underscores a transition towards a more regulated immune state in the vicinity of the relapsed tumor. Mph_03_SPP1 interactions typically involve macrophages engaged in inflammatory responses, while CD4T_11_FOXP3_STMN1 interactions suggest an increase in regulatory T cells, known for their role in maintaining immune tolerance and suppressing inflammatory responses, which may help prevent autoimmunity and maintain tissue integrity in the face of recurring tumor activity.
+
+### RESULTS OUTPUT:
+
+The analysis of Cell-Cell Interactions (CCIs) in hepatocellular carcinoma (HCC) via scRNA-seq across different tissue types illustrates significant variations in immune cell communication. In primary HCC tumors (PHT), CCIs are dominantly mediated by CD4T_04_BAG3 cells, indicating an active immune response. In contrast, late relapsed HCC (LRT) shows a decline in CCI intensity with a prevalence of interactions within CD8T_10_PDCD1 cells, pointing to potential immune exhaustion. Comparatively, normal adjacent tissue from late relapsed samples (LRN) exhibits a higher frequency of CCIs, particularly in CD4T_11_FOXP3_STMN1 cells, suggesting an enhanced regulatory state, while primary normal adjacent tissue (PHN) interactions are mostly mediated by Mph_03_SPP1 cells, reflecting a more inflammatory response. These findings highlight the dynamic and adaptive nature of the immune landscape in response to HCC progression and relapse.
+
+## PHLREuclideanDistanceBoxplot
+
+
+![](images/2024-04-14-11-08-21.png)
+
+
+### Figure Description
+
+Boxplot shows the comparisong using Manhattan distances between pairs of patient-matched samples.
+
+### Figure Results
+
+
+
+The analysis reveals that the primary hepatocellular carcinoma group, comprising both tumor (PHT) and adjacent normal tissue (PHN), exhibits a higher Euclidean distance when compared to the late relapsed hepatocellular carcinoma group, which includes both late-relapsed tumor (LRT) and its adjacent normal tissue (LRN).
+
+Biological Meaning OUTPUT:
+
+The higher Euclidean distances observed between the primary hepatocellular carcinoma group (PHN and PHT) compared to the late relapsed group (LRN and LRT) suggest greater variability in the cellular and molecular composition between the tumor and normal tissue in the primary cancer state than in the relapsed state. This could indicate that primary tumors and their adjacent tissues are more distinct from each other in their cellular profiles, possibly reflecting more aggressive or varied tumor biology in initial stages. Conversely, the smaller distances in the late relapsed group might imply that the relapsed tumors and their adjacent tissues have become more similar to each other, potentially due to convergent evolutionary pressures during cancer progression or treatment adaptations that make the tumor and surrounding normal tissue more homogenous.
+
+RESULTS OUTPUT:
+
+The study presented a comparative analysis utilizing boxplots to depict the Euclidean distances between patient-matched samples from the primary hepatocellular carcinoma group and the late relapsed hepatocellular carcinoma group. The findings demonstrated that the primary group, which includes primary tumors and adjacent normal tissues, shows significantly higher Euclidean distances than the late relapsed group, encompassing late-relapsed tumors and their adjacent normal tissues. This indicates a greater divergence in the molecular and cellular characteristics of primary tumors compared to their adjacent normal tissues, in contrast to the late relapsed tumors and their adjacent tissues which exhibit closer similarities.
 
 
 ## GlobalCelltypeLevel1CellCountBarplot
@@ -275,6 +339,53 @@ The observed distribution patterns of immune cell subpopulations across differen
 Conversely, the increased presence of CD8T_11_SLC4A10 and gdT_03_KLRD1 cells in normal adjacent liver tissues points to a distinct immune setting outside the tumor microenvironment, possibly reflecting a state of surveillance or readiness to respond to malignant cells. Gamma delta T cells (gdT), in particular, are recognized for their potent antitumor activity and can serve as an important line of defense against tumor development and progression.
 
 These findings underscore the dynamic interplay between tumor cells and the immune system in HCC, revealing how immune cell compositions differ markedly between tumor and normal tissues. This heterogeneity within the immune landscape offers critical insights into mechanisms of tumor immune evasion, the role of specific T cell subpopulations in cancer immunity, and potential targets for immunotherapy in HCC.
+
+## ExhaustedTcellsProportionBoxplot
+
+
+![](images/2024-04-14-12-04-16.png)
+
+
+### Figure Description
+
+Boxplots showing the proportion of exhausted Tcells across 4  groups (PHN,PHT,LRT and LRT). 
+
+### Figure Results
+
+
+Rewritten Figure Results for Publication:
+"The analysis revealed a markedly lower proportion of exhausted T cells in the late-relapsed hepatocellular carcinoma normal tissue (LRN) when compared to the adjacent primary hepatocellular carcinoma normal tissue (PHN)."
+
+Biological Meaning OUTPUT:
+The finding that exhausted T cells are significantly less prevalent in the late-relapsed hepatocellular carcinoma normal tissue (LRN) compared to the adjacent primary hepatocellular carcinoma normal tissue (PHN) suggests that the immune environment in LRN may be less suppressed or has undergone different immunological pressures compared to PHN. This could imply a more vigilant or less worn-out immune surveillance in the LRN, possibly due to a reduced burden of chronic antigen stimulation or differences in the immunomodulatory factors in the microenvironment following relapse. Understanding these dynamics is crucial for devising strategies that might improve immune responsiveness in the context of relapsed tumors.
+
+
+## CD8SignatureViolinPlot
+
+![](images/2024-04-14-12-20-09.png)
+![](images/2024-04-14-12-21-51.png)
+
+### Figure Description
+
+ViolintPlot of CD8 Signature(Exhausted score and Resident score) across 4 different groups(LRN,LRt,PHN and PHT).
+
+
+### Figure Results
+
+
+
+
+Analysis of CD8+ T cells across different hepatocellular carcinoma contexts reveals a pronounced expression of both resident and exhausted signatures in primary hepatocellular carcinoma (PHT) and its adjacent normal tissue (PHN). In contrast, these signatures are significantly diminished in samples from late relapsed hepatocellular carcinoma (LRT) and its adjacent normal tissue (LRN)."
+
+### Biological Meaning of the Figure Results:
+
+
+The results depicted in the violin plots indicate differential expression levels of resident and exhausted signatures in CD8+ T cells across various hepatocellular carcinoma (HCC) conditions. The higher expression of these signatures in primary hepatocellular carcinoma (PHT) and adjacent normal tissue (PHN) suggests a robust immune presence and activity in the initial stages of tumor development and in the surrounding normal tissue. This might reflect an active engagement of the immune system in responding to the tumor presence, where CD8+ T cells exhibit both residency (indicating tissue-specific T cells that reside long-term within a tissue) and exhaustion (a state often resulting from chronic exposure to antigens, characterized by decreased functionality).
+
+In contrast, the decreased expression of these signatures in the late relapsed tumor (LRT) and its adjacent normal tissue (LRN) might indicate a more immune-suppressive or immune-exhausted environment. This could suggest that over time, as the tumor relapses, there might be an evolution in the tumor microenvironment towards conditions that more effectively suppress or evade immune surveillance. This is particularly significant as it suggests that the tumor's ability to modulate immune responses increases with relapse, potentially complicating therapeutic interventions aimed at reactivating the immune system.
+
+This analysis underscores the importance of understanding the dynamic nature of the immune landscape in cancer progression and relapse, which can inform better strategies for immunotherapy and management of hepatocellular carcinoma.
+
 
 
 ## TumorCellBySampledUMAP
@@ -642,6 +753,9 @@ This finding has profound implications for understanding the progression and pro
 Analysis of myeloid cell cluster distribution across different hepatocellular carcinoma (HCC) sample types, including late-relapsed normal tissue (LRN), primary hepatocellular carcinoma normal tissue (PHN), primary hepatocellular carcinoma tumor tissue (PHT), and late-relapsed tumor tissue (LRT), was performed utilizing the Ro/e metric (the ratio of observed cell number to expected cell number). This approach facilitated the identification of preferential myeloid cell cluster presence within these distinct HCC contexts, elucidating the variances in immune cell landscape associated with tumor progression and relapse.
 
 ### Figure Results
+
+
+LRN and  PHN  are enriched in 
 
 #### Results:
 
