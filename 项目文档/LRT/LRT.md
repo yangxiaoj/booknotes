@@ -388,29 +388,255 @@ This analysis underscores the importance of understanding the dynamic nature of 
 
 
 
-## TumorCellBySampledUMAP
 
-![](images/2024-03-31-10-21-27.png)
+
+![](images/2024-04-14-15-41-47.png)
+
 
 
 ### Figure Description
 
-"Uniform Manifold Approximation and Projection (UMAP) visualizations illustrate the spatial distribution of tumor cells across diverse samples, providing a high-resolution insight into the cellular heterogeneity inherent in the samples studied."
 
+ViolintPlot of Cytotoxic signature across 4 different groups(LRN,LRt,PHN and PHT).
+
+### Figure Results
+
+Cytotoxic signature is highly expressed in LRT and LRN CD8+ T cells, suggesting that these cells are more cytotoxic than those in PHT and PHN.
+
+
+
+
+![](images/2024-04-14-15-43-38.png)
+
+
+
+### Figure Description
+
+ViolintPlot of Costimulatory score  across 4 different groups(LRN,LRt,PHN and PHT).
+
+### Figure Results
+
+In the comparative analysis of costimulatory scores across different tissue samples, data reveals a pronounced expression of costimulatory scores in CD8+ T cells from both primary hepatocellular carcinoma tumor (PHT) and its adjacent normal tissue (PHN). This contrasts with the lower costimulatory activity observed in CD8+ T cells from late relapsed hepatocellular carcinoma tumor (LRT) and its adjacent normal tissue (LRN). These findings highlight a differential regulation of T cell activation states between primary and relapsed cancer conditions."
+
+Biological Explanation of the Figure Results:
+
+The costimulatory score typically represents the level of expression or activity of molecules on T cells that are essential for their full activation, such as CD28, CD27, OX40, and others. These molecules interact with their ligands on antigen-presenting cells to provide the necessary second signal T cells require for activation, following T-cell receptor engagement with an antigen-MHC complex.
+
+
+High Costimulatory Scores in PHT and PHN: The elevated costimulatory scores observed in CD8+ T cells in PHT and PHN suggest an active immune environment where T cells are likely receiving robust costimulatory signals. This can be indicative of a strong anti-tumor immune response in the primary tumor setting, where the immune system is actively engaged in recognizing and responding to tumor antigens. The adjacent normal tissue (PHN) exhibiting similar patterns may reflect an immune alert status poised to respond to any migrating tumor cells or to manage inflammation and tissue remodeling caused by the nearby tumor.
+
+Lower Costimulatory Scores in LRT and LRN: In contrast, the reduced costimulatory scores in the LRT and LRN samples might indicate an immune-suppressive or immune-exhausted environment prevalent in the context of relapsed tumors. Relapsed tumors often develop mechanisms to evade the immune response, which can include downregulation of costimulatory ligands on antigen-presenting cells, induction of regulatory cells, or expression of inhibitory molecules that dampen T cell responses. The adjacent normal tissue in the relapsed setting (LRN) similarly showing lower costimulation might suggest a broader immunosuppressive microenvironment, possibly influenced by the recurrent tumor's evolved immune evasion strategies.
+
+Overall, the difference in costimulatory scores among these groups reflects the dynamic changes in the tumor-immune interaction from the primary to the relapsed stages of hepatocellular carcinoma. Understanding these shifts is crucial for devising effective immunotherapeutic strategies that can adapt to the changing immune landscape of tumors.
+
+
+
+
+# scTCR Part
+
+## CloneProportionBySampleBarplot
+
+
+![](images/2024-04-14-15-54-37.png)
+
+
+### Figure Description
+
+The TCR distribution of T cells in different samples. Unique (n = 1), and clonal (n = 2, n > 2) TCRs are labeled with different colors.
 
 ### Figure Results
 
 
 
-### Results:
+In the study, we merged scRNA-seq data with the scTCR-seq dataset to investigate the relationship among different T cell subpopulations within primary hepatocellular carcinoma (PHT), late relapsed hepatocellular carcinoma (LRT), and their respective normal adjacent tissues (PHN and LRN). Our aim was to understand the T cell receptor (TCR) diversity and its clonal expansion across these distinct tissue environments.
 
-Uniform Manifold Approximation and Projection (UMAP) analysis revealed that tumor cell clusters exhibit a patient-specific tendency, indicating distinct cellular architectures within tumors from different individuals.
+Our analysis revealed a highly diverse TCR clonotype fraction across all samples. This diversity in TCR clonotypes is indicative of a varied T cell response, possibly reflecting the heterogeneity of the tumor microenvironment or differences in the immunological history of the tissues. We specifically categorized TCRs based on their occurrence: unique TCRs (found in a single instance) were distinguished from clonal TCRs, where clonal references included those occurring exactly twice (n=2) and those found more than twice (n>2). These categories were visually represented using distinct colors to provide clear insights into the distribution pattern of TCR clonality.
 
-Biological Explanation:
-The observed patient-specific clustering of tumor cells suggests a high degree of heterogeneity in the cellular composition of tumors from different individuals. This heterogeneity could be driven by a variety of factors, including genetic mutations, environmental influences, and differences in immune response. The unique cellular architectures within each patient's tumor underscore the complexity of cancer and the need for personalized approaches to cancer treatment. Understanding these distinct cellular landscapes is crucial for developing targeted therapies that can effectively address the specific characteristics of each patient's tumor.
-
+This analysis is crucial as it highlights the adaptive immune response dynamics within tumor and adjacent normal tissues. A higher clonality might suggest an ongoing or past immune response to tumor antigens, while a more diverse, less clonal TCR repertoire could indicate a naive T cell population or T cells that have not been previously engaged by the tumor. Understanding these patterns helps us delineate the immune landscape associated with tumor progression and recurrence, providing a basis for potential therapeutic strategies targeting specific T cell populations.
 
 
+## CD4TvsCD8TvsgdTCloneProportionViolinPlot
+
+![](images/2024-04-14-15-55-37.png)
+
+### Figure Description
+
+Violin plot shows the percentage of clones between CD4+ T, CD8+ T and gdT subpopulations.
+
+### Figure Results
+
+
+In the comparative analysis, CD8+ T cells and γδT cells exhibit a significantly higher degree of clonal expansion compared to CD4+ T cells across the various sampled groups."
+
+### Biological Explanation of the Figure Results:
+
+The observed higher clonal expansion in CD8+ T cells and γδT cells compared to CD4+ T cells reflects their distinct roles in immune responses. CD8+ T cells, known for their cytotoxic activity, often expand clonally in response to specific antigens, particularly in the context of tumor immunity where they target and eliminate cancer cells. The γδT cells, while less common, provide a crucial bridge between innate and adaptive immunity and can rapidly expand in response to stress signals and tumor antigens without the requirement for antigen presentation. In contrast, CD4+ T cells primarily function as helper cells, orchestrating broader immune responses rather than directly eliminating target cells, which may explain their relatively lower clonal expansion as they are not as directly engaged in antigen-specific killing.
+
+### RESULTS OUTPUT:
+        
+The analysis of single-cell RNA sequencing data from primary and relapsed hepatocellular carcinoma tissues, including both tumor and adjacent normal tissues, reveals significant differences in clonal expansion among T cell subpopulations. Notably, CD8+ T cells and γδT cells demonstrate a significantly higher proportion of clonal expansion than CD4+ T cells. This pattern underscores the distinct functional roles of these cells in the immune landscape of hepatocellular carcinoma, with CD8+ T cells and γδT cells more actively involved in direct antitumor responses.
+
+
+
+## CD8TandCD4TCloneProportionByGroupsViolinPlot
+
+![](images/2024-04-14-16-29-55.png)
+![](images/2024-04-14-16-30-05.png)
+
+
+
+### Figure Description
+
+
+Violin plot showing the fraction of CD8+ T cell clones among different groups (PHT, PHN, LRT, and LRN).
+
+### Figure Results
+
+RESULTS OUTPUT:
+
+The single-cell RNA sequencing data analyzed from primary hepatocellular carcinoma (PHT), late relapsed hepatocellular carcinoma (LRT), and their respective adjacent normal tissues (PHN and LRN) reveal significant differences in the clonal dynamics of CD8+ T cells. The analysis, as visualized through violin plots, highlights a higher clonal proportion of CD8+ T cells in the normal adjacent tissues compared to the tumor tissues. Specific T cell subpopulations such as CD8_03_GZMK_S1PR1, CD8_07_PLCG2, and within the late-relapsed group, CD8_08_GZMK, notably exhibit this pattern, with CD8_08_GZMK showing an especially elevated clonal proportion in the LRN group.
+
+This observation suggests that the immune surveillance and response mechanisms in normal tissues are more robust and effective than in tumor tissues. Normal tissues, possibly being less influenced by the immunosuppressive microenvironment typical of tumor regions, may facilitate a more efficient detection and clonal expansion of T cells in response to tumor antigens. This environment allows the immune system to mount a stronger defense against potential malignancies, reflected by higher T cell clonal proportions.
+
+In contrast, the tumor microenvironments of both primary and relapsed hepatocellular carcinoma may hinder effective T cell responses through various immunosuppressive mechanisms, such as the secretion of inhibitory cytokines or expression of immune checkpoint molecules, which can suppress T cell activation and proliferation. Consequently, T cells in these tumor tissues show a lower clonal proportion, indicating a suppressed immune activity that may contribute to tumor persistence and progression.
+
+The distinct clonal expansion patterns between the tumor and adjacent normal tissues underscore the significant impact of the microenvironment on immune cell functionality and the potential for immune evasion by tumors. Understanding these dynamics is crucial for devising effective immunotherapeutic strategies tailored to counteract the immunosuppressive tactics of tumors and enhance the immune system's ability to combat cancer effectively.
+
+
+## OverlapBetweenTcellSubpopulationsHeatmap
+
+![](images/2024-04-14-16-39-22.png)
+
+### Figure Description
+
+Heatmap showing the overlap of clone types among different CD8+ T cell subpopulations.
+
+### Figure Results
+
+
+### RESULTS OUTPUT:
+
+1. **Rewritten Figure Results for Publication in Nature Journal**:
+"In the landscape of CD8+ T cell heterogeneity within hepatocellular carcinoma, our single-cell T cell receptor sequencing (scTCR-seq) analysis reveals significant clonal overlap across distinct CD8+ T cell subpopulations, notably within ICD8_06_CD69, CD8T_07_PLCG2, and CD8T_08_GZMK. These findings indicate that T cells, despite their subpopulation distinctions, share a substantial degree of clonal relatedness, suggesting a dynamic interplay of state transitions rather than strict subpopulation independence."
+
+2. **Biological Meaning of the Figure Results**:
+The significant overlap of clones among CD8+ T cell subpopulations such as ICD8_06_CD69, CD8T_07_PLCG2, and CD8T_08_GZMK highlights a complex biological phenomenon of clonal expansion and functional versatility within the immune landscape of hepatocellular carcinoma (HCC). The presence of shared clones across these subpopulations suggests that these T cells might originate from common precursor cells and have undergone extensive differentiation or state transitions in response to the tumor microenvironment. This clonal sharing can be indicative of a highly adaptive immune response, where T cells modify their phenotypic states to enhance their effectiveness against tumor antigens. This adaptability might be crucial for maintaining a robust antitumor response, especially in variable and challenging tumor microenvironments like those found in primary and relapsed HCC. The identification of shared clonal expansions also provides insights into the mechanisms of immune evasion and resilience against therapeutic interventions, underscoring the potential for targeting these transitions in future therapeutic strategies.
+
+
+
+# Tumor cell analysis
+
+
+## WESCNVProfileHeatmap
+
+
+![](images/2024-04-14-16-44-31.png)
+
+
+### Figure Description
+
+
+
+### Figure Results
+
+
+## scRNACNVProfileHeatmap
+
+![](images/2024-04-14-16-45-18.png)
+
+
+### Figure Description
+
+Heatmap shows the large-scale CNVs for individual cells (rows) from normal and malignant epithelial cells.
+
+### Figure Results
+
+
+## GenomicSampleLandscapes
+
+![](images/2024-04-14-16-46-25.png)
+
+
+### Figure Description
+
+
+Genomic landscape of the HCC patient cohort. Top histogram, mutation burden per sample; right histogram, percentage of patients with the corresponding somatic SNVs. Middle pie plot, the constitutes of the omics data type for each patient. Upper heatmap, distribution of mutation events.
+
+### Figure Results
+
+
+
+
+## TMBMutationBurdenBoxplot
+
+![](images/2024-04-14-17-02-54.png)
+
+### Figure Description
+
+Boxplot shows the comparison of TMB between PHT and LRT groups (two-sided Student’s t-test).
+
+### Figure Results
+
+RESULTS OUTPUT:
+
+The boxplot analysis compares Tumor Mutation Burden (TMB) between two groups of hepatocellular carcinoma (HCC) tumor samples: primary HCC (PHT) and late relapsed HCC (LRT). The results indicate a statistically significant lower TMB in the LRT group compared to the PHT group. 
+
+Biologically, this observation suggests several implications. Tumor Mutation Burden, which measures the number of mutations per million bases in tumor DNA, is an important indicator of genomic instability and the tumor's mutational landscape. A higher TMB in primary tumors (PHT) might reflect the initial aggressive nature of the cancer, with a greater accumulation of mutations contributing to oncogenesis and potentially affecting the tumor's response to immunotherapy. In contrast, the reduced TMB observed in the LRT group could be indicative of a selection pressure that favors tumor cells with fewer mutations, possibly as a consequence of therapeutic interventions that target highly mutated cells or due to a natural selection process where less mutated cells have a survival advantage in the relapsed tumor environment.
+
+These differences in TMB could impact the effectiveness of immunotherapies, as a higher TMB is often associated with better responses to such treatments due to the increased likelihood of forming new antigens that the immune system can target. The reduced mutational burden in relapsed tumors might therefore suggest potential challenges in treating these tumors with immune checkpoint inhibitors, which rely on a diverse antigenic profile to stimulate an immune response.
+
+
+## NeoantigenBurdenBoxplot
+
+![](images/2024-04-14-17-11-49.png)
+
+### Figure Description
+
+Boxplot showed the comparison of neoantigen burden between PHT and LRT groups (two-sided Student’s t-test).
+
+### Figure Results
+
+
+The boxplot analysis compares Tumor Mutation Burden (TMB) between two groups of hepatocellular carcinoma (HCC) tumor samples: primary HCC (PHT) and late relapsed HCC (LRT). The results indicate a statistically significant lower TMB in the LRT group compared to the PHT group.
+
+Biologically, this observation suggests several implications. Tumor Mutation Burden, which measures the number of mutations per million bases in tumor DNA, is an important indicator of genomic instability and the tumor's mutational landscape. A higher TMB in primary tumors (PHT) might reflect the initial aggressive nature of the cancer, with a greater accumulation of mutations contributing to oncogenesis and potentially affecting the tumor's response to immunotherapy. In contrast, the reduced TMB observed in the LRT group could be indicative of a selection pressure that favors tumor cells with fewer mutations, possibly as a consequence of therapeutic interventions that target highly mutated cells or due to a natural selection process where less mutated cells have a survival advantage in the relapsed tumor environment.
+
+These differences in TMB could impact the effectiveness of immunotherapies, as a higher TMB is often associated with better responses to such treatments due to the increased likelihood of forming new antigens that the immune system can target. The reduced mutational burden in relapsed tumors might therefore suggest potential challenges in treating these tumors with immune checkpoint inhibitors, which rely on a diverse antigenic profile to stimulate an immune response.
+
+## PurityAndPloidyBoxplot
+
+
+![](images/2024-04-14-17-14-28.png)
+
+
+
+### Figure Description
+
+Boxplot showed the comparison of purity and ploidy between PHT and LRT groups (two-sided Student’s t-test).
+### Figure Results
+
+
+
+## KeggPathwayEnrichmentBarPlot
+
+
+![](images/2024-04-15-16-54-55.png)
+
+### Figure Description
+
+Bar plot of Kegg pathway enrichment .
+
+### Figure Results
+
+
+
+The analysis reveals significant enrichment of the KEGG pathway related to antigen processing and presentation, as depicted in the bar plot. This pathway's enhanced activity highlights key immune mechanisms potentially involved in tumor surveillance and immune response modulation."
+
+Biological Meaning of the Figure Results:
+The enrichment of the KEGG pathway for antigen processing and presentation, as indicated by the bar plot, suggests an active involvement of the immune system in modulating the tumor environment. In cancer biology, antigen processing and presentation are critical for the immune system's ability to recognize and destroy cancer cells. This process involves the digestion of protein antigens into peptides that are then presented on the cell surface by major histocompatibility complex (MHC) molecules. T cells recognize these peptides through their T-cell receptors (TCRs), leading to an immune response against the tumor cells. Enhanced pathway activity in this context might indicate a robust immune surveillance mechanism in the tumor microenvironment, possibly reflecting the immune system's attempt to combat the tumor. This observation can have implications for understanding tumor immunogenicity, immune evasion, and could guide immunotherapy strategies.
+
+RESULTS OUTPUT:
+The bar plot analysis demonstrates an enrichment of the KEGG pathway related to antigen processing and presentation. This enrichment underscores the significant role of immune mechanisms in recognizing and responding to tumor cells, which is crucial for both natural immune surveillance and therapeutic interventions aimed at boosting immune response against hepatocellular carcinoma. This finding enhances our understanding of the immune landscape in hepatocellular carcinoma and may influence future approaches to cancer immunotherapy.
 
 ## PHTLRTAntigenGeneExpressionViolinPlot
 
@@ -451,6 +677,31 @@ In contrast, the late relapsed hepatocellular carcinoma tumor (LRT) scRNA-seq da
 Biological Significance:
 
 The distinct cytokine and chemokine profiles observed in PHT and LRT tumor cells highlight the dynamic nature of the tumor microenvironment in hepatocellular carcinoma. Cytokines and chemokines play pivotal roles in regulating immune responses, including the recruitment and activation of various immune cells. The presence of specific cytokines and chemokines in tumor cells can influence the behavior of the tumor, including growth, spread, and the tumor's ability to evade the immune system. Furthermore, the differences in expression profiles between primary and relapsed tumors could provide insights into the mechanisms underlying tumor relapse and resistance to therapy. These findings underscore the importance of understanding the tumor microenvironment's complexity in developing effective cancer treatments and potentially identifying biomarkers for disease progression and therapeutic response.
+
+
+
+## TumorCellBySampledUMAP
+
+![](images/2024-03-31-10-21-27.png)
+
+
+### Figure Description
+
+"Uniform Manifold Approximation and Projection (UMAP) visualizations illustrate the spatial distribution of tumor cells across diverse samples, providing a high-resolution insight into the cellular heterogeneity inherent in the samples studied."
+
+
+### Figure Results
+
+
+
+### Results:
+
+Uniform Manifold Approximation and Projection (UMAP) analysis revealed that tumor cell clusters exhibit a patient-specific tendency, indicating distinct cellular architectures within tumors from different individuals.
+
+Biological Explanation:
+The observed patient-specific clustering of tumor cells suggests a high degree of heterogeneity in the cellular composition of tumors from different individuals. This heterogeneity could be driven by a variety of factors, including genetic mutations, environmental influences, and differences in immune response. The unique cellular architectures within each patient's tumor underscore the complexity of cancer and the need for personalized approaches to cancer treatment. Understanding these distinct cellular landscapes is crucial for developing targeted therapies that can effectively address the specific characteristics of each patient's tumor.
+
+
 
 ## UMAPByScissorStatusUMAP
 
