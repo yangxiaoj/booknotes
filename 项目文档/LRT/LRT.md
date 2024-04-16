@@ -1130,11 +1130,16 @@ odds ratio value > 3 means significant enrichment; odds ratio value < 3 and > 1.
 ### Figure Results
 
 
-#### Results:
-Our analysis revealed a specific enrichment pattern of neutrophil subpopulations across different tissue types in hepatocellular carcinoma (HCC). Specifically, the neutrophil marker Neu_07_APOA2 showed significant enrichment in both primary hepatocellular carcinoma tumor (PHT) and late relapsed hepatocellular carcinoma tumor (LRT) samples. Interestingly, PHT and LRT samples exhibited a similar neutrophil composition, underscoring a consistent immune landscape in tumor environments at different stages of recurrence. In contrast, adjacent normal tissues from primary (PHN) and late relapsed (LRN) samples demonstrated distinct neutrophil subpopulation enrichments. PHN tissues were characterized by the presence of Neu_10_SPP1, Neu_08_CD74, Neu_11_CCL4, Neu_09_IFIT1, and Neu_05_ELL2. On the other hand, LRN tissues showed enrichment for Neu_02_S100A12, Neu_06_PTGS2, Neu_03_ISG15, and Neu_04_TXNIP, indicating a divergent neutrophilic response in the microenvironment surrounding the tumor at different stages.
+The scRNA-seq data from different stages and conditions of hepatocellular carcinoma (HCC) provides a comprehensive view of neutrophil cell cluster preferences within the tumor and its adjacent normal tissues. The analysis reveals distinct patterns of neutrophil enrichment across primary and late relapsed hepatocellular carcinoma samples.
 
-#### Biological Explanation:
-The observed enrichment patterns suggest a dynamic and evolving immune landscape within and around HCC tumors, influenced by the stage of the disease. The consistent neutrophil signature between PHT and LRT indicates that neutrophils play a sustained role in the tumor microenvironment, potentially contributing to tumor progression and the immune response to relapse. The differential enrichment of neutrophil subpopulations in adjacent normal tissues (PHN vs. LRN) hints at a localized immune response that varies significantly with the tumor's progression and recurrence. These neutrophil markers, associated with inflammation, tissue remodeling, and immune regulation, may reflect the tissue's evolving needs for immune surveillance and response to tumor-derived signals. Understanding these complex interactions is crucial for developing targeted therapies aimed at modulating the immune microenvironment to combat HCC effectively.
+In the adjacent late relapsed hepatocellular carcinoma normal tissue (LRN), there is a notable enrichment of early-stage neutrophils. In contrast, the adjacent primary hepatocellular carcinoma normal tissue (PHN) predominantly features late-stage neutrophils. For both the primary hepatocellular carcinoma tumor (PHT) and the late relapsed hepatocellular carcinoma tumor (LRT), the neutrophil cluster Neu_07_APOA2 is significantly enriched.
+
+### Biological Significance:
+
+The differential enrichment of neutrophil stages in normal tissues adjacent to the tumor sites suggests variations in the immune response dynamics and the local microenvironment's influence on immune cell maturation and functionality. Early-stage neutrophils in LRN may indicate a more active recruitment and potentially more dynamic immune response compared to PHN, where the presence of late-stage neutrophils could reflect a more established, possibly exhausted immune environment. 
+
+The consistent enrichment of the Neu_07_APOA2 cluster in both PHT and LRT suggests a specific role for this neutrophil subset in the tumor microenvironment of HCC, possibly linked to lipid metabolism alterations (APOA2 involvement) and the tumor's influence on neutrophil functionality and survival. This uniformity across primary and relapsed tumor conditions points to a fundamental role of this neutrophil type in the pathophysiology of HCC, which might be crucial for understanding tumor progression and developing therapeutic strategies targeting the tumor-associated neutrophil responses.
+
 
 ## NeutrophilCellProportionBarPlot
 
@@ -1220,7 +1225,8 @@ End cells: Neu_10_SPP1 and Neu_11_CCL4
 
 ### Figure Results
 
-
+Developmental trajectory analysis revealed
+a clear sequential differentiation path from early-stage  Neutrophils  to late-stage Neutrophils. And  
 
 
 
@@ -1761,6 +1767,81 @@ Biological Implication:
 
 This intricate pattern of B cell subset enrichment across different stages of hepatocellular carcinoma (HCC) and adjacent normal tissues underscores the dynamic role of B cells in the tumor microenvironment. The specific enrichment of B cell subsets in primary tumors, late relapsed tumors, and adjacent normal tissues suggests that B cells may contribute to the immune landscape in a context-dependent manner, potentially affecting tumor progression, immune surveillance, and the response to therapy. The detailed analysis of B cell preferences offers valuable insights into the immune mechanisms at play in HCC, opening avenues for targeted immunotherapies that leverage the unique immune profiles of HCC patients at different stages of the disease.
 
+
+
+# NK
+
+## NKCellOddsRatioHeatmap
+
+
+![](images/2024-04-15-19-40-14.png)
+
+
+### Figure Description
+
+The analysis elucidates the predilection of NK cell clusters within hepatocellular carcinoma (HCC), assessed through the Ro/e metric, which represents the ratio of observed to expected cell numbers. This investigation spans four distinct groups: primary hepatocellular carcinoma tumor (PHT), adjacent primary hepatocellular carcinoma normal tissue (PHN), adjacent late relapsed hepatocellular carcinoma normal tissue (LRN), and late relapsed hepatocellular carcinoma tumor (LRT).
+
+
+### Figure Results
+
+自己写的：Comparing with LRN and PHN, NK_02_FCGR3A_CXCR4 and NK_06_ITGA1 only enriched in LRT and PHT. Between LRT and PHT, LRT  also  enriched in NK_03_FCGR3A_IFNG,NK_O1_FCGR3A_CX3CR1 and NK_04_PLCG2.
+
+Comaping with PHN, NK_05_CD160,  NK_01_FCGR3A_Cx3CR1 and NK_04_PLCG2 especially in LRN.
+
+Compaing with LRN, NK_07_STMIN1 and NK_03_FCGR3A_IFNG are especially enriched in PHN.
+
+### CHATGPTA写的：**RESULTS OUTPUT:**
+
+The study focuses on the distribution of natural killer (NK) cell clusters across four different settings within the context of hepatocellular carcinoma (HCC), utilizing single-cell RNA sequencing data. The data are categorized into primary HCC tumor (PHT), late-relapsed HCC tumor (LRT), and their respective adjacent normal tissues (PHN and LRN). The analysis employs the Ro/e metric, indicating the observed to expected ratios of NK cell types, providing insights into their prevalence across different HCC environments.
+
+**Refined Figure Results for Publication in a High-Impact Journal:**
+In a comparative analysis between late-relapsed adjacent normal tissue (LRN) and primary adjacent normal tissue (PHN), specific NK cell types such as NK_02_FCGR3A_CXCR4 and NK_06_ITGA1 were found to be predominantly enriched in both primary HCC tumor (PHT) and late-relapsed HCC tumor (LRT) samples, suggesting these subtypes may play roles in both initial and recurring tumor environments. Notably, in the LRT group, an additional enrichment of NK_03_FCGR3A_IFNG, NK_01_FCGR3A_CX3CR1, and NK_04_PLCG2 was observed, compared to the PHT group, indicating a distinct or potentially enhanced immunological response in the relapsed tumor setting.
+
+Conversely, the analysis of adjacent late-relapsed normal tissue (LRN) compared to adjacent primary normal tissue (PHN) highlighted a significant presence of NK_05_CD160, NK_01_FCGR3A_CX3CR1, and NK_04_PLCG2 in LRN. This enrichment might reflect a heightened immune surveillance or a state of immune preparation against potential relapse in the LRN environment.
+
+Furthermore, when comparing PHN with LRN, NK cell subtypes NK_07_STMIN1 and NK_03_FCGR3A_IFNG were particularly enriched in PHN, suggesting unique immunological characteristics or responses potentially linked to the initial tumor environment compared to the relapse context.
+
+**Biological Implications of the Figure Results:**
+The distinctive patterns of NK cell enrichment across different HCC conditions reveal significant insights into the immune landscape of hepatocellular carcinoma. The enrichment of specific NK cell subtypes in tumor versus normal tissue, and in primary versus late-relapsed settings, suggests differential roles of these cells in immune surveillance, tumor suppression, and possibly in immune evasion tactics by the tumor. The presence of subtypes such as NK_01_FCGR3A_CX3CR1 and NK_03_FCGR3A_IFNG in relapsed tumors compared to primary tumors could indicate an adaptation or evolution of immune responses over the course of disease progression and after initial treatment. These findings could have profound implications for understanding the dynamics of tumor-immune interactions in HCC and might guide the development of targeted therapies or immunotherapeutic strategies based on NK cell activity and presence in distinct tumor microenvironments.
+# Stromal cells
+
+## StromalCellOddsRatioHeatmap
+
+![](images/2024-04-15-19-41-55.png)
+
+
+### Figure Description
+
+The analysis elucidates the predilection of stroma cell clusters within hepatocellular carcinoma (HCC), assessed through the Ro/e metric, which represents the ratio of observed to expected cell numbers. This investigation spans four distinct groups: primary hepatocellular carcinoma tumor (PHT), adjacent primary hepatocellular carcinoma normal tissue (PHN), adjacent late relapsed hepatocellular carcinoma normal tissue (LRN), and late relapsed hepatocellular carcinoma tumor (LRT).
+
+
+### Figure Results
+
+自己写的：Comparing with LRN and PHN, LRT and PHT  mainly enriched these :EC_04_ACKR1,EC_08_IGFBP3,EC_06_KDR_ESM1,EC_07_KDR_APOA,Mu_02_ABCC9,EC_05_KDR,Mu_03_STMN1,Fb_04_FABP4,Mu_01_MYH11,Fb_02_CXCL12,Fb_01_FAP,EC_09_PLCG2 and EC_10_STMN1. While, EC_03_TFF3,EC_04_ACKR1,EC_08_IGFBP3,EC_06_KDR_ESM1 and EC_07_KDR_APOA2PHT.
+
+
+EC_05_KDR,Mu_03_STMN1,Fb_04_FABP4,Mu_01_MYH11 and Fb_02_CXCL12 significantly enriched in LRT.
+
+
+EC_02_CLEC4A_APOA2 and Fb_03_KLF4 significantly enriched in LRN.
+
+### ChatGPTA生成的：RESULTS OUTPUT:
+
+The analysis focuses on identifying the stromal cell clusters within hepatocellular carcinoma (HCC) using the Ro/e metric, which measures the ratio of observed to expected cell numbers. This metric was applied across four different sample types: primary hepatocellular carcinoma tumor (PHT), adjacent primary hepatocellular carcinoma normal tissue (PHN), adjacent late relapsed hepatocellular carcinoma normal tissue (LRN), and late relapsed hepatocellular carcinoma tumor (LRT).
+
+Rewritten Figure Results for Publication:
+Our comprehensive assessment of stromal cell clusters across different hepatocellular carcinoma (HCC) contexts revealed distinct enrichment patterns. In the tumor groups, both primary hepatocellular carcinoma (PHT) and late relapsed hepatocellular carcinoma (LRT), we observed a notable enrichment of specific cell markers: endothelial cells (EC) expressing ACKR1, IGFBP3, KDR paired with ESM1 or APOA, as well as myofibroblasts (Mu) expressing ABCC9, STMN1, MYH11, and fibroblasts (Fb) marked by FABP4, CXCL12, FAP. Additionally, endothelial cells in these groups were also enriched for PLCG2 and STMN1, indicating a robust stromal interaction in tumor microenvironments.
+
+Moreover, the LRT group alone showed significant enrichment for EC expressing KDR, Mu expressing STMN1, Fb expressing FABP4 and CXCL12, and myofibroblasts marked by MYH11, underscoring a unique stromal composition associated with late relapsed tumors.
+
+Conversely, the normal adjacent late relapsed tissue (LRN) demonstrated a significant enrichment for endothelial cells expressing CLEC4A paired with APOA2 and fibroblasts marked by KLF4, suggesting distinct stromal changes in the microenvironment post-relapse.
+
+Biological Meaning of the Figure Results:
+The observed enrichments in stromal cell markers across different groups of HCC tissues reflect the dynamic interactions and adaptations within the tumor microenvironment. Endothelial cells marked by a variety of growth factors and receptors such as KDR, ESM1, and IGFBP3 indicate active angiogenesis and vascular remodeling, crucial for tumor growth and metastasis. The presence of specific myofibroblast and fibroblast markers like FAP, CXCL12, and FABP4 highlights the role of these cells in creating a supportive niche that promotes tumor survival and expansion.
+
+The distinct patterns observed in LRT suggest adaptations in the tumor microenvironment that may facilitate tumor recurrence and resistance to therapies. In contrast, the markers enriched in LRN reflect responses possibly aimed at tissue repair and maintaining homeostasis in the face of recurrent cancer.
+
+This detailed mapping and comparison of stromal cell populations provide insights into the molecular and cellular mechanisms driving tumor progression and recurrence in HCC, potentially guiding the development of targeted therapies that can disrupt these supportive tumor microenvironments.
 
 ## CellInCD45ProportionBoxplot
 
