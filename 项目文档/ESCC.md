@@ -115,6 +115,40 @@ Barplot of the number of cells in each T cell type at the level 3 cell type anno
 x-axis: tissue type (EAC_Normal, ESCC_Normal, EAC_tumor, ESCC_tumor) y-axis: proportion of cell type within Macrophage cells Barplot proportions of Macrophage subpopulations within all the Macrophages across different tissue types.
 
 
+### Figure REsults
+
+
+Comparison between EAC_tumor and ESCC_tumor,  TEX and Treg in ESCC_tumor have a much higher proportino than in EAC_tumor.
+
+
+Comparison between EAC_normal and ESCC_normal, NK/NKT in EAC_normal is much higher than  ESCC_normal;while TEFF is much lower in EAC_normal than in ESCC_normal.
+
+
+Comparison among tumor groups and normal groups, TMEM_CD4 and TMEM_CD8 in normal groups(EAC_normal and ESCC_normal) are much higher than in tumor groups(EAC_tumor and ESCC_tumor);while TEX and Treg much lower in normal groups(EAC_normal and ESCC_normal)  than in tumor groups(EAC_tumor and ESCC_tumor).
+
+
+### ChatGPT写的：
+
+RESULTS OUTPUT:
+
+In the study comparing esophageal adenocarcinoma (EAC) and esophageal squamous cell carcinoma (ESCC) across both tumor and normal tissue contexts, significant variations in T cell subpopulations are observed, as illustrated in the provided bar plots. These variations have profound implications for understanding the tumor microenvironment and immune evasion mechanisms in different esophageal cancer types.
+
+1. **Comparison between EAC_tumor and ESCC_tumor**:
+   - The proportion of T cell subpopulations such as Tumor-Exhausted T cells (TEX) and Regulatory T cells (Treg) is significantly higher in ESCC_tumor compared to EAC_tumor. This suggests a more pronounced immunosuppressive environment in ESCC tumors, which could contribute to the immune evasion and possibly reflect differences in the tumor biology or the response to the inflammatory milieu between these cancer types.
+
+2. **Comparison between EAC_normal and ESCC_normal**:
+   - Natural Killer/Natural Killer T cells (NK/NKT) are markedly higher in EAC_normal compared to ESCC_normal, indicating a potentially more active cytotoxic immune surveillance in the normal tissue surrounding EAC. Conversely, the proportion of T Effector cells (TEFF) is significantly lower in EAC_normal than in ESCC_normal, suggesting a reduced capacity for immediate immune response in EAC's normal adjacent tissue, possibly due to different local immune regulatory factors or baseline immune activity levels between these tissues.
+
+3. **Comparison among tumor groups and normal groups**:
+   - Memory T cells CD4+ (TMEM_CD4) and CD8+ (TMEM_CD8) are substantially higher in the normal groups (EAC_normal and ESCC_normal) compared to their tumor counterparts (EAC_tumor and ESCC_tumor). This indicates a loss or suppression of memory T cell populations within the tumor environments, a common feature in cancer that reflects tumor-mediated immunosuppression and evasion strategies.
+   - Conversely, TEX and Treg populations are significantly lower in normal tissues than in tumor tissues. This further highlights the role of these cells in maintaining tumor tolerance and promoting immune escape within the tumor microenvironment.
+
+The data highlight the dynamic and distinct immune landscapes in esophageal cancers, underscoring the importance of understanding specific immune cell roles in cancer progression and potential therapeutic targeting. The heightened presence of immunosuppressive cells in tumors underscores potential targets for immunotherapy, aiming to reverse these suppressive conditions and enhance antitumor immunity.
+
+
+
+
+
 
 
 ## EACTcellDEGsEnrichedPathways
@@ -403,3 +437,117 @@ x-axis: tissue type (EAC_Normal, ESCC_Normal, EAC_tumor, ESCC_tumor) y-axis: pro
 
 
 ### Figure Results
+
+In EAC_Normal and EAC_tumor Mono01 and cDC have a higher proportion than ESCC_Normal and ESCC_tumor.While in EAC_mormal and EAC_tumor Mono02 have a lower proportion than in ESCC_normal and ESCC_tumor.
+
+In tumor groups(EAC_tumor and ESCC_tumor), Mast and Mono03 have a much higher proportion than normal groups(EAC_normal and ESCC_normal); while in tumor groups (EAC_tumor and ESCC_tumor) cDC,Mono02 and TAM02  have a significantly lower proportion than the normal groups(EAC_normal and ESCC_normal).
+
+Comprison among the 4 groups: Mono01 have the highest proportion in the EAC_normal group. Mast and Mono03 have a significantly high proportion in EAC_tumor than in the other 3 groups;cDC, Mono02 and TAM02 have the highest proportion in ESCC_normal than in the other 3 groups;TAM01 and TAM03 have a significantly high proportion than in the other 3 groups.
+
+
+### ChatGPT写的：
+
+RESULTS OUTPUT:
+
+The bar plot analysis provided insights into the distribution of macrophage subpopulations within different tissue types of esophageal adenocarcinoma (EAC) and esophageal squamous cell carcinoma (ESCC). The subpopulations analyzed were Mono01, cDC, Mono02, Mast, Mono03, TAM01, TAM02, and TAM03.
+
+1. **Comparison of Mono01 and cDC**:
+   - In EAC_Normal and EAC_tumor tissues, Mono01 and conventional dendritic cells (cDC) are present in higher proportions compared to ESCC_Normal and ESCC_tumor. This suggests a possibly distinct immunological environment in EAC that favors the recruitment or retention of these cells. Mono01 and cDC are crucial for antigen presentation and initiation of immune responses, indicating a potentially more active immune surveillance in EAC.
+
+2. **Comparison of Mono02**:
+   - Mono02 exhibits a lower proportion in EAC_Normal and EAC_tumor than in ESCC_Normal and ESCC_tumor. This might reflect differences in the inflammatory or tumor microenvironment between EAC and ESCC, influencing the distribution of this macrophage subset.
+
+3. **Analysis of Tumor vs. Normal Groups**:
+   - Mast cells and Mono03 are significantly more prevalent in the tumor groups (EAC_tumor and ESCC_tumor) compared to the normal groups (EAC_Normal and ESCC_Normal). Increased mast cell presence in tumors can relate to enhanced angiogenesis and tissue remodeling, which are beneficial for tumor growth. The higher presence of Mono03 could be indicative of a tumor-promoting phenotype of macrophages in the tumor microenvironment.
+   - Conversely, cDC, Mono02, and TAM02 show significantly lower proportions in the tumor groups compared to the normal groups. The reduction in cDCs might suggest an impaired ability to initiate effective immune responses in the tumor setting, while lower Mono02 and TAM02 could indicate a shift towards a more tumor-promoting macrophage function.
+
+4. **Detailed Group Comparison**:
+   - Mono01 is most prevalent in EAC_Normal, suggesting a role in maintaining normal tissue integrity or possibly in early anti-tumor responses.
+   - Mast and Mono03 show a significant increase specifically in EAC_tumor, possibly indicating a shift towards a microenvironment that supports tumor progression and immune evasion.
+   - ESCC_Normal exhibits the highest proportions of cDC, Mono02, and TAM02, suggesting differences in the immune landscape between ESCC and EAC.
+   - TAM01 and TAM03 are significantly more prevalent in ESCC_tumor compared to other groups, which might indicate specific adaptations of the tumor-associated macrophages in ESCC promoting tumor growth and survival.
+
+These findings highlight how macrophage populations are differentially distributed across tissue types and disease states in esophageal cancers, reflecting variations in the tumor microenvironment and potential differences in the immune responses between EAC and ESCC. Understanding these patterns can help in designing targeted therapies that modulate the immune microenvironment to improve cancer treatment outcomes.
+## TAM
+
+
+![](images/2024-04-19-15-01-10.png)
+
+### Figure Description 
+
+Bar plot of Kegg pathway enrichment in EAC DEGS .
+
+### Figure Results
+
+
+In EAC enriched in these pathways:ubiquitin mediated proteolysis，T cell receptcr signaling pathway，Autophagy，Hepatitis B，
+Phosphatidylinositol signaling system and Sphingolipid signaling pathway.
+
+
+
+### ChatGPT写的：
+
+RESULTS OUTPUT:
+
+The bar plot depicting KEGG pathway enrichment in esophageal adenocarcinoma (EAC) differentially expressed genes (DEGs) reveals significant involvement in several critical biological pathways. These include ubiquitin-mediated proteolysis, T cell receptor signaling pathway, autophagy, hepatitis B, phosphatidylinositol signaling system, and sphingolipid signaling pathway.
+
+In the revised text suitable for publication in a journal such as Nature, the results might be presented as follows:
+"In the analysis of esophageal adenocarcinoma, our study identified significant enrichment of differentially expressed genes in key pathways, including ubiquitin-mediated proteolysis, T cell receptor signaling, autophagy, response to hepatitis B infection, phosphatidylinositol signaling system, and sphingolipid signaling pathway. These findings underscore the complex interplay of cellular processes that are disrupted in the pathogenesis of this cancer."
+
+Biological Interpretation of the Figure Results:
+The pathways enriched in EAC DEGs highlight critical areas of cellular function that are potentially disrupted or hijacked during cancer progression. Ubiquitin-mediated proteolysis regulates protein turnover and is crucial in controlling the levels of various cellular proteins, including those involved in cell cycle regulation and apoptosis. Disruption in this pathway could lead to uncontrolled cell growth and cancer progression.
+
+The enrichment of DEGs in the T cell receptor signaling pathway indicates a significant immune response component, which is crucial for the immune system’s ability to recognize and attack cancer cells. This suggests that immunotherapy could be a viable treatment option for EAC by enhancing this response.
+
+Autophagy, a cellular degradation process, plays a dual role in cancer by either promoting cell survival under stress or contributing to cell death, depending on the context and stage of cancer. Its enrichment points to its possible role in EAC tumor survival and progression.
+
+The presence of hepatitis B pathway enrichment suggests viral infection could be influencing the oncogenic process in some EAC cases, either through direct viral actions or by inflammation-induced mutations.
+
+Finally, alterations in the phosphatidylinositol and sphingolipid signaling pathways, which are crucial for the regulation of intracellular signaling and cellular homeostasis, may affect cell proliferation and apoptosis in EAC. These pathways are potential targets for therapeutic intervention, given their role in mediating key cellular functions that can be exploited by cancer cells.
+
+## EACESCCTAMSignatureViolinPlot
+
+![](images/2024-04-19-15-40-51.png)
+
+### Figure Description
+
+ViolintPlot of M2 score(TAM signature) across 4 different groups(EAC_tumor,EAC_normal,ESCC_tumor ans ESCC_normal).
+
+### FigureResults
+
+M2 score in ESCC_tumor  are significantly higher than in EAC_tumor;M2 score in ESCC_normal is significantly higher than in EAC_normal.
+
+
+### ChatGPT写的：
+
+RESULTS OUTPUT:
+
+The module entails generating Violin Plots to depict the distribution of M2 scores (TAM signature) across four different groups: EAC tumor, EAC normal, ESCC tumor, and ESCC normal. These M2 scores represent the infiltration or activity of M2 macrophages, which are typically associated with tumor-associated macrophages (TAMs) known for their roles in promoting tumor growth and suppressing anti-tumor immunity.
+
+The rewritten figure results section is as follows:
+"The analysis revealed that the M2 scores are significantly elevated in tumors and normal tissues of esophageal squamous cell carcinoma (ESCC) compared to esophageal adenocarcinoma (EAC). Specifically, ESCC tumors displayed higher M2 scores than EAC tumors, and similarly, normal tissues adjacent to ESCC showed increased M2 scores compared to those adjacent to EAC."
+
+Biological meaning of the figure results:
+The observed higher M2 scores in both tumor and normal tissues of ESCC compared to EAC suggest a greater presence or activity of M2 macrophages in ESCC. M2 macrophages are known for their immunosuppressive properties and their ability to promote angiogenesis, tissue remodeling, and tumor progression. The elevated M2 scores in ESCC could indicate a more immunosuppressive microenvironment, potentially contributing to the aggressiveness and higher malignancy rates often seen in ESCC compared to EAC. In normal tissues, higher M2 scores might reflect a pre-tumorigenic condition or an environment that could support tumor initiation and progression. This could imply that the immune landscape in ESCC, even in areas not yet overtaken by cancer, is conditioned towards facilitating tumor development and progression, contrasting with the microenvironment in EAC.
+
+
+![](images/2024-04-19-15-41-24.png)
+
+### Figure Description
+
+
+ViolintPlot of M1 score(TAM signature) across 4 different groups(EAC_tumor,EAC_normal,ESCC_tumor ans ESCC_normal).
+
+### FigureResults
+
+M1 score in ESCC_tumor  are significantly higher than in EAC_tumor;M1 score in ESCC_normal is significantly higher than in EAC_normal.
+
+### ChatGPT写的：
+
+RESULTS OUTPUT:
+
+The ViolinPlot analysis of M1 scores, representing the tumor-associated macrophage (TAM) signature, delineates distinct immunological landscapes across four different groups: EAC tumor, EAC normal, ESCC tumor, and ESCC normal. Our findings reveal that the M1 scores are significantly higher in tumors and normal tissues of esophageal squamous cell carcinoma (ESCC) compared to esophageal adenocarcinoma (EAC). Specifically, the M1 score in ESCC tumors is significantly elevated relative to EAC tumors. Similarly, the M1 score in ESCC normal tissues surpasses that in EAC normal tissues.
+
+Biological Significance:
+The higher M1 scores in both tumor and adjacent normal tissues of ESCC suggest a more pronounced inflammatory response or a higher degree of macrophage infiltration in ESCC than in EAC. M1 macrophages, typically associated with pro-inflammatory activities, can influence tumor behavior through cytokine production and modulation of the tumor microenvironment. The elevated M1 scores in ESCC might indicate a more active immune environment, which could either support anti-tumor responses or, paradoxically, enhance tumor progression depending on the context of other immune modulatory signals within the tumor microenvironment. The substantial difference in the TAM signatures between ESCC and EAC highlights the potential divergent roles of macrophages in the pathogenesis and progression of these two types of esophageal cancers, suggesting implications for tailored therapeutic strategies and prognostic assessments in esophageal cancer management.
+
