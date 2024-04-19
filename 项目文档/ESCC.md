@@ -13,6 +13,21 @@
 Uniform Manifold Approximation and Projection (UMAP) map of Number count cells color-coded for the indicated cell
 type. Including Tcell, Epithelial,endeothelialmFRE, Fibroblast,B cell,Myeloid and Pericytes.
 
+
+## IdentifyKeyCelltypeBetweenESCCAndEAC
+
+![](images/2024-04-18-16-15-00.png)
+
+
+### Figure Description
+
+
+
+### Figure Results
+
+
+
+
 # T cells
 
 ## TcellIntegratedUMAPByCellType
@@ -95,9 +110,9 @@ These findings underline distinct immune environments in the normal tissues adja
 
 
 
-Barplot of the number of cells in each Macrophage cell type at the level 3 cell type annotation.
+Barplot of the number of cells in each T cell type at the level 3 cell type annotation.
 
-x-axis: tissue type (PHT, LRT, PHN, LRN) y-axis: proportion of cell type within Macrophage cells Barplot proportions of Macrophage subpopulations within all the Macrophages across different tissue types.
+x-axis: tissue type (EAC_Normal, ESCC_Normal, EAC_tumor, ESCC_tumor) y-axis: proportion of cell type within Macrophage cells Barplot proportions of Macrophage subpopulations within all the Macrophages across different tissue types.
 
 
 
@@ -286,3 +301,105 @@ Analysis of the Resident scores revealed that, in a comparison between esophagea
 
 Biological Meaning:
 The Resident score typically reflects the degree of immune cell presence or activity within a given tissue. The significantly lower Resident scores observed in both normal and tumor tissues of ESCC compared to EAC suggest a reduced immune cell infiltration or activity in ESCC. This finding might indicate an inherent difference in the immunological environment between these two types of esophageal cancer. A diminished immune presence in ESCC could imply a potential for higher immune evasion, possibly contributing to the aggressiveness or differing therapeutic responses observed in ESCC compared to EAC. Understanding these differences is crucial for tailoring specific immunotherapeutic strategies or assessing prognosis more accurately for each cancer subtype.
+
+
+### 我把以上四个图总结一下，问了ChatGPT，这个是结果：
+
+These observations reveal significant differences in the immune environment characteristics between esophageal squamous cell carcinoma (ESCC) and esophageal adenocarcinoma (EAC). Specifically:
+
+1. **Higher toxicity, exhaustion, and costimulatory scores in ESCC compared to EAC**:
+   - **Higher toxicity** suggests that immune cells in ESCC, especially CD8+ T cells, have a higher cytotoxic capability and are more effective at killing tumor cells. This could be related to the expression of more antigens on the surface of ESCC cells, thereby triggering a stronger immune response.
+   - **Higher exhaustion scores** indicate that although the immune cells are more active, they also face the risk of exhaustion due to continuous activation. Exhausted immune cells may lose efficacy in long-term anti-tumor responses, suggesting that the immune response in ESCC may become unsustainable due to ongoing intense reactions.
+   - **Higher costimulatory scores** reflect the presence of more costimulatory signals in the ESCC microenvironment, which help activate and sustain T cell immune responses. This is generally a positive immune characteristic that aids in strengthening the attack on the tumor.
+
+2. **Lower residence scores in ESCC compared to EAC**:
+   - **Lower residence scores** imply that immune cells in ESCC have shorter stay times, possibly indicating a lower survival rate of immune cells in the tumor microenvironment or that immune cells quickly leave the tumor area after fulfilling their immune functions. This could be due to the presence of more cytotoxic conditions or immune suppressive factors in the ESCC tumor microenvironment, making it difficult for immune cells to survive there for extended periods.
+
+These characteristics suggest that compared to EAC, ESCC may exhibit a more aggressive immune state, with immune cells displaying higher activity but also being more prone to exhaustion. This environment, although potentially beneficial in initially combating the tumor, might lead to a decline in immune system functionality over time, thereby affecting sustained control over the tumor. Additionally, the rapid mobility of immune cells could impact their ability to form lasting immune memory in the tumor microenvironment, further complicating treatment responses and disease management.
+
+Understanding these differences is crucial for designing treatment strategies tailored to different types of esophageal cancer, particularly when utilizing immune checkpoint inhibitors or other immunomodulatory therapies, as it is important to consider how to optimize treatment to suit their respective immune characteristics.
+
+
+# Myeloid
+## ESCAUMAPByCellType
+
+![](images/2024-04-18-16-16-23.png)
+
+### Figure Description
+
+
+The UMAP of Myeloid cells from different Myeloid cell subpopulations. Each dot represents a cell, and the color represents the subpopulation.
+
+
+
+
+### Figure Results
+
+
+
+## ESCAUMAPByGroup
+
+
+![](images/2024-04-18-16-17-56.png)
+
+
+### Figure Description
+
+EAC_Normal , ESCC_Normal , EAC_Tumor and ESCC_Tumor preference of Myeloid cell clusters in EAC and ESCC, revealed by Ro/e (ratio of observed cell number to expected cell number).
+
+odds ratio value > 3 means significant enrichment; odds ratio value < 3 and > 1.5 means moderate enrichment;
+
+### Figure Results
+
+
+
+## ESCCEACMyeloidOddsRatioAcrossTissueGroups
+
+
+![](images/2024-04-18-16-18-55.png)
+
+
+### Figure Description
+
+EAC_Normal , ESCC_Normal , EAC_Tumor and ESCC_Tumor preference of Myeloid cell clusters in EAC and ESCC, revealed by Ro/e (ratio of observed cell number to expected cell number).
+
+odds ratio value > 3 means significant enrichment; odds ratio value < 3 and > 1.5 means moderate enrichment;
+
+### Figure Results
+
+In ESCC_tumor enrichment :Mono02，cDC，TAM02，TAM04，tDC，TAM01，pDC
+and TAM03.In EAC_tumor enrichment:Mono01，Mast and Mono03.ESCC_tumor and EAC_tumor are completely different.
+
+
+In EAC_Normal and  ESCC_Normal both enrichement:Mono01 Mono02，cDC and TAM02. 
+
+
+TAM04，tDC，TAM01，pDC and TAM03 only enriched in ESCC_tumor.
+Mast and Mono03 only enriched in EAC_tumor.
+
+
+### ChatGPT写的
+
+RESULTS OUTPUT:
+
+The analysis of Myeloid cell cluster preferences in Esophageal Adenocarcinoma (EAC) and Esophageal Squamous Cell Carcinoma (ESCC) based on the ratio of observed cell number to expected cell number (Ro/e) has provided key insights into the tumor microenvironment of these cancers. Specifically, we measured significant enrichment (odds ratio value > 3) and moderate enrichment (odds ratio value > 1.5 and < 3) of various myeloid cell types in tumor and adjacent normal tissues.
+
+For ESCC tumor tissues, the cell types that showed significant enrichment included monocytes (Mono02), conventional dendritic cells (cDC), tumor-associated macrophages (TAM02, TAM04, TAM01, and TAM03), and plasmacytoid dendritic cells (pDC). In contrast, EAC tumor tissues exhibited significant enrichment for a different subset of myeloid cells, specifically Mono01, mast cells, and Mono03. This indicates distinct immunological landscapes in ESCC versus EAC tumors, reflecting potentially unique mechanisms of immune evasion or interaction with the tumor microenvironment.
+
+Both EAC and ESCC normal tissues shared moderate enrichment for Mono01, Mono02, cDC, and TAM02, suggesting a common myeloid background in the normal esophageal environment across these cancer types. However, certain myeloid cells such as TAM04, tDC (tissue dendritic cells), TAM01, pDC, and TAM03 were only significantly enriched in ESCC tumor, pointing towards a specific immune response or adaptation in the squamous cell carcinoma subtype. Meanwhile, mast cells and Mono03 were exclusively enriched in EAC tumor, indicating a potential role for these cells in adenocarcinoma progression or immune modulation.
+
+These findings highlight the complex and divergent roles that myeloid cells play in the tumor microenvironment of esophageal cancers, potentially influencing disease progression, response to therapy, and patient outcomes. Further studies are warranted to explore the functional impact of these enriched myeloid populations in EAC and ESCC, aiming to develop targeted therapies that modulate the tumor immune microenvironment.
+
+## ESCCEACBarplot
+
+![](images/2024-04-18-16-19-47.png)
+
+
+### Figure Description
+
+Barplot of the number of cells in each Macrophage cell type at the level 3 cell type annotation.
+
+x-axis: tissue type (EAC_Normal, ESCC_Normal, EAC_tumor, ESCC_tumor) y-axis: proportion of cell type within Macrophage cells Barplot proportions of Macrophage subpopulations within all the Macrophages across different tissue types.
+
+
+### Figure Results
