@@ -993,9 +993,11 @@ This finding has profound implications for understanding the progression and pro
 
 
 
+
 ## MyeloidCellOddsRatioHeatmap
 
 ![](images/2024-03-31-14-40-04.png)
+
 
 
 ### Figure Description
@@ -1704,12 +1706,182 @@ Biological Meaning:
 This result has profound biological implications, highlighting the role of macrophages in the tumor microenvironment of hepatocellular carcinoma. The presence of Scissor+ macrophages across all clusters suggests that these cells, regardless of their specific subtype or origin (primary tumor or relapsed tumor, tumor or adjacent normal tissue), may contribute to a poor prognosis in hepatocellular carcinoma. This could be due to a variety of mechanisms, such as promoting tumor growth, facilitating metastasis, or suppressing the immune response against the tumor. The uniform distribution of Scissor+ macrophages indicates that this trait is a common characteristic of macrophages in the disease context, rather than being restricted to specific subsets, highlighting the potential of targeting these cells as a therapeutic strategy to improve patient outcomes.
 
 
+## MacrophageM1SignatureViolinPlot
+
+
+![](images/2024-04-20-09-34-25.png)
+
+
+### Figure Description
+
+Violin plot indicating the expression of M1 macrophage signature genes in different groups.
+
+
+### Figure Results
+
+The expression of M1 macrophage signature genes was significantly higher in the PHN group compared to the LRN group.The expression of M1 macrophage signature genes was significantly higher in the PHT group compared to the LRT group.
 
 
 
+### ChatGPT写的
+
+RESULTS OUTPUT:
+
+The violin plot analysis revealed that the expression levels of M1 macrophage signature genes are distinctly higher in the primary hepatocellular carcinoma (HCC) normal adjacent tissue (PHN) than in the late-relapsed normal adjacent tissue (LRN). Similarly, within the tumor tissues, the primary HCC tumor (PHT) group exhibited significantly higher expression of these genes compared to the late-relapsed tumor (LRT) group.
+
+Biologically, this pattern indicates a more robust presence or activation of M1 macrophages in the primary HCC environments (both tumor and adjacent normal tissue) than in the contexts of late relapse. M1 macrophages, known for their pro-inflammatory and anti-tumoral properties, play a crucial role in initiating immune responses against tumors by producing inflammatory cytokines, presenting antigens, and phagocytosing pathogens and tumor cells. The higher expression of M1 signature genes in the PHN and PHT groups suggests an active immune environment that may contribute to a more vigorous initial immune response against the primary tumor. Conversely, the lower expression in the LRN and LRT groups might reflect an immune evasion or suppression scenario, possibly due to the tumor's adaptation over time or immunomodulatory treatments received prior to relapse. This adaptation may enable the tumor to escape immune surveillance, leading to a diminished presence or functional suppression of M1 macrophages in the relapsed settings.
+
+## MacrophageM2SignatureViolinPlot
 
 
-## B cells
+![](images/2024-04-20-09-35-17.png)
+
+
+### Figure Description
+
+
+Violin plot indicating the expression of M2 macrophage signature genes in different groups.
+
+### Figure Results
+
+The expression of M2 macrophage signature genes was significantly higher in the LRN group compared to the PHN group.The expression of M2 macrophage signature genes was significantly higher in the LRT group compared to the PHT group.
+
+
+### ChatGPT写的
+
+
+RESULTS OUTPUT:
+
+The violin plot analysis demonstrated a marked increase in the expression of M2 macrophage signature genes in the late-relapsed normal (LRN) group relative to the primary hepatocellular carcinoma normal (PHN) group. Similarly, increased expression of these genes was also observed in the late-relapsed tumor (LRT) group when compared with the primary hepatocellular carcinoma tumor (PHT) group. 
+
+Biological Interpretation of the Figure Results:
+The findings suggest a substantial shift toward an immunosuppressive and tumor-promoting environment in late-relapsed hepatocellular carcinoma, both in the tumor and adjacent normal tissues. M2 macrophages, often referred to as tumor-associated macrophages (TAMs), are known for their role in promoting tissue remodeling, tumor growth, and suppression of the anti-tumor immune response. The elevated expression of M2 macrophage signature genes in LRN and LRT groups indicates a higher presence or activity of these immunosuppressive cells in late-relapsed stages of the disease. This could imply that the microenvironment in late-relapsed HCC is more conducive to tumor progression and may resist therapeutic interventions more strongly than in primary HCC. Such insights are critical for understanding the evolving dynamics of the tumor microenvironment and could guide the development of targeted therapies that modulate macrophage activity to enhance anti-tumor immunity.
+
+# LR vs ER (early relapse)
+
+## T cells
+
+![](images/2024-04-20-09-33-13.png)
+
+
+### Figure Description
+
+LRT , LRN , ERT and ERA preference of T cell clusters in HCC, revealed by Ro/e (ratio of observed cell number to expected cell number).
+
+odds ratio value > 3 means significant enrichment; odds ratio value < 3 and > 1.5 means moderate enrichment;
+
+### Figure Results
+
+### 第一组结论：
+
+In LRN enriched :CD8T_11_SLC4A10，CD8T_12_IFIT3，gdT_03_KLRD1，gdT_04_STMN1，CD8T_05_KLRD1，CD8T_06_CD69，CD8T_07_PLCG2，CD8T_03_GZMK_S1PR1，gdT_01_GNLY_S1PR5，CD4T_02_SELL，CD8T_02_Cx3CR1，CD4T_01_CCR7 and CD8T_01_CCR7. 
+
+In LRT enriched : CD8T_09_PDCD1_IFNG，CD4T_04_BAG3，
+CD8T_10_PDCD1，CD8T_13_STMN1，CD4T_08_STMN1，CD4T_03_GPR183，
+CD4T_11_FOXP3_STMN1，CD8T_08_GZMK，gdT_02_GNLY，CD4T_07_CXCL13，
+CD4T_10_FOXP3_CTLA4，CD4T_06_PLCG2，CD4T_09_FOXP3 and CD8T_04_GNLY.
+
+From this comparison we found that LRN and LRT shares the completely different enrichment T cell types. 
+
+
+### ChatGPT写的：
+
+**RESULTS OUTPUT**
+
+The study aimed to delineate the preference of T cell clusters in hepatocellular carcinoma (HCC) contexts, comparing late-relapsed normal (LRN) and late-relapsed tumor (LRT) environments through the ratio of observed to expected cell numbers (Ro/e). An odds ratio value above 3 was interpreted as significant enrichment, whereas values between 1.5 and 3 indicated moderate enrichment.
+
+The results indicated distinct patterns of T cell cluster enrichment between LRN and LRT. In LRN, a significant enrichment was observed in several T cell clusters, including:
+- CD8T_11_SLC4A10, CD8T_12_IFIT3, gdT_03_KLRD1, gdT_04_STMN1, CD8T_05_KLRD1
+- CD8T_06_CD69, CD8T_07_PLCG2, CD8T_03_GZMK_S1PR1, gdT_01_GNLY_S1PR5, CD4T_02_SELL
+- CD8T_02_Cx3CR1, CD4T_01_CCR7, and CD8T_01_CCR7.
+
+Conversely, in LRT, a different set of T cell clusters showed significant enrichment, including:
+- CD8T_09_PDCD1_IFNG, CD4T_04_BAG3, CD8T_10_PDCD1, CD8T_13_STMN1, CD4T_08_STMN1
+- CD4T_03_GPR183, CD4T_11_FOXP3_STMN1, CD8T_08_GZMK, gdT_02_GNLY, CD4T_07_CXCL13
+- CD4T_10_FOXP3_CTLA4, CD4T_06_PLCG2, CD4T_09_FOXP3, and CD8T_04_GNLY.
+
+This comparison highlights the distinct T cell subtype enrichments in LRN and LRT. LRN seems to focus on T cell types associated with surveillance and initial immune responses, perhaps maintaining a vigilant perimeter around normal tissues. In contrast, LRT shows an enrichment of T cell types that may engage in more specialized or exhausted responses, potentially reflective of the immunosuppressive tumor microenvironment that characterizes late-stage relapsed tumors.
+
+Understanding these patterns is crucial for developing targeted therapies and immunomodulatory strategies tailored to different stages and situations of HCC progression and relapse. This insight provides a foundation for potentially enhancing the effectiveness of immunotherapies by targeting specific T cell subtypes prevalent in distinct tumor microenvironments.
+
+
+### 第二组结论：
+
+In ERT (Early relapse tumor) enriched:CD8T_09_PDCD1_IFNG，CD4T_04_BAG3，CD8T_10_PDCD1，CD8T_13_STMN1，CD4T_08_STMN1，CD4T_03_GPR183，CD4T_11_FOXP3_STMN1，CD8T_08_GZMK，CD8T_11_SLC4A10，CD8T_12_IFIT3 and  CD8T_05_KLRD1 .
+
+In ERA （early replapse adjacent）enriched: CD8T_09_PDCD1_IFNG，CD4T_04_BAG3，CD8T_10_PDCD1，CD8T_13_STMN1，
+CD8T_11_SLC4A10，CD8T_12_IFIT3，gdT_03_KLRD1，gdT_04_STMN1 and CD8T_05_KLRD1 . 
+
+Compare to the LR group, ER group (ERT and ERA) shares the more similar cell types .
+
+
+### ChatGPT写的
+
+RESULTS OUTPUT:
+
+The study examines the distribution and prevalence of T cell clusters in hepatocellular carcinoma (HCC), focusing on differences between early relapse tumor (ERT) and early relapse adjacent (ERA) tissues compared to late relapse (LR) groups, using the Ro/e metric (ratio of observed to expected cell numbers). An odds ratio value greater than 3 indicates significant enrichment, while a value between 1.5 and 3 suggests moderate enrichment.
+
+In the analysis:
+- The ERT group shows significant enrichment for various T cell clusters, notably CD8T_09_PDCD1_IFNG, CD4T_04_BAG3, CD8T_10_PDCD1, CD8T_13_STMN1, CD4T_08_STMN1, CD4T_03_GPR183, CD4T_11_FOXP3_STMN1, CD8T_08_GZMK, CD8T_11_SLC4A10, CD8T_12_IFIT3, and CD8T_05_KLRD1. These clusters suggest a highly active immune environment within the ERT, characterized by both cytotoxic and regulatory functionalities.
+- The ERA group is enriched with a similar but slightly different profile, including CD8T_09_PDCD1_IFNG, CD4T_04_BAG3, CD8T_10_PDCD1, CD8T_13_STMN1, CD8T_11_SLC4A10, CD8T_12_IFIT3, gdT_03_KLRD1, gdT_04_STMN1, and CD8T_05_KLRD1. The presence of additional gdT cell clusters (gdT_03_KLRD1 and gdT_04_STMN1) highlights a distinctive immune surveillance possibly aimed at detecting and responding to early metastatic cells in adjacent non-tumor tissues.
+
+When comparing the ER group to the LR group, it is observed that the early relapse groups (ERT and ERA) share more similar T cell types, emphasizing a consistent immune signature during the initial phases of relapse across tumor and adjacent tissues. This similarity might reflect a systemic immune response pattern that is specific to early relapse dynamics in HCC, potentially useful for identifying early biomarkers of relapse and targets for intervention.
+
+These findings suggest that the immune landscape in early relapse HCC exhibits unique characteristics that could be pivotal for understanding tumor recurrence mechanisms and developing targeted therapies for early intervention in relapse management.
+
+
+### 第三组结论
+
+
+Comparison between LRT and ERT:Only in LRT enriched:gdT_02_GNLY，CD4T_07_CXCL13，CD4T_10_FOXP3_CTLA4，CD4T_06_PLCG2，CD4T_09_FOXP3 and CD8T_04_GNLY;while only in ERT enriched:CD8T_11_SLC4A10，CD8T_12_IFIT3 and CD8T_05_KLRD1 .
+
+In LRT and ERT share the same enriched cell types: CD8T_09_PDCD1_IFNG，CD4T_04_BAG3，CD8T_10_PDCD1，CD8T_13_STMN1，CD4T_08_STMN1，CD4T_03_GPR183，
+CD4T_11_FOXP3_STMN1 and CD8T_08_GZMK.
+
+### ChatGPT写的
+
+RESULTS OUTPUT:
+
+In the study of hepatocellular carcinoma (HCC), distinct T cell subpopulations exhibit varying degrees of enrichment across different disease states, namely late-relapsed tumor (LRT) and early relapsed tumor (ERT), as indicated by their respective Ro/e values. The analysis identifies specific T cell clusters with notable differences in prevalence between these conditions.
+
+In LRT, significant enrichment is observed in several T cell subtypes that are not enriched in ERT. These include gdT_02_GNLY, CD4T_07_CXCL13, CD4T_10_FOXP3_CTLA4, CD4T_06_PLCG2, CD4T_09_FOXP3, and CD8T_04_GNLY. Conversely, ERT shows a distinct set of enriched T cell subtypes, including CD8T_11_SLC4A10, CD8T_12_IFIT3, and CD8T_05_KLRD1.
+
+Both LRT and ERT share enrichment in certain T cell clusters, which include CD8T_09_PDCD1_IFNG, CD4T_04_BAG3, CD8T_10_PDCD1, CD8T_13_STMN1, CD4T_08_STMN1, CD4T_03_GPR183, CD4T_11_FOXP3_STMN1, and CD8T_08_GZMK.
+
+Biological Meaning of the Figure Results:
+The differences in T cell enrichment between LRT and ERT reflect adaptive immune responses that are potentially tailored to the specific tumor microenvironment or evolutionary stage of the tumor. The unique enrichment in LRT of T cell subtypes such as those expressing CXCL13, FOXP3, CTLA4, and GNLY suggests a microenvironment with active regulatory and cytotoxic pathways, which may be crucial for controlling tumor progression in later stages of relapse. These cells are likely involved in modulating immune suppression, maintaining immune tolerance, and executing cytotoxic functions.
+
+The distinct enrichment of certain CD8T subtypes in ERT, like those expressing SLC4A10, IFIT3, and KLRD1, points to a unique adaptive response possibly associated with early relapse characteristics, where rapid response and the involvement of killer cell lectin-like receptors are essential.
+
+The shared enriched T cell subtypes between LRT and ERT, including those expressing PD-1, STMN1, and BAG3, indicate common mechanisms of immune adaptation in HCC, involving both immune checkpoint regulation and cellular stress responses. These shared patterns suggest fundamental immune strategies that persist across different phases of tumor relapse, potentially providing targets for therapeutic intervention.
+
+This comprehensive profiling helps to delineate the dynamic immune landscape in HCC relapse and offers insights into the specific immune cells that could be leveraged for therapeutic benefits.
+
+### 第四组结论
+
+
+Comparison between LRN and ERA:Only in LRN eniriched: D8T_07_PLCG2，CD8T_03_GZMK_S1PR1，gdT_01_GNLY_S1PR5，CD4T_02_SELL，CD8T_02_Cx3CR1，CD4T_01_CCR7 and CD8T_01_CCR7;
+only in ERA enriched in:CD8T_09_PDCD1_IFNG，CD4T_04_BAG3，CD8T_10_PDCD1 and CD8T_13_STMN1.
+
+And in LRN and ERA share the same enriched cell types:CD8T_11_SLC4A10，CD8T_12_IFIT3，gdT_03_KLRD1，gdT_04_STMN1 and CD8T_05_KLRD1 .
+
+
+### ChatGPT写的
+
+RESULTS OUTPUT:
+
+The comparative analysis of T cell clusters between Late Relapsed Normal (LRN) and Early Relapsed Adjacent (ERA) tissues in hepatocellular carcinoma (HCC), as defined by the Ro/e (ratio of observed to expected cell numbers), reveals distinct profiles of immune cell enrichment. An odds ratio value above 3 indicates significant enrichment, while values between 1.5 and 3 denote moderate enrichment.
+
+In LRN, the significantly enriched T cell subtypes include CD8T_07_PLCG2, known for its involvement in T cell receptor signaling and calcium mobilization, and CD8T_03_GZMK_S1PR1, which implicates a cytotoxic function paired with S1PR1-mediated migratory capability. Additionally, gdT_01_GNLY_S1PR5 suggests a cytotoxic function in natural killer T cells with enhanced migration, and CD4T_02_SELL, associated with skin-homing properties of T cells. The presence of chemokine receptors Cx3CR1, CCR7 on both CD8 and CD4 T cells highlights the role of these receptors in cell migration and tissue-specific homing.
+
+Conversely, in ERA, there is a significant enrichment of CD8T_09_PDCD1_IFNG and CD8T_10_PDCD1, indicating a strong presence of immunosuppressive regulatory T cells potentially exhibiting exhaustion markers alongside interferon-gamma production. The enrichment of CD4T_04_BAG3 and CD8T_13_STMN1 suggests involvement in anti-apoptotic processes and cytoskeletal dynamics, respectively.
+
+Both LRN and ERA exhibit enrichment in CD8T_11_SLC4A10, associated with bicarbonate transport and pH regulation, CD8T_12_IFIT3, involved in antiviral responses, gdT_03_KLRD1 and gdT_04_STMN1 indicating killer cell lectin-like receptor subfamily D member 1 presence in gamma delta T cells and stathmin involvement in microtubule dynamics, and CD8T_05_KLRD1, enhancing cytotoxic activity.
+
+These results underscore differential immunological landscapes between LRN and ERA, highlighting specialized T cell functions and adaptations to their microenvironments in HCC. This profiling provides insights into the dynamic interplay of immune responses in HCC progression and recurrence, suggesting potential targets for therapeutic intervention.
+
+
+# B cells
 ## BCellOddsRatioHeatmap
 
 
@@ -1879,3 +2051,93 @@ Mucosa-associated invariant T cell (MAIT), CD8-C1, CD8-C2, and CD4-C3 showed sig
 
 Although most
 cells had unique TCRs, we detecteld TCR sequences shared among all $\mathrm{CD} 4^{+}$and cell subpopulations (Figure S7E). The number of clones shared between CD8-C4 and CD8-C1 ranked top of all shared clones of CD8-C4, further supporting the conclusion that CD8-C1 was the potential origin of exhausted cells. We also noticed that shared with some cells from , confirming that naive cells encompassed a small proportion of cells, as revealed by scRNA-seq analysis. In addition, shared clones with CD4-C1 and CD8-C1, in agreement with the developmental trajectory that CD8$\mathrm{C} 5$ originated from naïve cells and transited through CD8-C1 to CD8-C4. Thus, our scTCR-seq data demonstrated that cells of different subpopulations were not completely independent but had undergone an extensive state transition.
+
+
+
+# GlobalscATAC
+
+
+
+
+# GlobalCelltypeUMAP
+
+
+
+![](images/2024-04-20-11-06-09.png)
+
+
+### Figure Description
+
+Heatmap of Z-scores of  cis-regulatory elements in scATAC-seq clusters derived from cell types.Each box shows scATAC-
+seq profiles from 100 representative single cells from each cluster. Each pixel represents a 200-bp region. The top genome track shows the aggregate accessibility profile from all cells combined.
+
+### Figure Results
+
+
+
+
+
+![](images/2024-04-20-11-06-48.png)
+
+
+
+### Figure DEscription
+
+
+
+### Figure Results
+
+
+
+
+![](images/2024-04-20-11-07-24.png)
+
+
+
+### Figure Description 
+
+Genome tracks of aggregate scATAC-seq data.Arrows indicate the position and distance (in kb) of distal enhancers in each gene locus.
+
+
+### Figure Results
+
+
+S100A12 Neutrophiles 
+S100A7A  Tumor01
+CD86     Macrophages; Mono/DC
+NCR1     NK
+
+
+We identified cis-elements
+in the CD3E,CD8A and CD4 locus from T cell . 
+
+The gene scores of S100A8 showed a specific enrichment of  
+peaks in T-cell exhaustion markers such as PDCD1, CTLA4, ENTPD1, and HAVCR2 .
+
+
+![](images/2024-04-20-11-07-51.png)
+
+
+
+
+
+
+
+
+![](images/2024-04-20-11-08-04.png)
+
+
+
+
+
+
+![](images/2024-04-20-11-08-15.png)
+
+
+
+
+
+
+![](images/2024-04-20-11-08-28.png)
+
+
