@@ -1208,15 +1208,15 @@ odds ratio value > 3 means significant enrichment; odds ratio value < 3 and > 1.
 ### Figure Results
 
 
-The scRNA-seq data from different stages and conditions of hepatocellular carcinoma (HCC) provides a comprehensive view of neutrophil cell cluster preferences within the tumor and its adjacent normal tissues. The analysis reveals distinct patterns of neutrophil enrichment across primary and late relapsed hepatocellular carcinoma samples.
+RESULTS OUTPUT:
 
-In the adjacent late relapsed hepatocellular carcinoma normal tissue (LRN), there is a notable enrichment of early-stage neutrophils. In contrast, the adjacent primary hepatocellular carcinoma normal tissue (PHN) predominantly features late-stage neutrophils. For both the primary hepatocellular carcinoma tumor (PHT) and the late relapsed hepatocellular carcinoma tumor (LRT), the neutrophil cluster Neu_07_APOA2 is significantly enriched.
+The analysis of neutrophil cell clusters in hepatocellular carcinoma (HCC) using the ratio of observed cell number to expected cell number (Ro/e) across different tissue types provides insightful distinctions between primary and late-relapsed stages of the disease. Specifically, in the normal tissue adjacent to late-relapsed hepatocellular carcinoma (LRN), there is a noticeable prevalence of early-stage neutrophils, whereas the normal tissue adjacent to primary hepatocellular carcinoma (PHN) primarily contains late-stage neutrophils. This difference indicates a dynamic shift in neutrophil maturation and functionality dependent on the tumor's progression and the surrounding microenvironment.
 
-### Biological Significance:
+In both the primary (PHT) and late-relapsed (LRT) hepatocellular carcinoma tumors, the neutrophil cluster designated as Neu_07_APOA2 is significantly enriched. This consistency in neutrophil enrichment across tumor types suggests a common role for these cells in the tumor microenvironment, potentially related to inflammation or tumor immune evasion mechanisms.
 
-The differential enrichment of neutrophil stages in normal tissues adjacent to the tumor sites suggests variations in the immune response dynamics and the local microenvironment's influence on immune cell maturation and functionality. Early-stage neutrophils in LRN may indicate a more active recruitment and potentially more dynamic immune response compared to PHN, where the presence of late-stage neutrophils could reflect a more established, possibly exhausted immune environment. 
+Furthermore, the analysis highlights that while the tumor groups (PHT and LRT) show similar patterns of neutrophil enrichment, there is a pronounced difference in the types of neutrophil clusters between the normal tissues (PHN and LRN). This observation raises questions about the contributions of normal cells to the immunological landscape and how they may differ fundamentally between primary and relapsed stages. Such differences could have implications for understanding the immune contexture of the tumor microenvironment and developing stage-specific therapeutic strategies.
 
-The consistent enrichment of the Neu_07_APOA2 cluster in both PHT and LRT suggests a specific role for this neutrophil subset in the tumor microenvironment of HCC, possibly linked to lipid metabolism alterations (APOA2 involvement) and the tumor's influence on neutrophil functionality and survival. This uniformity across primary and relapsed tumor conditions points to a fundamental role of this neutrophil type in the pathophysiology of HCC, which might be crucial for understanding tumor progression and developing therapeutic strategies targeting the tumor-associated neutrophil responses.
+
 
 
 ## NeutrophilCellProportionBarPlot
