@@ -1430,13 +1430,26 @@ group of DEGs: PHN vs LRN, this shows the LRN DEGs enriched GO gene sets.
 
 ###  Figure Results:
 
+Comparing to the PHN, LRN are more enriched in these pathways:
+
+negative regulation of phosphate metabolic process，negative regulation of phosphorus metabolic process，
+positive regulation of cytokine production，positive regulation of
+response to external stimulus and negative regulation of phosphorylation.
 
 
-#### Results:
-Differential expression gene (DEG) analysis was conducted between adjacent primary hepatocellular carcinoma normal tissue (PHN) and adjacent late-relapsed hepatocellular carcinoma normal tissue (LRN). This analysis identified a distinct set of DEGs in the LRN group. Subsequent gene ontology (GO) gene set enrichment analysis of these DEGs revealed significant enrichment in three key pathways: the negative regulation of phosphate metabolic process, the negative regulation of phosphorus metabolic process, and the positive regulation of cytokine production.
+### ChatGPT RESULTS OUTPUT:
 
-#### Biological Explanation:
-The enrichment of DEGs in the pathways related to the negative regulation of phosphate and phosphorus metabolic processes suggests a shift in the metabolic landscape of the liver microenvironment in late-relapsed hepatocellular carcinoma (HCC). These changes may reflect an adaptive response to altered nutrient availability or tumor-induced metabolic reprogramming, affecting the proliferation and survival of tumor cells. On the other hand, the positive regulation of cytokine production highlights an activated immune response, possibly as a reaction to tumor recurrence. This activation may be part of the body's defense mechanism attempting to control or eliminate the relapsed tumor. Together, these findings underline the complex interplay between metabolic reprogramming and immune response in the context of late-relapsed HCC, offering new insights into the underlying mechanisms of tumor recurrence and persistence.
+Upon analysis of the Enrichment dot plot detailing enriched Gene Ontology (GO) gene sets in differentially expressed genes (DEGs) between neutrophil cells from Primary Hepatocellular Carcinoma Normal adjacent tissue (PHN) and Late-Relapsed Hepatocellular Carcinoma Normal adjacent tissue (LRN), the results demonstrate significant pathway enrichments. Compared to PHN, neutrophils in LRN exhibit a heightened activity in several critical immune regulatory pathways:
+
+1. **Negative Regulation of Phosphate Metabolic Process** and **Negative Regulation of Phosphorus Metabolic Process**: These pathways involve the downregulation of phosphate and phosphorus metabolism. The enrichment suggests alterations in mineral ion homeostasis and signaling, which may influence local inflammation and tissue remodeling processes in the context of cancer progression or recurrence.
+
+2. **Positive Regulation of Cytokine Production**: This pathway highlights an increased capacity of LRN neutrophils to promote cytokine production. Cytokines are pivotal mediators of inflammation and immune responses, suggesting that neutrophils in the relapsed environment are potentially enhancing inflammatory responses or are more reactive to inflammatory stimuli.
+
+3. **Positive Regulation of Response to External Stimulus**: This indicates that LRN neutrophils have an enhanced responsiveness to external stimuli, which could be related to increased surveillance and reactivity in the relapsed tumor microenvironment. This might represent an adaptive immune response to new or altered signals in the microenvironment of recurrent tumors.
+
+4. **Negative Regulation of Phosphorylation**: This pathway's enrichment suggests a modulation in the phosphorylation processes within neutrophils. Phosphorylation is critical for the activation and function of many signaling molecules, thus its downregulation might indicate a regulatory adjustment in signal transduction pathways, potentially influencing cell migration, activation, or apoptosis in response to the relapsed tumor microenvironment.
+
+Overall, the results from the dot plot analysis provide insights into the functional shifts in neutrophil activities between primary and relapsed tumor environments, reflecting changes that might contribute to the pathology or immune landscape of relapsed hepatocellular carcinoma. The observed pathway enrichments in LRN neutrophils underscore their dynamic role in adapting to and possibly shaping the tumor microenvironment in response to recurrent cancer. These adaptations could impact the progression of the disease and the effectiveness of potential therapeutic strategies targeting inflammation and immune modulation.
 
 
 ## PHN_Neutrophiles_DEGsGOEnrichmentDotPlot
@@ -1458,20 +1471,17 @@ group of DEGs: PHN vs LRN, this shows the PHN DEGs enriched GO gene sets.
 ### Figure Results
 
 #### Results:
-Differential gene expression (DEG) analysis was conducted between primary hepatocellular carcinoma normal tissue (PHN) and late relapsed hepatocellular carcinoma normal tissue (LRN), leading to the identification of DEGs predominantly in the PHN group. Subsequent Gene Ontology (GO) gene set enrichment analysis of these genes revealed significant enrichment in three key pathways: production of molecular mediators of immune response, adaptive immune response based on somatic recombination of immune receptors constructed from immunoglobulin superfamily domains, and both lymphocyte-mediated and leukocyte-mediated immunity.
-
-#### Biological Explanation:
-The enrichment of DEGs in these specific immune-related pathways in the PHN group versus the LRN group underscores the complex interplay between the host's immune system and the tumor microenvironment, particularly in the context of hepatocellular carcinoma (HCC) recurrence. The highlighted pathways are integral to the body's defense mechanism against malignancies, indicating a more active or altered immune response in the microenvironment surrounding primary HCC compared to that of late-relapsed HCC. 
-
-1. **Production of molecular mediators of immune response** reflects the initial stages of immune activation, where various signaling molecules orchestrate the immune system's response to cancer cells.
-
-2. **Adaptive immune response based on somatic recombination**, signifies the generation of diverse immune receptors that allow for a highly specific response to tumor antigens. This process is crucial for identifying and eliminating cancer cells that may express novel or mutated antigens.
-
-3. **Lymphocyte-mediated and leukocyte-mediated immunity** point towards the direct engagement and destruction of tumor cells by specific immune cells. Lymphocytes (including T cells and B cells) play roles in both recognizing cancer cells and signaling other parts of the immune system, while leukocytes (such as macrophages) can directly attack tumor cells.
-
-These findings suggest a dynamic immune landscape in the tissue surrounding HCC tumors, with implications for understanding the mechanisms of tumor recurrence and the potential for therapeutic interventions aimed at harnessing the immune system to prevent or treat recurrent HCC.
 
 
+Comparing to LRN,PHN are more enriched in these pathways:production of molecularmegiatorivef immuA8 r8β8ns范
+based on somatic
+recombination of immune
+receptors built from
+immunoglobulin superfamily
+domains
+lymphocyte mediated immunity
+leukocyte mediated immunity
+immunoglobulin production
 
 
 ## NeuScissorUMAP
