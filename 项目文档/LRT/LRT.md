@@ -2183,17 +2183,7 @@ accessibility. Red block indicates differential peaks within clusters.
 ### Figure Results
 
 
-S100A12 Neutrophiles 
-S100A7A  Tumor01
-CD86     Macrophages; Mono/DC
-NCR1     NK
-
-
-We identified cis-elements
-in the CD3E,CD8A and CD4 locus from T cell . 
-
-The gene scores of S100A8 showed a specific enrichment of  
-peaks in T-cell exhaustion markers such as PDCD1, CTLA4, ENTPD1, and HAVCR2 .
+Genome tracks for the indicated neutrophiles at A100A8 locus of aggregated scATAC-seq  subpopulations with peak coaccessibility. 
 
 
 ![](images/2024-04-20-11-07-51.png)
@@ -2204,10 +2194,10 @@ peaks in T-cell exhaustion markers such as PDCD1, CTLA4, ENTPD1, and HAVCR2 .
 
 
 
-
 ![](images/2024-04-20-11-08-04.png)
 
 
+Genome tracks for the indicated macrophages and Mono/DC at CD86 locus of aggregated scATAC-seq  subpopulations with peak coaccessibility. 
 
 
 
@@ -2216,10 +2206,14 @@ peaks in T-cell exhaustion markers such as PDCD1, CTLA4, ENTPD1, and HAVCR2 .
 
 
 
+Genome tracks for the indicated CD4 and CD8 at CD3E locus of aggregated scATAC-seq subpopulations with peak coaccessibility. 
 
 
 
 ![](images/2024-04-20-11-08-28.png)
+
+
+Genome tracks for the indicated NK cells at NCR1 locus of aggregated scATAC-seq  subpopulations with peak coaccessibility. 
 
 
 
@@ -2256,6 +2250,27 @@ Biologically, the enrichment of these specific motifs reveals critical insights 
 4. **NFYB** and **NFYA** are components of the NF-Y transcription factor, known for binding CCAAT motifs in promoters. NF-Y is critical in DNA replication, cell cycle progression, and modulation of genes involved in tumor progression. Their enrichment points to a potential role in promoting gene expression changes that could support tumor survival or interaction with the tumor microenvironment.
 
 These findings suggest that in the late relapse of hepatocellular carcinoma, neutrophils may undergo significant transcriptional reprogramming that could affect their role in cancer progression, potentially altering their tumor-promoting or antitumor activities.
+
+## Tracks of scATAC-seq data by cell type
+
+
+![](images/2024-04-21-19-52-24.png)
+
+
+### Figure DEscription
+
+Genome tracks for the indicated neutrophiles at A100A8 locus of aggregated scATAC-seq Neutrophiles subpopulations with peak coaccessibility. 
+
+![](images/2024-04-21-19-52-39.png)
+
+
+Genome tracks for the indicated NK cells at NCR1 locus of aggregated scATAC-seq  subpopulations with peak coaccessibility.
+
+
+![](images/2024-04-21-19-52-50.png)
+
+
+
 
 # Tumor scATAC
 
