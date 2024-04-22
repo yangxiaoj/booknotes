@@ -1319,7 +1319,7 @@ a clear sequential differentiation path from early-stage  Neutrophils  to late-s
 ### Figure Description
 
 
-Enrichment dot plot of enriched GO gene sets in differentially expressed genes (DEGs) among PHT，LRT，PHN and PHT neutrophiles cells. x-axis: gene ratio, the ratio of the number of genes in the gene set to the total number of genes in the gene set.  dot size represents the number of genes in the gene set
+Enrichment dot plot of enriched GO gene sets in differentially expressed genes (DEGs) among PHN neutrophiles cells. x-axis: gene ratio, the ratio of the number of genes in the gene set to the total number of genes in the gene set.  dot size represents the number of genes in the gene set
 
 cell type: Neutrophiles (ALL)
 
@@ -1327,7 +1327,7 @@ dataset: scRNA-seq
 
 algorithm: DEGs and GO enrichment analysis
 
-group of DEGs:  LRN，LRT， PHN and PHT.
+group of DEGs:   PHN .
 
 
 
@@ -1335,17 +1335,16 @@ group of DEGs:  LRN，LRT， PHN and PHT.
 
 
 
-In this study, we conducted an enrichment analysis to explore the biological functions of differentially expressed genes (DEGs) within neutrophil cells across various conditions associated with hepatocellular carcinoma (HCC), utilizing scRNA-seq datasets. Our analysis encompasses primary HCC tumor (PHT), late relapsed HCC tumor (LRT), and their adjacent normal tissues (PHN and LRN, respectively).
-
-For neutrophils in the LRN group, enriched Gene Ontology (GO) gene sets include components involved in the content of ficolin-1-rich granules, the structure of secretory granule membranes, and processes negatively regulating phosphorus and phosphate metabolic processes, alongside components of tertiary granules. These findings suggest a focus on granule composition and metabolic regulation in the normal tissue adjacent to late relapsed tumors.
-
-In LRT neutrophils, we observed enrichment in gene sets related to the positive regulation of responses to external stimuli and reactive oxygen species, the presence of tertiary granules, regulation of protein serine/threonine kinase activity, and negative regulation of the immune system process. This indicates an active response to oxidative stress and a nuanced regulation of immune responses in the tumor microenvironment of late relapsed HCC.
 
 Neutrophils from PHN showed enrichment in gene sets associated with the adaptive immune response, notably those requiring somatic recombination of receptors built from immunoglobulin superfamily domains, immunoglobulin production, molecular mediators of immune response, immunoglobulin complex formation, and antigen binding. This highlights the involvement of adaptive immune processes in the normal tissue adjacent to primary tumors.
 
-Lastly, PHT neutrophils exhibited enrichment in gene sets related to the regulation of the pattern recognition receptor signaling pathway, the secretory granule membrane, ubiquitin-like protein ligase binding, ubiquitin protein ligase binding, and protein folding chaperone. These results underscore the regulatory mechanisms of innate immunity and protein homeostasis within primary HCC tumors.
 
-Biological Interpretation: The differential enrichment of GO gene sets across the groups reflects distinct immune and metabolic states of neutrophils in the context of HCC progression and its microenvironment. In LRN and PHN (adjacent normal tissues), the focus on granular content and metabolic processes versus adaptive immune responses suggests a differential baseline state of immune readiness and metabolic regulation in response to tumor presence. For tumor-associated neutrophils (LRT and PHT), the emphasis shifts towards managing oxidative stress, regulating immune responses, and ensuring protein homeostasis, indicating an adaptive response to tumor growth and potential therapeutic targeting points. These findings contribute to our understanding of the dynamic interplay between neutrophils and the HCC tumor microenvironment, offering insights into potential biomarkers and therapeutic targets.
+### ChatGPT OUTPUT:
+
+The enrichment dot plot analyzing differentially expressed genes (DEGs) in neutrophils from primary hepatocellular carcinoma normal adjacent tissues (PHN) reveals significant insights into the immunological profile of these cells. The plot, which utilizes the ratio of genes in specific gene sets to the total number of genes in those sets on the x-axis and varies the dot size according to the number of genes in each gene set, indicated a pronounced enrichment in gene sets associated with the adaptive immune response. Specifically, these gene sets include those involved in the somatic recombination of receptors that are built from immunoglobulin superfamily domains, immunoglobulin production, molecular mediators of immune response, immunoglobulin complex formation, and antigen binding. 
+
+Biologically, this suggests that neutrophils in PHN are not only active participants in the innate immune response, typically expected of them, but also show involvement in adaptive immune processes. This is particularly noteworthy as it deviates from the traditional understanding of neutrophils as primarily front-line defenders in acute inflammation. The involvement of these cells in adaptive immunity, as suggested by their gene expression profile, indicates a sophisticated level of engagement where they may help orchestrate a more targeted immune response against tumor antigens present in the adjacent normal tissues. This could involve mechanisms where neutrophils interact with or support other immune cells like lymphocytes, contributing to a comprehensive immune surveillance and possibly the generation of immune memory in the tissue surrounding the primary tumor. Such findings underscore the complex role of neutrophils beyond their conventional boundaries, highlighting their potential contribution to immune modulation in cancerous contexts.
+
 
 ## PHT_Neutrophiles_DEGsGOEnrichmentDotPlot
 
