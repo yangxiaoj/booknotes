@@ -2143,8 +2143,9 @@ cells had unique TCRs, we detecteld TCR sequences shared among all $\mathrm{CD} 
 
 ### Figure Description
 
-Heatmap of Z-scores of  cis-regulatory elements in scATAC-seq clusters derived from cell types.Each box shows scATAC-
-seq profiles from 100 representative single cells from each cluster. Each pixel represents a 200-bp region. The top genome track shows the aggregate accessibility profile from all cells combined.
+
+
+Heatmap of the Z-score normalized accessibilities of scATAC-seq differential  peaks from malignant cells for each sample.  
 
 ### Figure Results
 
@@ -2172,6 +2173,11 @@ seq profiles from 100 representative single cells from each cluster. Each pixel 
 ### Figure Description 
 
 Genome tracks of aggregate scATAC-seq data.Arrows indicate the position and distance (in kb) of distal enhancers in each gene locus.
+
+
+
+Genome tracks for the indicated CD8-C4 at PDCD1, CTLA4, HAVCR2, and   ENTPD1 locus of aggregated scATAC-seq T and NK subpopulations with peak co- 
+accessibility. Red block indicates differential peaks within clusters.  
 
 
 ### Figure Results
@@ -2214,5 +2220,161 @@ peaks in T-cell exhaustion markers such as PDCD1, CTLA4, ENTPD1, and HAVCR2 .
 
 
 ![](images/2024-04-20-11-08-28.png)
+
+
+
+# Neutrophiles scATAC
+
+## Motif Enrichment between PH and LR
+
+![](images/2024-04-21-19-39-21.png)
+
+
+### Figure  DEscription
+ 
+Motif enrichment of  neutrophiles comparison  between   LR  and PH.
+
+### Figure  REsults
+
+In LR enriched :ELK4_341， PBX3_518， GABPA_338，NFYB_807 and NFYA_288.
+
+
+### ChatGPT RESULTS OUTPUT:
+
+The module focuses on motif enrichment analysis, which involves comparing the frequency and types of DNA-binding motifs present in regulatory regions of genes in neutrophils between late relapsed (LR) and primary hepatocellular carcinoma (PH) groups. 
+
+In the revised description of the figure results, the motifs that are enriched in neutrophils from the late relapsed group include ELK4 (motif ID 341), PBX3 (motif ID 518), GABPA (motif ID 338), NFYB (motif ID 807), and NFYA (motif ID 288). These results indicate a distinct regulatory landscape in the transcriptional control in neutrophils between the two studied conditions.
+
+Biologically, the enrichment of these specific motifs reveals critical insights into the transcriptional regulation changes in neutrophils during late relapse of hepatocellular carcinoma. Each motif is linked to a transcription factor that could be pivotal in neutrophil function and behavior:
+
+1. **ELK4** is part of the ETS transcription factor family, known for roles in cell cycle regulation, apoptosis, and differentiation. Its enrichment suggests a possible involvement in enhancing the proliferative or survival capacity of neutrophils in the LR setting.
+
+2. **PBX3** is a homeobox gene that typically interacts with HOX proteins, influencing developmental processes. In the context of cancer, PBX3 might be redirecting neutrophil functions towards a tumor-supportive microenvironment.
+
+3. **GABPA** is another member of the ETS family and is often implicated in mitochondrial biogenesis and cellular metabolism. Its increased presence could indicate shifts in metabolic demands or adaptations of neutrophils in the tumor microenvironment of late relapsed patients.
+
+4. **NFYB** and **NFYA** are components of the NF-Y transcription factor, known for binding CCAAT motifs in promoters. NF-Y is critical in DNA replication, cell cycle progression, and modulation of genes involved in tumor progression. Their enrichment points to a potential role in promoting gene expression changes that could support tumor survival or interaction with the tumor microenvironment.
+
+These findings suggest that in the late relapse of hepatocellular carcinoma, neutrophils may undergo significant transcriptional reprogramming that could affect their role in cancer progression, potentially altering their tumor-promoting or antitumor activities.
+
+# Tumor scATAC
+
+## LRVsPHMotifEnrichment
+
+![](images/2024-04-21-18-47-13.png)
+
+
+### Figure Description
+
+Motif enrichment of Tumor comparison between LR and PH.
+
+
+
+###  Figure  Results
+
+
+LR group are more enriched in:TFAP2D_C， PITX2_504，MYPOP_652，FUBP1_809 and ELF1_329. 
+
+
+RESULTS OUTPUT:
+
+The comparative analysis of motif enrichment between late-relapsed (LR) and primary hepatocellular carcinoma (PH) reveals distinct transcription factor activities within the tumor environments. Specifically, the LR group exhibits a higher enrichment of transcription factor binding motifs associated with TFAP2D_C, PITX2_504, MYPOP_652, FUBP1_809, and ELF1_329.
+
+Biological Implications:
+
+1. **TFAP2D_C** - This transcription factor is a variant of the AP-2 family, known for its roles in development and differentiation. In the context of cancer, AP-2 factors have been implicated in the regulation of genes involved in proliferation and apoptosis. Enrichment in the LR group suggests a possible adaptation of the tumor cells to resist apoptotic signals and sustain malignant growth.
+
+2. **PITX2_504** - PITX2 is crucial in developmental pathways and has been noted for its involvement in cellular proliferation, hormonal signaling, and left-right asymmetry in development. Its enhanced presence in LR tumors could indicate a role in the altered cellular signaling pathways that contribute to tumor recurrence and progression.
+
+3. **MYPOP_652** - Little is known about this factor; however, its association with tumors might indicate a novel role in cancer biology, potentially in the regulation of gene networks specific to the tumor’s adaptive mechanisms in relapsed conditions.
+
+4. **FUBP1_809** - Far Upstream Element Binding Protein 1 (FUBP1) regulates the c-Myc oncogene and is involved in cellular growth and proliferation. Overrepresentation in LR tumors could reflect its role in maintaining aggressive tumor growth and its potential as a therapeutic target.
+
+5. **ELF1_329** - ETS family member ELF1 is involved in immune response regulation and has been implicated in leukemias and lymphomas. Its presence might influence the immune evasion capabilities of LR tumors, altering immune surveillance and response within the tumor microenvironment.
+
+These findings highlight the specific transcriptional control mechanisms that potentially contribute to the distinct pathophysiological features of late-relapsed hepatocellular carcinoma compared to primary tumors. Understanding these differences is crucial for developing targeted therapies that address the unique challenges of treating recurrent cancer.
+
+## PoorSurvivalVsOthersMotifEnrichment
+
+![](images/2024-04-21-18-46-31.png)
+
+
+### Figure Description
+
+Motif enrichment of tumor scissor comparison between poor survival and others.
+
+
+###  Figure Results
+
+
+In poor survival group enriched in: MYPOP_652 ,MEF2C_640，TFAP2D_2， FOXE1_371 and FUEP1_809.
+
+
+### ChatGPT RESULTS OUTPUT:
+
+The analysis focused on motif enrichment among tumor scissor comparisons, identifying differences between patients with poor survival and other groups. The results indicate significant motif enrichment in the poor survival group, highlighting specific transcription factors that may be critical in regulating genes associated with aggressive tumor behavior and adverse clinical outcomes.
+
+In the poor survival group, motifs enriched include:
+- MYPOP_652, which may suggest an involvement of MYPOP in the regulatory networks influencing tumor progression or response to therapy.
+- MEF2C_640, known for its role in cell differentiation and growth, suggesting that alterations in MEF2C-associated pathways could contribute to poor prognosis.
+- TFAP2D_2, potentially implicating this transcription factor in aberrant developmental or cellular processes within the tumor.
+- FOXE1_371, a factor known to be involved in thyroid development and implicated in various cancers, suggesting a role in tumor phenotype or survival pathways.
+- FUEP1_809, although less well-characterized, could indicate novel regulatory mechanisms influencing tumor behavior in the context of survival.
+
+These findings underscore the importance of transcriptional regulation in tumor biology and provide insights into potential genetic markers or therapeutic targets associated with poor prognosis in cancer patients. The enrichment of these motifs suggests that these transcription factors may be key drivers of the gene expression patterns associated with more aggressive and lethal forms of the disease, offering potential avenues for targeted therapies or prognostic assessments.
+
+
+## CD8 scATAC
+
+
+![](images/2024-04-21-18-45-52.png)
+
+
+
+### Figure Description
+
+Motif enrichment of CD8 Comparison between LR and PH.
+
+### 
+
+In LR enriched: SP2_232，SP1_267，SP4_180，SP5_279 and  SP6_275.
+
+
+### ChatGPT RESULTS OUTPUT:
+
+For the project focused on motif enrichment analysis of CD8 cells comparing late-relapsed hepatocellular carcinoma (LR) with primary hepatocellular carcinoma (PH), the figure results have been refined for clarity. The enrichment analysis revealed specific transcription factor binding motifs that are prominently represented in the late-relapsed group. The motifs identified include SP2 (at position 232), SP1 (at position 267), SP4 (at position 180), SP5 (at position 279), and SP6 (at position 275). These findings are critical for understanding the transcriptional regulatory mechanisms that might be activated or repressed in CD8 T cells during the progression from primary to late-relapsed hepatocellular carcinoma.
+
+The biological meaning of these results is significant. Transcription factors SP1, SP2, SP4, SP5, and SP6 are known to play crucial roles in gene expression regulation involved in cell cycle control, apoptosis, and immune response modulation. The presence of these motifs in CD8 cells in the late-relapsed group suggests potential shifts in regulatory networks that could influence CD8 T cell behavior, possibly impacting their proliferation, survival, or functionality. These changes might contribute to the altered immune landscape observed in late-relapsed hepatocellular carcinoma, reflecting adaptation or resistance mechanisms that could influence disease progression and patient response to therapy. This enrichment in transcription factor motifs provides a foundation for further investigations into the specific genes and pathways regulated by these factors, which could lead to targeted therapeutic strategies.
+
+## Macrophages scATAC
+
+![](images/2024-04-21-18-44-32.png)
+
+
+### Figure Description
+
+Motif enrichemtn of macrophages comparison between LR and PH.
+
+### Figure Results
+
+RFX2_274, GABPA_338,ELK1_331,NRF1805and ELF4_323 these TFs(transcription factors) are enriched in LR group .
+
+
+
+### ChatGPT RESULTS OUTPUT:
+
+The analysis on motif enrichment within macrophages comparing late-relapsed (LR) and primary hepatocellular (PH) groups reveals a distinct transcriptional landscape. Specifically, transcription factors RFX2, GABPA, ELK1, NRF1, and ELF4 show significant enrichment in the LR group. These transcription factors are crucial in understanding the molecular mechanisms underpinning macrophage behavior in different stages of hepatocellular carcinoma (HCC).
+
+RFX2 is known for its role in DNA binding and transcriptional regulation, often associated with immune and inflammatory responses. Its enrichment in the LR group suggests a potential activation of genes related to immune modulation, which could influence the tumor microenvironment in late-stage relapsed cancer.
+
+GABPA, a member of the ETS transcription factor family, is involved in cell cycle regulation, mitochondrial biogenesis, and differentiation. The enrichment of GABPA indicates a possible shift in metabolic and proliferative states of macrophages in the LR group, potentially contributing to a pro-tumorigenic environment.
+
+ELK1, another member of the ETS transcription factor family, is involved in various cellular processes including proliferation, differentiation, and apoptosis. Its presence in enriched form in the LR group could imply a role in signaling pathways that promote tumor survival and adaptation.
+
+NRF1 (Nuclear Respiratory Factor 1) plays a critical role in regulating the expression of genes involved in mitochondrial DNA transcription and replication. Its enrichment in macrophages in the LR group may suggest alterations in metabolic programming that support the distinct demands of the tumor microenvironment in relapsed cancer.
+
+ELF4, involved in the regulation of proliferation and apoptosis, particularly in lymphoid and myeloid cells, might contribute to the modulation of the immune response within the tumor microenvironment, potentially facilitating immune evasion or suppression in the context of tumor relapse.
+
+Collectively, the enrichment of these transcription factors in the LR group underscores a sophisticated reprogramming of macrophages, likely reflecting adaptive changes necessary for survival and function in a relapsed tumor setting. This reprogramming may impact the tumor's progression, immune escape mechanisms, and the overall response to therapy in late-stage hepatocellular carcinoma.
 
 
