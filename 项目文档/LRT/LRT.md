@@ -1470,19 +1470,30 @@ group of DEGs: PHN vs LRN, this shows the PHN DEGs enriched GO gene sets.
 
 ### Figure Results
 
-#### Results:
+
+Comparing to LRN,PHN are more enriched in these pathways:production of molecular mediator of immune response adaptive immune response based on somatic recombination of immune,
+receptors built from immunoglobulin superfamily domains，
+lymphocyte mediated immunity，
+leukocyte mediated immunity and immunoglobulin production.It shows that in PHN imooune response is more active than in LRN.
 
 
-Comparing to LRN,PHN are more enriched in these pathways:production of molecularmegiatorivef immuA8 r8β8ns范
-based on somatic
-recombination of immune
-receptors built from
-immunoglobulin superfamily
-domains
-lymphocyte mediated immunity
-leukocyte mediated immunity
-immunoglobulin production
 
+
+### ChatGPT RESULTS OUTPUT:
+
+
+RESULTS OUTPUT:
+
+
+Compared to late-relapsed normal adjacent tissue (LRN), primary hepatocellular carcinoma normal adjacent tissue (PHN) shows a pronounced enrichment in several immunologically relevant pathways. These include the production of molecular mediators of immune response, adaptive immune response predicated on somatic recombination of immune receptors that incorporate immunoglobulin superfamily domains, lymphocyte-mediated immunity, leukocyte-mediated immunity, and immunoglobulin production. This enrichment suggests a heightened state of immune activity in PHN relative to LRN.
+
+Biological Meaning of the Figure Results:
+
+The observed enrichment of immune-related gene sets in PHN compared to LRN suggests a more active immune landscape in the tissue adjacent to the primary hepatocellular carcinoma. This heightened immune response could be due to an ongoing effort by the immune system to detect and respond to tumor antigens presented by the primary tumor. Key processes such as the production of molecular mediators and the activity of various immune cells like lymphocytes and leukocytes are crucial for orchestrating a robust immune defense against tumor cells. 
+
+The enrichment of pathways involving somatic recombination of immune receptors and immunoglobulin production indicates a significant involvement of adaptive immunity. This could imply that in PHN, there is an active reconfiguration and diversification of the immune repertoire to better recognize and neutralize tumor cells through antibodies and receptor diversity. In contrast, the relatively subdued immune response in LRN might reflect an immune landscape that has potentially been modified or suppressed over time, possibly due to tumor evasion strategies or systemic changes following the relapse of the disease.
+
+Overall, these findings highlight significant differences in the immune readiness and activities between tissues adjacent to primary and relapsed tumors, underscoring potential targets for immunomodulatory therapies.
 
 ## NeuScissorUMAP
 
