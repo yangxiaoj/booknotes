@@ -597,11 +597,15 @@ Boxplot showed the comparison of neoantigen burden between PHT and LRT groups (t
 ### Figure Results
 
 
-The boxplot analysis compares Tumor Mutation Burden (TMB) between two groups of hepatocellular carcinoma (HCC) tumor samples: primary HCC (PHT) and late relapsed HCC (LRT). The results indicate a statistically significant lower TMB in the LRT group compared to the PHT group.
 
-Biologically, this observation suggests several implications. Tumor Mutation Burden, which measures the number of mutations per million bases in tumor DNA, is an important indicator of genomic instability and the tumor's mutational landscape. A higher TMB in primary tumors (PHT) might reflect the initial aggressive nature of the cancer, with a greater accumulation of mutations contributing to oncogenesis and potentially affecting the tumor's response to immunotherapy. In contrast, the reduced TMB observed in the LRT group could be indicative of a selection pressure that favors tumor cells with fewer mutations, possibly as a consequence of therapeutic interventions that target highly mutated cells or due to a natural selection process where less mutated cells have a survival advantage in the relapsed tumor environment.
 
-These differences in TMB could impact the effectiveness of immunotherapies, as a higher TMB is often associated with better responses to such treatments due to the increased likelihood of forming new antigens that the immune system can target. The reduced mutational burden in relapsed tumors might therefore suggest potential challenges in treating these tumors with immune checkpoint inhibitors, which rely on a diverse antigenic profile to stimulate an immune response.
+
+### RESULTS OUTPUT:
+
+The figure presents a boxplot analysis that compares the neoantigen burden between two distinct groups of hepatocellular carcinoma (HCC) tumor samples: primary hepatocellular carcinoma (PHT) and late-relapsed hepatocellular carcinoma (LRT). The analysis utilized a two-sided Student's t-test to assess statistical significance. The findings reveal that the late-relapsed HCC group exhibits a significantly lower neoantigen burden compared to the primary HCC group.
+
+The biological implication of these results is significant in understanding the tumor's evolutionary dynamics and its interaction with the host immune system. Neoantigens, which are novel peptides presented by cancer cells due to tumor-specific mutations, are crucial for immune recognition and targeting by T cells. A higher neoantigen burden in primary tumors (PHT) suggests a more pronounced mutation rate or diverse mutational landscape, potentially making these tumors more detectable and vulnerable to immune responses. In contrast, the reduced neoantigen burden observed in the late-relapsed tumors (LRT) might indicate a selection process where tumor cells with fewer mutations or those that present less immunogenic profiles survive and dominate. This could be a result of immune editing, where the immune system selectively targets more immunogenic cancer cells, allowing less detectable cells to persist and eventually lead to relapse. Consequently, the variation in neoantigen burden between PHT and LRT highlights the adaptive changes tumors undergo to evade immune surveillance, which could influence the strategies for immunotherapy and the management of relapsed disease.
+
 
 ## PurityAndPloidyBoxplot
 
