@@ -2458,3 +2458,49 @@ ELF4, involved in the regulation of proliferation and apoptosis, particularly in
 Collectively, the enrichment of these transcription factors in the LR group underscores a sophisticated reprogramming of macrophages, likely reflecting adaptive changes necessary for survival and function in a relapsed tumor setting. This reprogramming may impact the tumor's progression, immune escape mechanisms, and the overall response to therapy in late-stage hepatocellular carcinoma.
 
 
+
+# ER vs LR
+
+
+![](images/2024-04-23-16-15-21.png)
+
+### Figure Description
+
+
+### Figure Results
+
+ER and LR only have one overlap in macrophages.
+
+![](images/2024-04-23-16-16-21.png)
+
+### Figure Description
+
+
+
+### Figure REsults
+
+These is no overlap between ERT and LRT in  T cells.
+
+
+![](images/2024-04-23-16-16-30.png)
+
+
+### Figure  Description
+
+
+### Figure  Results
+
+Theres is no overlap between ERN and LRN in T cells.
+
+
+![](images/2024-04-23-16-16-38.png)
+
+
+###  Figure  Description
+
+
+
+###  Figure  Results
+
+
+There are 34 overlaps between ERT and LRT in Tumor cells.
