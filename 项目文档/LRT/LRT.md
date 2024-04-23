@@ -2231,15 +2231,6 @@ These findings provide insights into the molecular mechanisms that might be driv
 
 ### Figure Description 
 
-Genome tracks of aggregate scATAC-seq data.Arrows indicate the position and distance (in kb) of distal enhancers in each gene locus.
-
-
-
-Genome tracks for the indicated CD8-C4 at PDCD1, CTLA4, HAVCR2, and   ENTPD1 locus of aggregated scATAC-seq T and NK subpopulations with peak co- 
-accessibility. Red block indicates differential peaks within clusters.  
-
-
-### Figure Results
 
 
 Genome tracks for the indicated neutrophiles at A100A8 locus of aggregated scATAC-seq  subpopulations with peak coaccessibility. 
@@ -2252,9 +2243,10 @@ Genome tracks for the indicated neutrophiles at A100A8 locus of aggregated scATA
 
 
 
-
 ![](images/2024-04-20-11-08-04.png)
 
+
+### Figure Description
 
 Genome tracks for the indicated macrophages and Mono/DC at CD86 locus of aggregated scATAC-seq  subpopulations with peak coaccessibility. 
 
@@ -2264,6 +2256,7 @@ Genome tracks for the indicated macrophages and Mono/DC at CD86 locus of aggrega
 ![](images/2024-04-20-11-08-15.png)
 
 
+### Figure Description
 
 Genome tracks for the indicated CD4 and CD8 at CD3E locus of aggregated scATAC-seq subpopulations with peak coaccessibility. 
 
@@ -2271,6 +2264,7 @@ Genome tracks for the indicated CD4 and CD8 at CD3E locus of aggregated scATAC-s
 
 ![](images/2024-04-20-11-08-28.png)
 
+### Figure Description
 
 Genome tracks for the indicated NK cells at NCR1 locus of aggregated scATAC-seq  subpopulations with peak coaccessibility. 
 
@@ -2323,11 +2317,19 @@ Genome tracks for the indicated neutrophiles at A100A8 locus of aggregated scATA
 ![](images/2024-04-21-19-52-39.png)
 
 
+### Figure Descripiton
+
 Genome tracks for the indicated NK cells at NCR1 locus of aggregated scATAC-seq  subpopulations with peak coaccessibility.
 
 
 ![](images/2024-04-21-19-52-50.png)
 
+
+### Figure Description
+
+
+
+### Figure REsults
 
 
 
