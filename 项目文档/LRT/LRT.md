@@ -2166,17 +2166,21 @@ cells had unique TCRs, we detecteld TCR sequences shared among all $\mathrm{CD} 
 
 
 
-Heatmap of the Z-score normalized accessibilities of scATAC-seq differential  peaks from malignant cells for each sample.  
+Heatmap of the Z-score normalized accessibilities of scATAC-seq differential peaks from major  cell types  for each sample.  
 
 ### Figure Results
 
-From the figure we found that  different cell types have its own peaks. Also tumor have the similar peaks also have its own specifics.
+From the figure we found that 75670 peaks, different cell types have its own peaks. Also tumor have the similar peaks also have its own specifics.
 
 ###  ChatGPT RESULTS OUTPUT:
 
-The heatmap generated from the Z-score normalized accessibilities of scATAC-seq differential peaks in malignant cells across various samples reveals distinct chromatin accessibility patterns. Each cell type is characterized by unique accessibility peaks, indicating cell-type-specific regulatory landscapes. Furthermore, while different tumor groups exhibit overlaps in their peak profiles, suggesting common regulatory mechanisms, there also exist patient-specific peaks. These individual variations underscore the heterogeneity within and between tumor groups, which may reflect personalized genetic and epigenetic modifications influencing tumor behavior and response to therapy.
 
-Biological interpretation of these findings suggests that the unique peaks identified in each cell type provide insights into the cell-specific regulatory elements that are active in malignant cells. These elements likely control the expression of genes critical for the cancer phenotype specific to each cell type. The common peaks across different tumor groups hint at shared oncogenic pathways or tumor survival mechanisms, while the patient-specific peaks could be indicative of unique disease progressions or individual responses to environmental and therapeutic pressures. This variability in chromatin accessibility highlights the complexity of cancer genomics and underscores the importance of personalized medicine approaches in treating cancer.
+
+The heatmap generated from the analysis of single-cell ATAC sequencing (scATAC-seq) presents the Z-score normalized accessibility of 75,670 differential peaks across various cell types in each sample. This visualization highlights that while some peaks are common across different cell types, each cell type also possesses unique peaks that are specific to its transcriptional and regulatory landscape. Additionally, it was observed that tumor samples, although sharing some commonality in peaks with other samples, also display unique characteristics with their own specific peaks. 
+
+
+This indicates not only the heterogeneity between different cell types but also the distinct epigenetic landscapes that can be associated with tumoral versus normal cellular states. These findings underscore the complexity of cellular regulation at the epigenetic level and provide insights into the specific regulatory elements that may be crucial for the unique properties of each cell type, including those that may contribute to the oncogenic processes in tumor cells.
+
 
 ![](images/2024-04-20-11-06-48.png)
 
