@@ -1471,10 +1471,10 @@ group of DEGs: PHN vs LRN, this shows the PHN DEGs enriched GO gene sets.
 ### Figure Results
 
 
-Comparing to LRN,PHN are more enriched in these pathways:production of molecular mediator of immune response adaptive immune response based on somatic recombination of immune,
+Comparing to PHN,LRN are much lower enrichemnt in these pathways:production of molecular mediator of immune response adaptive immune response based on somatic recombination of immune,
 receptors built from immunoglobulin superfamily domains，
 lymphocyte mediated immunity，
-leukocyte mediated immunity and immunoglobulin production.It shows that in PHN imooune response is more active than in LRN.
+leukocyte mediated immunity and immunoglobulin production.It shows that in LRN immune response is more inactive than in PHN.
 
 
 
@@ -1484,16 +1484,9 @@ leukocyte mediated immunity and immunoglobulin production.It shows that in PHN i
 
 RESULTS OUTPUT:
 
+The enrichment dot plot analysis of differentially expressed genes (DEGs) between primary hepatocellular carcinoma normal adjacent tissue (PHN) and late-relapsed normal tissue (LRN) in neutrophils reveals significant disparities in immune-related pathways. Specifically, the pathways associated with the production of molecular mediators of immune response, adaptive immune response based on somatic recombination of immune receptors from the immunoglobulin superfamily domains, lymphocyte-mediated immunity, leukocyte-mediated immunity, and immunoglobulin production show markedly lower enrichment in LRN compared to PHN. This suggests a subdued immune activity in LRN, indicating potential immune evasion mechanisms that are more pronounced in the late-relapsed normal tissue.
 
-Compared to late-relapsed normal adjacent tissue (LRN), primary hepatocellular carcinoma normal adjacent tissue (PHN) shows a pronounced enrichment in several immunologically relevant pathways. These include the production of molecular mediators of immune response, adaptive immune response predicated on somatic recombination of immune receptors that incorporate immunoglobulin superfamily domains, lymphocyte-mediated immunity, leukocyte-mediated immunity, and immunoglobulin production. This enrichment suggests a heightened state of immune activity in PHN relative to LRN.
-
-Biological Meaning of the Figure Results:
-
-The observed enrichment of immune-related gene sets in PHN compared to LRN suggests a more active immune landscape in the tissue adjacent to the primary hepatocellular carcinoma. This heightened immune response could be due to an ongoing effort by the immune system to detect and respond to tumor antigens presented by the primary tumor. Key processes such as the production of molecular mediators and the activity of various immune cells like lymphocytes and leukocytes are crucial for orchestrating a robust immune defense against tumor cells. 
-
-The enrichment of pathways involving somatic recombination of immune receptors and immunoglobulin production indicates a significant involvement of adaptive immunity. This could imply that in PHN, there is an active reconfiguration and diversification of the immune repertoire to better recognize and neutralize tumor cells through antibodies and receptor diversity. In contrast, the relatively subdued immune response in LRN might reflect an immune landscape that has potentially been modified or suppressed over time, possibly due to tumor evasion strategies or systemic changes following the relapse of the disease.
-
-Overall, these findings highlight significant differences in the immune readiness and activities between tissues adjacent to primary and relapsed tumors, underscoring potential targets for immunomodulatory therapies.
+The biological implication of these findings is significant, indicating that the immune landscape in LRN is characterized by a reduction in active immune responses that are vital for fighting infections and possibly surveilling and responding to malignant cells. The reduced activity in these pathways could imply that LRN has adapted mechanisms that facilitate immune evasion, potentially allowing for a more conducive environment for the relapse or progression of cancer. Understanding these mechanisms is crucial for developing therapeutic strategies that could reinvigorate the immune response in LRN, potentially enhancing the effectiveness of treatment in late-relapsed hepatocellular carcinoma.
 
 ## NeuScissorUMAP
 
@@ -2316,14 +2309,17 @@ These findings suggest that in the late relapse of hepatocellular carcinoma, neu
 
 ### Figure DEscription
 
-Genome tracks for the indicated neutrophiles at A100A8 locus of aggregated scATAC-seq Neutrophiles subpopulations with peak coaccessibility. 
+Genome tracks for the indicated  that at ISG15 locus of aggregated scATAC-seq C2 and C1 tumor subpopulations with peak coaccessibility. 
 
 ![](images/2024-04-21-19-52-39.png)
 
 
 ### Figure Descripiton
 
-Genome tracks for the indicated NK cells at NCR1 locus of aggregated scATAC-seq  subpopulations with peak coaccessibility.
+Genome tracks for the indicated  that at ELL2 locus of aggregated scATAC-seq C3 and C1 tumor subpopulations with peak coaccessibility. 
+
+
+
 
 
 ![](images/2024-04-21-19-52-50.png)
