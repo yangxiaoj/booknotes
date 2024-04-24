@@ -1668,8 +1668,57 @@ Mph_09_STMN1	7799
 Total	132468
 
 
+## MacrophageScissorPoorSurvivalDEGsVolcanoPlot
+
+![](images/2024-04-24-16-08-48.png)
 
 
+### Figure Description
+
+Volcano plot of differential gene expressions in Scissor+ (Poor Survival) Macrophages versus all other Macrophages.
+
+### Figure Results
+
+It shows that poor survival enriched in: It shows that poor survival enriched in: ALB，SPP1，CCL3，PLAUR ， IL1B ，CCL3L1， LMNA，NR4A1，CXCL2 and ICAM1.
+
+
+RESULTS OUTPUT:
+
+The figure presents a volcano plot illustrating the differential gene expression in Scissor+ macrophages associated with poor survival compared to all other macrophages. The analysis reveals significant upregulation of several key genes in the poor survival Scissor+ macrophage subgroup. These include ALB (Albumin), SPP1 (Osteopontin), CCL3 (MIP-1α), PLAUR (Urokinase Plasminogen Activator Surface Receptor), IL1B (Interleukin-1 beta), CCL3L1 (MIP-1αP), LMNA (Lamin A/C), NR4A1 (Nur77), CXCL2 (MIP-2), and ICAM1 (Intercellular Adhesion Molecule 1).
+
+Biological interpretation of these results suggests a complex interplay of inflammatory and immune-modulatory responses in macrophages that correlate with poorer survival outcomes. Albumin (ALB), typically a serum protein, may indicate aberrant protein handling or leakage in the tumor microenvironment. SPP1, a cytokine involved in immune modulation and matrix remodeling, is known for its role in enhancing tumor progression and metastasis. CCL3 and CCL3L1 are chemokines that recruit immune cells to inflammation sites, potentially exacerbating tumor-associated inflammation.
+
+PLAUR and ICAM1 both play roles in cell adhesion and migration, facilitating tumor cell invasion and metastasis. IL1B is a pro-inflammatory cytokine that contributes to the inflammatory milieu conducive to tumor growth. LMNA, involved in nuclear structure integrity, when dysregulated, is implicated in several cancer types. NR4A1 and CXCL2 are associated with immune response regulation; their upregulation suggests a heightened inflammatory state within the tumor microenvironment.
+
+Overall, the upregulation of these genes in Scissor+ macrophages from patients with poor survival underscores the pivotal role of macrophages in cancer progression, highlighting potential targets for therapeutic intervention to modulate the tumor microenvironment and improve patient outcomes.
+
+
+
+## MacrophageScissorPoorSurvivalDEGsSignatureViolinPlot
+
+![](images/2024-04-24-16-16-36.png)
+
+### Figure Description
+
+Violin plots of expression levels of selected upregulated genes in Scissor+ (Poor Survival) Macrophages.
+
+
+### Figure Results
+
+
+It shows that poor survival enriched in: ALB，SPP1，CCL3，PLAUR ， IL1B ，CCL3L1， LMNA，NR4A1，CXCL2 and ICAM1.
+
+
+
+### ChatGPT  RESULTS OUTPUT:
+
+The figure presents a violin plot illustrating the differential gene expression in Scissor+ macrophages associated with poor survival compared to all other macrophages. The analysis reveals significant upregulation of several key genes in the poor survival Scissor+ macrophage subgroup. These include ALB (Albumin), SPP1 (Osteopontin), CCL3 (MIP-1α), PLAUR (Urokinase Plasminogen Activator Surface Receptor), IL1B (Interleukin-1 beta), CCL3L1 (MIP-1αP), LMNA (Lamin A/C), NR4A1 (Nur77), CXCL2 (MIP-2), and ICAM1 (Intercellular Adhesion Molecule 1).
+
+Biological interpretation of these results suggests a complex interplay of inflammatory and immune-modulatory responses in macrophages that correlate with poorer survival outcomes. Albumin (ALB), typically a serum protein, may indicate aberrant protein handling or leakage in the tumor microenvironment. SPP1, a cytokine involved in immune modulation and matrix remodeling, is known for its role in enhancing tumor progression and metastasis. CCL3 and CCL3L1 are chemokines that recruit immune cells to inflammation sites, potentially exacerbating tumor-associated inflammation.
+
+PLAUR and ICAM1 both play roles in cell adhesion and migration, facilitating tumor cell invasion and metastasis. IL1B is a pro-inflammatory cytokine that contributes to the inflammatory milieu conducive to tumor growth. LMNA, involved in nuclear structure integrity, when dysregulated, is implicated in several cancer types. NR4A1 and CXCL2 are associated with immune response regulation; their upregulation suggests a heightened inflammatory state within the tumor microenvironment.
+
+Overall, the upregulation of these genes in Scissor+ macrophages from patients with poor survival underscores the pivotal role of macrophages in cancer progression, highlighting potential targets for therapeutic intervention to modulate the tumor microenvironment and improve patient outcomes.
 
 ## LRTDEGsGOEnrichmentDotPlot
 
