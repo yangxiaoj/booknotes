@@ -1817,6 +1817,40 @@ In our study, differential expression analysis was carried out to compare Macrop
 The biological significance of these findings suggests a profound impact on the understanding of Macrophages' role in the microenvironment of hepatocellular carcinoma, particularly in the context of relapse. Ribonucleoprotein complex biogenesis and RNA splicing are integral to the processing and maturation of RNA, implicating changes in gene expression regulation in Macrophages during late-stage disease. Moreover, the enrichment of genes involved in energy derivation by oxidation of organic compounds, cellular respiration, and aerobic respiration indicates a metabolic shift that could reflect the Macrophages' adaptation to the tumor microenvironment in late relapsed conditions. This metabolic reprogramming may contribute to the altered functionality of Macrophages, potentially influencing tumor progression and the relapse mechanism in hepatocellular carcinoma.
 
 
+
+## MacrophageScissorPathwayEnrichmentDotPlot
+
+![](images/2024-04-26-19-18-31.png)
+
+### Figure Description
+
+
+
+This figure presents an enrichment dot plot showcasing the GO (Gene Ontology) gene sets enriched  in Macrophages scissor(poor survival). The x-axis denotes the gene ratio, which is calculated as the ratio of the number of genes present in each gene set to the total number of genes within that set. The color intensity of each dot correlates with the p-adjusted value derived from the enrichment analysis, indicating the significance of the enrichment. 
+
+
+### Figure Results
+
+Macrophage poor survival enriched in these pathways:Cytokine-mediated signaling pathway，myeloid cell differentiation，viral process，leukocyte migration and cellular response to chemical stress. If this means myeloid cell differentiation are strongly related to poor survival
+
+
+### ChatGPT 写的
+
+RESULTS OUTPUT:
+
+The enrichment dot plot in the figure elucidates specific Gene Ontology (GO) gene sets that are significantly enriched in macrophages associated with poor survival outcomes. The gene sets highlighted include the cytokine-mediated signaling pathway, myeloid cell differentiation, viral processes, leukocyte migration, and cellular response to chemical stress. Each dot represents a GO term, where the x-axis value, the gene ratio, signifies the proportion of genes categorized under each gene set relative to the total number of genes within that set. The intensity of the dot's color reflects the p-adjusted value, providing a visual gauge of the statistical significance of the enrichment.
+
+Biological interpretation of these results suggests a complex interplay between immune function and disease severity. Specifically:
+- The enrichment of the cytokine-mediated signaling pathway indicates an active inflammatory environment within the macrophages, which can exacerbate disease severity by promoting tissue damage and fibrosis.
+- The association of myeloid cell differentiation with poor survival underscores the role of differentiated myeloid cells, such as macrophages, in disease progression. These cells are pivotal in immune responses and may contribute to a pro-tumorigenic or disease-aggravating microenvironment.
+- Viral processes being enriched suggests potential interactions between viral infections and macrophage functions, which might influence disease outcomes by altering immune efficacy or by the viral exploitation of macrophage machinery.
+- Enrichment in leukocyte migration reflects the recruitment or movement of immune cells into tissues, which, while a normal part of immune surveillance, may in this context indicate a pathological state where excessive or inappropriate migration contributes to inflammation and poor prognosis.
+- Lastly, the cellular response to chemical stress being highlighted points to macrophages encountering and responding to harmful stimuli, which may be indicative of exposure to toxic metabolites or oxidative stress within a disease setting, further contributing to cellular damage and poor survival.
+
+These insights provide a detailed map of the functional priorities and stresses experienced by macrophages in poor survival conditions, offering potential targets for therapeutic intervention to modulate macrophage functions and improve patient outcomes.
+
+
+
 ## MacrophageScissorUMAP
 
 
@@ -2549,3 +2583,45 @@ Theres is no overlap between ERN and LRN in T cells.
 
 
 There are 34 overlaps between ERT and LRT in Tumor cells.
+
+
+
+
+
+![](images/2024-04-26-20-00-58.png)
+
+
+### Figure Description
+
+Heatmap of different stages neutrophils tfs(transcription factors).
+
+###  Figure Results
+
+
+early-stage neutrophils tfS :NR3C1_666，TCF4_97，SNAl1_199，ID3_38，ID4_75 and BCL11A_194.
+
+
+
+middle-stage neutrophils tfs:CTCF_177，CTCFL_198，TFEB_32，TFEC_27，USF1_60，USF2_26，ARNTL2_16，TFE3_18，CEBPZ_806，NFYC_800，ELK4_341，GABPA_338，ATF3_132，ELK1_331，ELK3_327，NFYB_807，NFYA_288，PBX3_518 and CREB5_127.
+
+
+late-stage neutrophils tfs: CEBPA_155，NFE2_119，NFE2L2_115，RUNX1_733，IRF4_632，JUNB_139，
+SMARCC1_651，FOSL2_105，FOSL1_142，JUN_143，FOS_137，JUND_124，BACH1_130，JDP2_125，BACH2_113，FOSB_121，BATF_129，NRF1_805，REL_721，RELA_722，NFKB1_719，RELB_718，NFKB2_714，HIVEP1_170 and HIVEP3_824
+
+
+### ChatGPT 写的
+
+
+**RESULTS OUTPUT:**
+
+The heatmap represents transcription factor (TF) profiles across different stages of neutrophil development: early, middle, and late stages. 
+
+**Figure Description for Publication:**
+In the analysis of neutrophil-specific transcription factors across various stages of their maturation, distinct profiles have emerged. In the early stage, a limited set of transcription factors including NR3C1, TCF4, SNAI1, ID3, ID4, and BCL11A are prevalent, indicating a foundational role in the initial stages of neutrophil development. As neutrophils progress to the middle stage, a broader array of transcription factors is observed, including CTCF, CTCFL, TFEB, TFEC, USF1, USF2, ARNTL2, TFE3, CEBPZ, NFYC, ELK4, GABPA, ATF3, ELK1, ELK3, NFYB, NFYA, PBX3, and CREB5, suggesting a complex network of regulatory controls that guide further differentiation and functional specialization. In the late stage, a diverse and robust set of transcription factors such as CEBPA, NFE2, NFE2L2, RUNX1, IRF4, JUNB, SMARCC1, FOSL2, FOSL1, JUN, FOS, JUND, BACH1, JDP2, BACH2, FOSB, BATF, NRF1, REL, RELA, NFKB1, RELB, NFKB2, HIVEP1, and HIVEP3 dominate. This extensive array reflects the mature capabilities of neutrophils, encompassing a wide range of immune responses and signaling pathways critical for their function in host defense and inflammation.
+
+**Biological Meaning of the Figure Results:**
+The heatmap underscores the dynamic regulation of gene expression by transcription factors at different stages of neutrophil development, illustrating a complex orchestration of cellular activities necessary for the maturation and functional specialization of neutrophils. In the early stages, transcription factors like NR3C1 and TCF4 may be crucial for the initial differentiation processes from progenitor cells. As neutrophils advance to the middle stage, transcription factors such as CTCF and TFEB play significant roles in further differentiation and the beginning of acquiring functional attributes like phagocytosis and chemotaxis. In the late stages, the presence of a wide variety of transcription factors including CEBPA and NFKB1 indicates the readiness of neutrophils to perform their ultimate functions such as pathogen destruction and modulation of inflammatory responses. This comprehensive profiling provides insights into the molecular mechanisms that underpin neutrophil development and function, highlighting potential targets for therapeutic intervention in diseases where neutrophils play a pivotal role.
+
+
+
+
