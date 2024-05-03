@@ -551,3 +551,221 @@ The ViolinPlot analysis of M1 scores, representing the tumor-associated macropha
 Biological Significance:
 The higher M1 scores in both tumor and adjacent normal tissues of ESCC suggest a more pronounced inflammatory response or a higher degree of macrophage infiltration in ESCC than in EAC. M1 macrophages, typically associated with pro-inflammatory activities, can influence tumor behavior through cytokine production and modulation of the tumor microenvironment. The elevated M1 scores in ESCC might indicate a more active immune environment, which could either support anti-tumor responses or, paradoxically, enhance tumor progression depending on the context of other immune modulatory signals within the tumor microenvironment. The substantial difference in the TAM signatures between ESCC and EAC highlights the potential divergent roles of macrophages in the pathogenesis and progression of these two types of esophageal cancers, suggesting implications for tailored therapeutic strategies and prognostic assessments in esophageal cancer management.
 
+
+
+# MyeloidCellCountBarplot
+
+
+![](images/2024-04-19-16-45-22.png)
+
+
+### Figure DEscription
+
+
+
+
+### Figure results
+
+
+
+
+
+# Fibroblast
+
+
+![](images/2024-04-19-16-46-31.png)
+
+
+
+###  Figure Description
+
+
+
+
+![](images/2024-04-19-16-46-58.png)
+
+
+
+### FigureDescription
+
+
+
+
+
+![](images/2024-04-19-16-47-31.png)
+
+
+
+### Figure Description
+
+
+###  Figure results
+
+
+We found that they can
+be clustered into 9 subtypes as normal mucosa fibroblasts (NMF),
+normal activated fibroblasts (NAF1/2), cancer-associated fibro-
+blasts (CAF1–4), pericytes and vascular smooth muscle cells
+(VSMC)
+
+
+
+ VSMC,CAF2,NAF2,CAF3 and CAF4 enriched in ESCC_tumor. VSMC,CAF1,enriched in EAC_normal 
+
+
+
+
+# Myeloid
+
+## ESCAUMAPByCellType
+
+![](images/2024-05-02-14-02-57.png)
+
+
+## ESCAUMAPByGroup
+
+![](images/2024-05-02-14-03-22.png)
+
+
+
+
+
+## ESCCEACMyeloidOddsRatioAcrossTissueGroups
+
+
+![](images/2024-05-02-14-03-54.png)
+
+
+
+### Figure Description
+
+
+The analysis elucidates the predilection of myeloid cell clusters within ESCC and EAC, assessed through the Ro/e metric, which represents the ratio of observed to expected cell numbers. This investigation spans four distinct groups: ESCC_tumor，EAC_tumor，ESCC_normal and EAC_Normal.
+
+### Figure Results
+
+
+We found that ESCC_Normal and EAC_normal have the same enrichement (Mono01， Mono02，cDC and TAM02).
+
+But EAC_tumor and ESCC_tumor have completely significantly enrichment.Enrichment in ESCC_Tumor ：Monoo2，cDC，TAMO2，TAM04，tDc，TAM01，pDc and TAM03.
+Enrichment in EAC_tumor :Mono01，Mast and Mono03. It shows thst ESCC_Tumor and EAC_tumor have a big differences in myleiod cells enrichment.
+
+
+Mast and Mono03 are only and extremely enriched in EAC_tumor.
+TAMO4，tDC，TAM01，pDc and TAM03 are only and extremely enriched in ESCC_tumor.
+
+
+### ChatGPT
+
+RESULTS OUTPUT:
+
+The study analyzed the distribution of myeloid cell clusters within esophageal squamous cell carcinoma (ESCC) and esophageal adenocarcinoma (EAC) using the Ro/e metric, which calculates the ratio of observed to expected cell numbers across different tissue conditions. The analysis incorporated four distinct sample groups: ESCC_tumor, EAC_tumor, ESCC_normal, and EAC_normal.
+
+Our findings indicate that ESCC_normal and EAC_normal groups display similar myeloid cell enrichment patterns, characterized by the presence of Mono01, Mono02, conventional dendritic cells (cDC), and tumor-associated macrophages (TAM02). This suggests a conserved myeloid cell response in the normal tissue surrounding both types of esophageal cancer, which could be involved in maintaining tissue integrity and responding to non-malignant inflammatory stimuli.
+
+Contrastingly, the tumor environments of ESCC and EAC show distinct and significant differences in myeloid cell enrichment. In ESCC tumors, there is a notable enrichment of Mono02, cDC, TAM02, TAM04, tumor-associated dendritic cells (tDC), TAM01, plasmacytoid dendritic cells (pDC), and TAM03. This indicates a diverse and robust myeloid presence, which may be involved in various aspects of tumor microenvironment modulation, such as promoting inflammation, supporting tumor growth, or possibly mediating immune suppression.
+
+In EAC tumors, the enrichment pattern is less diverse, with significant presence of Mono01, mast cells, and Mono03. The unique presence of mast cells and Mono03 in EAC tumors suggests a specific myeloid response potentially linked to the unique pathophysiological aspects of adenocarcinoma, such as different cytokine environments or interactions with the tumor's epithelial cells.
+
+The pronounced differences between ESCC and EAC in terms of myeloid cell composition underscore the distinct biological pathways and immune environments driven by each cancer subtype. Understanding these differences is crucial for developing targeted therapies that can modulate the tumor microenvironment effectively for each specific cancer type.
+
+
+
+# ESCCTAMScissor
+
+## Volcano plot with significance
+
+![](images/2024-05-02-13-15-33.png)
+
+### Figure  Description
+
+
+Volcano plot of differential gene expressions in Scissor+ (Poor Survival) ESCC TAM(tumor assciated myleoid) . The two vertical dashed lines represent ±ln(1.25) fold changes in gene expression, and the horizontal dashed line denotes an FDR cutoff of 0.05. The FDR was the adjusted P value calculated by the two-tailed Wilcoxon rank sum test.
+
+
+
+### Figure Results
+
+As a result, genes were differentially expressed in Scissor+ cells (poorsurvival)over other cells.For example，F13A1，CLDN1，EMP2，sELPLG，SERPINF1 and MPC2 are enriched in the poorsurvival column.
+
+
+### ChatGPT
+
+
+### RESULTS OUTPUT:
+
+The volcano plot was employed to visualize differential gene expression in Scissor+ tumor-associated myeloid (TAM) cells from esophageal squamous cell carcinoma (ESCC) patients with poor survival outcomes. This analysis delineated significant gene expression changes, with the threshold for significance set by a false discovery rate (FDR) cutoff of 0.05, and fold changes marked by vertical dashed lines at ±ln(1.25). The FDR was meticulously adjusted using a two-tailed Wilcoxon rank sum test.
+
+Subsequent analysis revealed distinct upregulation of several key genes in Scissor+ TAMs associated with poor prognosis. Notably, F13A1, CLDN1, EMP2, sELPLG, SERPINF1, and MPC2 were identified as markedly enriched in these cells. These genes collectively contribute to the altered functional dynamics of TAMs in the tumor microenvironment, potentially influencing the aggressive behavior and poorer survival rates observed in these patients.
+
+**Biological Implications of Figure Results:**
+The identified genes are pivotal in understanding the pathophysiology of ESCC and the role of TAMs in cancer progression. For instance:
+- **F13A1 (Factor XIII A chain)** is involved in blood clotting and tissue repair processes, potentially contributing to tumor stroma formation and providing a scaffold that supports tumor growth.
+- **CLDN1 (Claudin-1)** and **EMP2 (Epithelial membrane protein 2)** are associated with tight junction integrity and can influence cellular adhesion and metastatic potential, enhancing tumor cell dissemination.
+- **sELPLG (Selectin P Ligand)** is implicated in leukocyte recruitment and may promote inflammation and immune escape mechanisms within the tumor microenvironment.
+- **SERPINF1 (Serpin Family F Member 1)**, a potent anti-angiogenic factor, when dysregulated, could alter the vascular dynamics of the tumor, affecting tumor growth and metastasis.
+- **MPC2 (Mitochondrial Pyruvate Carrier 2)** plays a role in metabolic reprogramming of cells, a hallmark of cancer cells adapting to hypoxic conditions within the tumor microenvironment.
+
+The differential expression of these genes underscores a complex interaction between TAMs and cancer cells, contributing to an immunosuppressive environment, enhanced tumor survival, and possibly poor patient prognosis. This information could be instrumental in developing targeted therapies that modulate TAM functions to improve cancer treatment outcomes.
+
+
+
+## PoorSurvivalSignatureViolinPlot
+
+![](images/2024-05-02-13-46-47.png)
+
+
+### Figure Description:
+
+Violin plots of expression levels of selected upregulated genes in Scissor+ (Poor Survival) cells. The FDR was the adjusted P value calculated by the two-tailed Wilcoxon rank sum test.
+
+All the genes in red are upregulated in Scissor+ (poor survival)cells, which are significantly higher expressed in Scissor+ cells(poor survival) than in Scissor- cells.
+
+All these genes are included in the PoorSurvival signature.
+
+
+### Figure Results:
+
+Our analysis revealed distinct gene expression signatures(F13Al，CLDN1，EMP2，SELPLG，SERPINF1，MPC2，TSPAN4，RPS4Y1，MAF
+and MRC1) that significantly differentiate between patients with poor survival outcomes and others . 
+
+
+### ChatGPT
+
+RESULTS OUTPUT:
+
+Our analysis has identified a set of genes (F13A1, CLDN1, EMP2, SELPLG, SERPINF1, MPC2, TSPAN4, RPS4Y1, MAF, and MRC1) that are distinctly upregulated in Scissor+ cells associated with poor survival outcomes. These genes constitute the PoorSurvival signature, showcasing significantly higher expression in Scissor+ cells compared to their Scissor- counterparts. Each gene in this signature was subjected to rigorous statistical testing, with false discovery rates (FDR) adjusted using the two-tailed Wilcoxon rank sum test to confirm their significant association with poor prognosis in affected patients.
+
+Biological Meaning of the Figure Results:
+The identification of these genes as part of the PoorSurvival signature suggests their pivotal roles in the pathology of the condition studied. For instance:
+
+- **F13A1 (Factor XIII A chain)** is involved in blood coagulation and tissue repair processes. Its upregulation might influence tumor microenvironment, promoting metastasis or angiogenesis.
+- **CLDN1 (Claudin-1)** and **EMP2 (Epithelial membrane protein 2)** are implicated in cellular tight junctions and membrane stability, respectively. Their increased expression could relate to enhanced cellular proliferation and metastatic potential, altering cellular adhesion and permeability in tumor cells.
+- **SELPLG (Selectin P ligand)** is crucial for inflammation and leukocyte trafficking. Its higher levels might facilitate tumor-immune interactions that promote tumor growth or survival under stress.
+- **SERPINF1 (Serpin Family F Member 1)**, a known anti-angiogenic factor, paradoxically upregulated in this context, might indicate a complex adaptive response of tumor cells to hypoxic conditions.
+- **MPC2 (Mitochondrial Pyruvate Carrier 2)** and **TSPAN4 (Tetraspanin 4)** are involved in metabolic processes and cellular signaling, suggesting metabolic reprogramming and altered cell communication pathways are key to poor survival scenarios.
+- **RPS4Y1 (Ribosomal Protein S4 Y-linked 1)**, a protein synthesis regulator, hints at increased protein production needs in rapidly proliferating tumor cells.
+- **MAF (v-maf avian musculoaponeurotic fibrosarcoma oncogene homolog)** and **MRC1 (Mannose Receptor C-Type 1)** are transcription factors and pattern recognition receptors respectively, which could be modulating immune responses and cellular differentiation pathways in these patients.
+
+Together, these genes highlight a complex network of biological pathways that contribute to poor survival, indicating potential targets for therapeutic intervention and markers for diagnostic and prognostic evaluation.
+
+
+
+## TumorScissorDEGsSurvivalCurve
+
+![](images/2024-05-02-13-56-32.png)
+
+
+### Figure Description:
+
+Kaplan–Meier survival curves show the clinical relevance of the PoorSurvival signature on the TCGA ESCC datasets. Tick marks indicate censoring events. The statistical P values were determined by the two-tailed log rank sum test.
+
+
+### Figure Results:
+
+Our analysis established a clear correlation between the expression levels of specific upregulated genes and clinical outcomes in ESCC patients. Individuals exhibiting elevated expression of these genes experienced significantly reduced survival times compared to those with lower expression levels.
+
+
+
+
+
