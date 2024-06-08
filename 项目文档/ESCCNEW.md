@@ -228,11 +228,32 @@ Subtype C3, with its distinct enrichment in pDC, Mono02, TAM04, TAM03, and TAM02
 
 ### Description
 
-
+TME Chemokine and cytokine expression in different subtypes
 
 ###  Results
 
+C1 subtype significantly are highly expressed in CXCL13, CCL28 and CCL5.
 
+C2 sbubtype are significantly highly expressed in CCL19.
+
+C3 subytpe are significanylt highly expressed in CCL20, CXCL10, CXCL1,CXCL6,CXCL8,CXCL2,CXCL14,CCL7,CCL13,CCL3,CXCL3,CXCL5,CXCL16,CCL2,CXCL8,CCL22,CXCL12,CCL23,CCL4,CXCL9 and CXCL11.
+
+From the comparison ,we could see that TME cytokie and CHemokine are mainly highly expressed in C3 subytpe.
+
+
+### ChatGPT 写的
+
+
+### Description
+
+C1 subtype exhibits significantly higher expression of CXCL13, CCL28, and CCL5.
+C2 subtype shows significantly elevated levels of CCL19.
+C3 subtype is characterized by significantly higher expression of multiple chemokines and cytokines, including CCL20, CXCL10, CXCL1, CXCL6, CXCL8, CXCL2, CXCL14, CCL7, CCL13, CCL3, CXCL3, CXCL5, CXCL16, CCL2, CCL22, CXCL12, CCL23, CCL4, CXCL9, and CXCL11.
+From the comparison, it is evident that the TME cytokine and chemokine expressions are predominantly elevated in the C3 subtype.
+
+### Biological Meaning of the Figure Results:
+
+The differential expression of chemokines and cytokines among the ESCC subtypes suggests distinct immunological landscapes within the tumor microenvironment. The C1 subtype, with high levels of CXCL13, CCL28, and CCL5, may be associated with a specific immune cell infiltration pattern, potentially involving B cells and T cells. The C2 subtype, marked by elevated CCL19, could indicate a role in lymphoid organogenesis and migration of dendritic cells and T cells. The extensive expression of a broad range of chemokines and cytokines in the C3 subtype suggests a highly inflammatory and immunologically active environment, which may influence tumor progression, metastasis, and response to immunotherapy. This extensive chemokine and cytokine profile in C3 might attract various immune cells, promoting a complex interplay within the TME, potentially impacting therapeutic strategies and prognosis.
 
 
 ![](images/2024-06-07-18-05-34.png)
@@ -240,10 +261,28 @@ Subtype C3, with its distinct enrichment in pDC, Mono02, TAM04, TAM03, and TAM02
 
 ### Description
 
+Cancer cells Chemokine and cytokin expression in different subtypes
 
 ###  Results
 
+C1 highly expressed：CXCL3，IL7R and CCL5.
+C2 highly expressed : CCL20.CXCL10,CXCL6，CCL8，CXCL2,CCL7,CCL13,CCL3,CXCL3，CXCL6，CCL19，CCL2，CXCL8，IL1B，CCL22，CXCL12，CCL23，CXCL9 and CXCL11.
+C3 highly expresed：CXCL1，IL18，CXCL14，CCL28，CXCL8，CCL4 and IL2A.
 
+From the comparison, we could see that Cancer cells Chemokine and cytokin especially highly expressed in C2 subytpe.
+
+
+### ChatGPT写的
+
+### Results
+
+C1 subtype cancer cells show high expression levels of CXCL3, IL7R, and CCL5. In contrast, the C2 subtype exhibits significantly elevated levels of a broader range of chemokines and cytokines, including CCL20, CXCL10, CXCL6, CCL8, CXCL2, CCL7, CCL13, CCL3, CXCL3, CXCL6, CCL19, CCL2, CXCL8, IL1B, CCL22, CXCL12, CCL23, CXCL9, and CXCL11. The C3 subtype is characterized by high expression of CXCL1, IL18, CXCL14, CCL28, CXCL8, CCL4, and IL2A.
+
+Comparative analysis indicates that the C2 subtype exhibits a particularly high expression of chemokines and cytokines within cancer cells. Conversely, in the tumor microenvironment (TME), cytokines and chemokines are predominantly highly expressed in the C3 subtype.
+
+### Biological Meaning of the Figure Results:
+
+The differential expression of chemokines and cytokines among the ESCC subtypes highlights the distinct inflammatory and immune response profiles associated with each subtype. The C2 subtype's high expression of a wide array of chemokines and cytokines suggests a highly inflammatory and potentially more immunogenic tumor microenvironment, which could influence the recruitment and activation of various immune cells. This may impact the tumor's behavior and response to immunotherapies. In the C3 subtype, the predominance of cytokine and chemokine expression in the TME indicates a significant role of the surrounding stromal and immune cells in modulating the tumor's immune landscape. Understanding these variations is crucial for developing targeted therapeutic strategies and improving patient outcomes in ESCC.
 
 ## Level1 Cell proportion Boxplot across Subtype
 
@@ -252,16 +291,94 @@ Subtype C3, with its distinct enrichment in pDC, Mono02, TAM04, TAM03, and TAM02
 
 ### Description
 
+Level1 Cell proportion Boxplot across Subtype
 
 ###  Results
 
 
 
+Comparing with C1 and C3,Bcell in C2 subtype are significanyly highly expressed.
+Comparing with C1 and C2,Myeloid cells are significantly highly expressed in C3.
+Comparing with C3 and C2,T cell are significantly highly expressed in C1.
+
+
+### ChatGPT写的
+
+### Results
+
+In the C2 subtype of ESCC, B cells are significantly more abundant compared to the C1 and C3 subtypes. Conversely, myeloid cells are significantly more prevalent in the C3 subtype compared to C1 and C2. Additionally, T cells are significantly more abundant in the C1 subtype compared to C2 and C3.
+
+### Biological Meaning of the Figure Results:
+
+The differential expression of immune cells across ESCC subtypes suggests distinct immune microenvironments that could influence the behavior and treatment response of the cancer. The higher proportion of B cells in the C2 subtype may indicate a robust humoral immune response, potentially associated with better prognosis or response to certain immunotherapies. The elevated myeloid cell presence in the C3 subtype could be indicative of an immunosuppressive environment, often linked to poorer outcomes and resistance to therapies. The higher proportion of T cells in the C1 subtype suggests an active cellular immune response, which may correlate with more effective anti-tumor activity and improved clinical outcomes. Understanding these immune landscapes is crucial for developing subtype-specific therapeutic strategies and improving patient management in ESCC.
+
+
+## Cell Proportion Heatmap of different subtypes
+
+![](images/2024-06-07-19-31-37.png)
+
+
+### Description
+
+Heatmap showing frequencies of TME cell subpopulations in different subtypes.
+
+### Results
+
+C1：TFH2，TEX，TEFF，TMEM.CB8,NK_NKT,TMEN.CD4 and Treg.
+
+C3:Mono01,Mast, TAM02,cDC,Plasma,Mono02,TAM01,TAM03 and TAM04.
+
+C2:TFH1,GCB01,GCB02,activedB, Resting B,TN and TH17.
 
 
 
+### Chat GPT写的
+
+### Results
+
+The heatmap analysis revealed distinct patterns of tumor microenvironment (TME) cell subpopulations across the different subtypes. In subtype C1, there is a higher frequency of TFH2, TEX, TEFF, TMEM.CD8, NK_NKT, TMEM.CD4, and Treg cells. Subtype C3 is characterized by elevated levels of Mono01, Mast cells, TAM02, cDC, Plasma cells, Mono02, TAM01, TAM03, and TAM04. In contrast, subtype C2 shows a predominance of TFH1, GCB01, GCB02, activated B cells, resting B cells, TN, and TH17 cells.
+
+### Biological Meaning of the Figure Results:
+
+The figure results illustrate the heterogeneity of the tumor microenvironment (TME) in different subtypes of ESCC. Subtype C1, with higher frequencies of TFH2, TEX, TEFF, TMEM.CD8, NK_NKT, TMEM.CD4, and Treg cells, suggests a microenvironment with active immune responses and potential immune regulation, indicative of both effector and regulatory functions. Subtype C3, marked by a significant presence of various macrophage populations (TAMs), dendritic cells (cDC), and plasma cells, points to a more immunosuppressive and possibly pro-tumorigenic environment. Subtype C2, enriched with B cell populations and TH17 cells, highlights an adaptive immune response, with possible implications for antibody-mediated immunity and inflammatory responses. Understanding these distinct TME profiles can provide insights into the mechanisms of tumor progression and potential therapeutic targets in ESCC.
 
 
+## Top markers
 
+![](images/2024-06-07-19-32-49.png)
+
+
+### Description
+
+Top 5 significant genes for each group.
+
+### Results
+
+
+C1 top 5 marker genes: GZMA, CD3E, CXCL13, GNLY and CD8A.
+C2 top 5 marker genes: USP3-AS1, SPATA21, TG, RAB26 and AC010894.3 .
+C3 top 5 marker genes: SPARCL1, COL3A1, LY6D, ADIRF and S100A7.
+
+
+### ChatGPT写的
+
+### Figure Results:
+    
+    
+The top 5 marker genes for each group in ESCC are as follows:
+
+Group C1: The most significant marker genes are GZMA, CD3E, CXCL13, GNLY, and CD8A.
+Group C2: The top marker genes include USP3-AS1, SPATA21, TG, RAB26, and AC010894.3.
+Group C3: The leading marker genes are SPARCL1, COL3A1, LY6D, ADIRF, and S100A7.
+
+### Biological Meaning of the Figure Results:
+
+Group C1: The marker genes GZMA, CD3E, CXCL13, GNLY, and CD8A suggest a strong involvement of immune cells, particularly cytotoxic T cells and natural killer (NK) cells. These genes are associated with immune response mechanisms, indicating that Group C1 might have an immune-active microenvironment.
+
+Group C2: The marker genes USP3-AS1, SPATA21, TG, RAB26, and AC010894.3 are less characterized in the context of ESCC. USP3-AS1 and SPATA21 may be involved in gene regulation and spermatogenesis respectively, while TG (thyroglobulin) could hint at an aberrant expression pattern. RAB26 is linked to vesicle trafficking, and AC010894.3 might represent a non-coding RNA. This group might represent a unique molecular subtype with distinct regulatory mechanisms.
+
+Group C3: The marker genes SPARCL1, COL3A1, LY6D, ADIRF, and S100A7 are indicative of extracellular matrix (ECM) remodeling and differentiation processes. SPARCL1 and COL3A1 are involved in ECM composition, LY6D in lymphoid development, ADIRF in adipocyte differentiation, and S100A7 in inflammation and skin differentiation. This suggests that Group C3 may have an environment conducive to ECM interactions and differentiation signals.
+
+These insights into the marker genes provide valuable information for understanding the molecular heterogeneity of ESCC and could guide the development of targeted therapies and personalized treatment strategies.
 
 
