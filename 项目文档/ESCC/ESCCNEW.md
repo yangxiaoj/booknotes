@@ -382,3 +382,215 @@ Group C3: The marker genes SPARCL1, COL3A1, LY6D, ADIRF, and S100A7 are indicati
 These insights into the marker genes provide valuable information for understanding the molecular heterogeneity of ESCC and could guide the development of targeted therapies and personalized treatment strategies.
 
 
+### Cancer cell Scissor Differential Expressed Genes
+
+![](images/2024-06-12-09-51-12.png)
+
+
+### Description
+
+Valcano of differential expressed genes in cancer cell Scissor（between poor survival and others） .
+
+
+###  Results
+
+The significance of Poor survival enriched in: FTH1，VIM，PTMA，CD63，EID1，HSP90AA1，SERPINH1，HSPA1A，
+LGALS1 and TIMP1.
+
+
+
+### ChatGPT写的
+
+RESULTS OUTPUT:
+
+The analysis of differentially expressed genes in esophageal squamous cell carcinoma (ESCC) using the Scissor method revealed significant enrichment of genes associated with poor survival. The key genes identified include FTH1, VIM, PTMA, CD63, EID1, HSP90AA1, SERPINH1, HSPA1A, LGALS1, and TIMP1.
+
+### Biological Meaning of the Figure Results:
+
+1. **FTH1 (Ferritin Heavy Chain 1)**: This gene plays a role in iron storage and regulation, which is crucial for cellular proliferation and tumor growth. Elevated levels of FTH1 have been linked to increased cancer cell survival and resistance to oxidative stress.
+
+2. **VIM (Vimentin)**: Vimentin is a marker for epithelial-mesenchymal transition (EMT), a process that enhances the migratory and invasive capabilities of cancer cells, contributing to metastasis and poor prognosis in ESCC.
+
+3. **PTMA (Prothymosin Alpha)**: PTMA is involved in cell proliferation and apoptosis inhibition. Its overexpression is often associated with tumorigenesis and poor clinical outcomes.
+
+4. **CD63 (Cluster of Differentiation 63)**: CD63 is a member of the tetraspanin family, which plays a role in cell adhesion, migration, and signal transduction. Its high expression is linked to tumor progression and metastasis.
+
+5. **EID1 (EP300 Interacting Inhibitor of Differentiation 1)**: EID1 is involved in regulating transcription and cellular differentiation. Its dysregulation can contribute to tumorigenesis and cancer progression.
+
+6. **HSP90AA1 (Heat Shock Protein 90 Alpha Family Class A Member 1)**: HSP90AA1 is a molecular chaperone involved in protein folding and stabilization. It supports the function of multiple oncogenic proteins, making it a critical player in cancer cell survival and proliferation.
+
+7. **SERPINH1 (Serpin Family H Member 1)**: SERPINH1, also known as HSP47, is a collagen-specific chaperone. Its upregulation is associated with increased collagen production and fibrosis, contributing to the tumor microenvironment's support of cancer progression.
+
+8. **HSPA1A (Heat Shock Protein Family A Member 1A)**: This gene encodes a stress-induced chaperone protein that assists in protein folding and protection against apoptosis. Elevated levels are often found in tumors and correlate with poor prognosis.
+
+9. **LGALS1 (Galectin-1)**: LGALS1 is involved in cell-cell and cell-matrix interactions, immune response modulation, and angiogenesis. Its overexpression promotes tumor growth, metastasis, and immune evasion.
+
+10. **TIMP1 (Tissue Inhibitor of Metalloproteinases 1)**: TIMP1 regulates the extracellular matrix by inhibiting metalloproteinases. While its primary function is to prevent excessive matrix degradation, its overexpression can contribute to a more aggressive tumor phenotype and poor survival outcomes.
+
+These findings highlight the complex interplay between various cellular processes and pathways that drive poor survival in ESCC, offering potential targets for therapeutic intervention.
+
+RESULTS OUTPUT:
+
+在使用Scissor方法分析食管鳞状细胞癌（ESCC）中的差异表达基因时，发现与生存率差相关的基因显著富集。确定的关键基因包括FTH1、VIM、PTMA、CD63、EID1、HSP90AA1、SERPINH1、HSPA1A、LGALS1和TIMP1。
+
+### 图形结果的生物学意义：
+
+1. **FTH1 (铁蛋白重链1)**：该基因在铁储存和调节中发挥作用，这对于细胞增殖和肿瘤生长至关重要。FTH1水平升高与癌细胞生存和抗氧化应激的增加有关。
+
+2. **VIM (波形蛋白)**：波形蛋白是上皮-间质转化（EMT）的标志，EMT增强了癌细胞的迁移和侵袭能力，导致转移和ESCC的不良预后。
+
+3. **PTMA (胸腺素α)**：PTMA参与细胞增殖和凋亡抑制。其过表达通常与肿瘤发生和不良临床结果相关。
+
+4. **CD63 (分化簇63)**：CD63是四跨膜家族成员，参与细胞粘附、迁移和信号传导。其高表达与肿瘤进展和转移有关。
+
+5. **EID1 (EP300交互抑制因子1)**：EID1参与调节转录和细胞分化。其失调可能促进肿瘤发生和癌症进展。
+
+6. **HSP90AA1 (热休克蛋白90α家族A成员1)**：HSP90AA1是一种分子伴侣，参与蛋白质折叠和稳定。它支持多种致癌蛋白的功能，使其成为癌细胞生存和增殖的关键角色。
+
+7. **SERPINH1 (丝氨酸蛋白酶抑制剂H家族成员1)**：SERPINH1，也称为HSP47，是一种胶原特异性伴侣蛋白。其上调与胶原生成和纤维化增加有关，支持肿瘤微环境中癌症的进展。
+
+8. **HSPA1A (热休克蛋白家族A成员1A)**：该基因编码一种应激诱导的伴侣蛋白，帮助蛋白质折叠并防止细胞凋亡。其水平升高常见于肿瘤中，并与不良预后相关。
+
+9. **LGALS1 (半乳糖凝集素-1)**：LGALS1参与细胞-细胞和细胞-基质的相互作用，免疫反应调节和血管生成。其过表达促进肿瘤生长、转移和免疫逃逸。
+
+10. **TIMP1 (基质金属蛋白酶抑制剂1)**：TIMP1通过抑制金属蛋白酶调节细胞外基质。尽管其主要功能是防止过度的基质降解，但其过表达可能导致更具侵袭性的肿瘤表型和不良生存结果。
+
+这些发现突出了各种细胞过程和途径之间的复杂相互作用，这些过程和途径推动了ESCC中的不良生存，提供了潜在的治疗干预靶点。
+
+### Cancer cell Scissor Differential Expressed Genes Kegg Pathway barplot
+
+
+![](images/2024-06-12-10-00-36.png)
+
+
+### Description
+
+
+Barplot of differential Expressed Genes Kegg Pathway 
+shows that in Cancer cell Scissor(poor survival with others)
+### Results
+
+Poor survival of differential expressed genes Kegg pathway enriched in : Protein processing in endoplasmic reticulum，
+Antigen processing and presentation，Focal adhesion，Phagosome，ECM-receptor interaction，Lysosome and Relaxin signaling pathway. 
+
+
+### ChatGPT写的
+
+
+RESULTS OUTPUT:
+
+
+
+### Figure Results**:
+
+Differentially expressed genes associated with poor survival in ESCC are significantly enriched in several KEGG pathways. These pathways include Protein Processing in the Endoplasmic Reticulum, Antigen Processing and Presentation, Focal Adhesion, Phagosome, ECM-Receptor Interaction, Lysosome, and Relaxin Signaling Pathway.
+
+
+**Biological Meaning of the Figure Results**:
+
+The enrichment of differentially expressed genes in specific KEGG pathways reveals critical biological processes linked to poor survival in ESCC. 
+
+- **Protein Processing in the Endoplasmic Reticulum**: This pathway indicates the importance of proper protein folding and stress response mechanisms in cancer cell survival and progression.
+  
+- **Antigen Processing and Presentation**: The involvement of this pathway suggests that immune evasion through altered antigen presentation may contribute to poor prognosis in ESCC.
+  
+- **Focal Adhesion**: This pathway is crucial for cell adhesion, migration, and signaling, which are essential for cancer metastasis and invasion.
+- **Phagosome**: The role of phagosome in cellular debris clearance and immune response modulation is highlighted, impacting tumor immunity.
+
+- **ECM-Receptor Interaction**: This pathway underscores the significance of extracellular matrix (ECM) components in cell signaling, adhesion, and migration, influencing tumor growth and metastasis.
+
+- **Lysosome**: The involvement of lysosomal pathways indicates the importance of cellular degradation and recycling processes in maintaining cancer cell viability.
+
+- **Relaxin Signaling Pathway**: This pathway is implicated in tissue remodeling and fibrosis, contributing to tumor progression and metastasis.
+
+These findings provide insights into the molecular mechanisms underlying poor survival in ESCC, potentially guiding the development of targeted therapies and improving patient outcomes.
+
+
+重写的图表结果:
+与ESCC预后不良相关的差异表达基因在多个KEGG通路中显著富集。这些通路包括内质网中的蛋白质加工、抗原处理和呈递、粘着斑、吞噬体、ECM受体相互作用、溶酶体和松弛素信号通路。
+
+图表结果的生物学意义:
+差异表达基因在特定KEGG通路中的富集揭示了与ESCC预后不良相关的重要生物过程。
+
+内质网中的蛋白质加工: 该通路表明在癌细胞生存和进展中，蛋白质正确折叠和应激反应机制的重要性。
+
+抗原处理和呈递: 该通路的参与表明，通过改变抗原呈递来逃避免疫可能会导致ESCC预后不良。
+
+粘着斑: 该通路对于细胞粘附、迁移和信号传导至关重要，这对于癌细胞的转移和侵袭至关重要。
+
+吞噬体: 吞噬体在清除细胞碎片和调节免疫反应中的作用，对肿瘤免疫有影响。
+
+ECM受体相互作用: 该通路强调了细胞外基质（ECM）成分在细胞信号传导、粘附和迁移中的重要性，影响肿瘤生长和转移。
+
+溶酶体: 溶酶体通路的参与表明，细胞降解和再循环过程在维持癌细胞生存中的重要性。
+
+松弛素信号通路: 该通路与组织重塑和纤维化有关，促进肿瘤进展和转移。  
+
+这些发现提供了对ESCC预后不良分子机制的洞见，有助于开发针对性的治疗方法并改善患者的预后。
+
+![](images/2024-06-12-10-12-05.png)
+
+
+
+
+
+
+
+
+
+![](images/2024-06-12-10-12-40.png)
+
+
+
+### Description
+
+Cell proportion of poor survival in all samples.
+
+
+###  Results
+
+
+Almost all samples exists poor survival cells.
+
+
+
+
+### Hazard ratio of level2 cell types
+
+![](images/2024-06-12-10-29-51.png)
+
+
+### Description
+
+Hazard ratio of level2 cell types.
+
+
+###  Results
+
+
+
+VSMC，CAF4，NAF2，NMF,Pericyte,TEC2,CAF2,FRC,NEC1 and NAF1 cell types are most highly enriched .
+
+
+###  ChatGPT
+
+
+RESULTS OUTPUT:
+
+
+
+### Figure Results:
+"Vascular smooth muscle cells (VSMC), cancer-associated fibroblasts type 4 (CAF4), normal-associated fibroblasts type 2 (NAF2), normal mesenchymal fibroblasts (NMF), pericytes, tumor endothelial cells type 2 (TEC2), cancer-associated fibroblasts type 2 (CAF2), fibroblastic reticular cells (FRC), neural endothelial cells type 1 (NEC1), and normal-associated fibroblasts type 1 (NAF1) are the cell types most highly enriched in ESCC."
+
+### Biological Meaning of the Figure Results:
+The high enrichment of these specific cell types in ESCC indicates their significant roles in the tumor microenvironment. VSMCs and pericytes are involved in the formation of blood vessels, which can support tumor growth through angiogenesis. Various types of fibroblasts (CAF4, CAF2, NAF2, NAF1) contribute to the remodeling of the extracellular matrix and create a supportive niche for cancer cells. NMFs and FRCs are essential for maintaining tissue integrity and immune cell interactions. TEC2 cells are indicative of the angiogenic switch, where tumor vasculature begins to support rapid tumor growth. NEC1 cells, being part of the neural endothelial system, might influence tumor invasion and metastasis. Overall, the presence of these cell types highlights the complex interactions within the tumor microenvironment that promote tumor progression and impact patient outcomes in ESCC.
+
+
+图表结果：
+
+"血管平滑肌细胞（VSMC）、癌症相关成纤维细胞4型（CAF4）、正常相关成纤维细胞2型（NAF2）、正常间充质成纤维细胞（NMF）、周细胞、肿瘤内皮细胞2型（TEC2）、癌症相关成纤维细胞2型（CAF2）、纤维网状细胞（FRC）、神经内皮细胞1型（NEC1）和正常相关成纤维细胞1型（NAF1）是ESCC中最富集的细胞类型。"
+图表结果的生物学意义：
+
+这些特定细胞类型在ESCC中的高度富集表明它们在肿瘤微环境中的重要作用。血管平滑肌细胞和周细胞参与血管的形成，通过血管生成支持肿瘤生长。各种类型的成纤维细胞（CAF4、CAF2、NAF2、NAF1）有助于重塑细胞外基质，为癌细胞创造支持性环境。正常间充质成纤维细胞和纤维网状细胞对维持组织完整性和免疫细胞相互作用至关重要。肿瘤内皮细胞2型的存在表明肿瘤血管化开关已经开启，肿瘤血管开始支持快速肿瘤生长。神经内皮细胞1型作为神经内皮系统的一部分，可能影响肿瘤的侵袭和转移。总体而言，这些细胞类型的存在突显了肿瘤微环境中的复杂相互作用，这些相互作用促进了肿瘤进展并影响ESCC患者的预后。
+
+
