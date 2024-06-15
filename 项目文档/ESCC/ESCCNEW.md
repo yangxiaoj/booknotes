@@ -594,3 +594,38 @@ The high enrichment of these specific cell types in ESCC indicates their signifi
 这些特定细胞类型在ESCC中的高度富集表明它们在肿瘤微环境中的重要作用。血管平滑肌细胞和周细胞参与血管的形成，通过血管生成支持肿瘤生长。各种类型的成纤维细胞（CAF4、CAF2、NAF2、NAF1）有助于重塑细胞外基质，为癌细胞创造支持性环境。正常间充质成纤维细胞和纤维网状细胞对维持组织完整性和免疫细胞相互作用至关重要。肿瘤内皮细胞2型的存在表明肿瘤血管化开关已经开启，肿瘤血管开始支持快速肿瘤生长。神经内皮细胞1型作为神经内皮系统的一部分，可能影响肿瘤的侵袭和转移。总体而言，这些细胞类型的存在突显了肿瘤微环境中的复杂相互作用，这些相互作用促进了肿瘤进展并影响ESCC患者的预后。
 
 
+### Hazard ratio of level2 cell types in normal microenvironment
+
+
+
+![](images/2024-06-14-16-55-17.png)
+
+
+### Description
+
+Hazard ratio of level2 cell types in normal microenvironment
+
+
+
+### Results
+
+
+In normal microenvironment cDC,Mono02,Epithlial,pDC,tDC,NK/NKT,TFH2,TAM02,Mono03 and TAM04 are most highly enriched.
+
+### ChatGPT写的
+
+### Description
+
+
+In the normal microenvironment, the cell types that are most highly enriched include classical dendritic cells (cDC), monocytes (Mono02), epithelial cells, plasmacytoid dendritic cells (pDC), tissue-resident dendritic cells (tDC), natural killer (NK) cells and natural killer T (NKT) cells, T follicular helper cells type 2 (TFH2), tumor-associated macrophages subtype 2 (TAM02), monocytes (Mono03), and tumor-associated macrophages subtype 4 (TAM04).
+
+### Biological Meaning:
+
+The figure highlights the significant enrichment of specific immune cell types within the normal microenvironment surrounding esophageal squamous cell carcinoma. This enrichment suggests an active and complex immune surveillance system involving a variety of immune cells. Classical dendritic cells (cDC) and plasmacytoid dendritic cells (pDC) are critical for antigen presentation and initiating adaptive immune responses. Monocytes (Mono02, Mono03) and tumor-associated macrophages (TAM02, TAM04) play roles in inflammation and immune regulation. Epithelial cells form the structural basis of tissues, while tissue-resident dendritic cells (tDC) maintain local immune homeostasis. Natural killer (NK) cells and natural killer T (NKT) cells are involved in the immediate response to tumor cells. T follicular helper cells type 2 (TFH2) support B cell function and antibody production. The presence of these diverse cell types indicates a robust interaction between the immune system and the normal tissue microenvironment, potentially contributing to tumor suppression and immune surveillance.
+
+在正常微环境中，最富集的细胞类型包括经典树突状细胞（cDC）、单核细胞（Mono02）、上皮细胞、浆细胞样树突状细胞（pDC）、组织驻留树突状细胞（tDC）、自然杀伤（NK）细胞和自然杀伤T（NKT）细胞、滤泡辅助T细胞2型（TFH2）、肿瘤相关巨噬细胞亚型2（TAM02）、单核细胞（Mono03）和肿瘤相关巨噬细胞亚型4（TAM04）。
+
+生物学意义:
+
+该图结果显示在食管鳞状细胞癌周围的正常微环境中，特定免疫细胞类型显著富集。这种富集表明存在一个活跃且复杂的免疫监视系统，涉及多种免疫细胞。经典树突状细胞（cDC）和浆细胞样树突状细胞（pDC）在抗原呈递和启动适应性免疫反应中起关键作用。单核细胞（Mono02, Mono03）和肿瘤相关巨噬细胞（TAM02, TAM04）在炎症和免疫调节中发挥作用。上皮细胞构成组织的结构基础，而组织驻留树突状细胞（tDC）维持局部免疫稳态。自然杀伤（NK）细胞和自然杀伤T（NKT）细胞参与对肿瘤细胞的即时响应。滤泡辅助T细胞2型（TFH2）支持B细胞功能和抗体产生。这些多样化细胞类型的存在表明免疫系统与正常组织微环境之间存在强烈的相互作用，可能有助于肿瘤抑制和免疫监视。
+
