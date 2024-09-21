@@ -187,7 +187,7 @@ RESULTS OUTPUT
 
 ### Description 
 
-ViolinPlot of different Cell types Proportion .
+Scatter diagram of different Cell types Proportion .
 
 #### CHATGPT rewrite：
 
@@ -238,7 +238,7 @@ Proportion of total cell types in HCC vs Benign vs Healthy
 
 ####CHATGPT Rewrite **Figure Description:**
    
-   Proportion of immune cell types across three groups: patients with HCC, patients with benign tumors, and healthy individuals.
+Proportion of immune cell types across three groups: patients with HCC, patients with benign tumors, and healthy individuals.
 
 
 ### Results
@@ -383,17 +383,27 @@ RESULTS OUTPUT:
 
 ### Description
 
+Confusion matrix of different B cells (Naive B cells,Unswitched memory B cells and Switched memory B cells) model prediction accuracy.
 
 
 ### Results
 
 
+It shows that confusion matrix of all B cells are higher than 0.94.
 
 
 
 
-### CD8T
+## CD4T 
 
+
+
+
+
+
+
+
+## CD8T
 
 
 
@@ -402,12 +412,15 @@ RESULTS OUTPUT:
 
 ### Description
 
-Boxplot Proportion of CD8T cells.
+Scatter diagram Proportion of CD8T cells.
 
 
 ### CHATGPT Rewrite Figure Description:
 
-Boxplot illustrating the proportion of CD8 T cells among the study groups.
+Scatter diagram illustrating the proportion of CD8 T cells among the study groups.  
+
+
+
 
 ### Results
 
@@ -464,7 +477,7 @@ Boxplot proportion of Myleoid cells.
 
 #### Description CHATGPT rewrite: 
 
-Boxplot illustrating the distribution of Myeloid cell proportions across different cell types.
+Scatter diagram illustrating the distribution of Myeloid cell proportions across different cell types.
 ### Results
 
 Proportion of Myleoid  cells from high to low:
@@ -804,6 +817,8 @@ HBV感染组与未感染组肝癌患者之间免疫细胞分布的差异提供�
 
 
 
+Unsupervised spectral clustering analysis was applied to normalized flowcytometry percentages torevealfive distinct molecular subtypes based on the distribution
+of selected cell populations. 
 
 ### Results
 
@@ -863,6 +878,8 @@ Benign patient are mainly enriched in G05 group.
 
 Age distribution across molecular subtypes
 
+
+
 ### Results
 
 
@@ -881,7 +898,7 @@ G2 and G4 group almost have the same age distribution.
 
 ### Description
 
-
+Cell type Enrichment across 5 different Molecular Subtypes.
 
 
 ### Results
