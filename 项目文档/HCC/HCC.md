@@ -883,7 +883,10 @@ Age distribution across molecular subtypes
 ### Results
 
 
-G2 and G4 group almost have the same age distribution.
+G05 and G02 have the younger average age, G02 are mainly enirched in healthy group;G5 are mainly enriched in Healthy and Benign group.
+
+G01 , G03 and  G04 have the older average age, G01 and G04 mainly enriched in HCC, while G# mainly enriched in healthy group.
+
 
 
 
@@ -922,11 +925,40 @@ CD4 Effector Memory T cellsCD4 Memory Treg cells,swithced momoery B cells, unswi
 In G02 group enriched cell types:non-classical Monocytes.
 
 
+Only in G01 enriched:classical Monocytes,PDCs, HLA-DR-low Monocytes.
+
+Only in G02 enriched :non-classical Monocytes.
+
+
+Only in G03 enriched:immature NK cells,CD 4 TERMA cells  and CD8 effector momory.
+
+Only in G04 enriched:Naive CD4T, cD8 central Meomory, CD4 Effector MEmory T cells and CD 4 MEmory Treg T cells.
+
+Only in G05 enriched: CD8 TERMA.
+
+cDC and Neutrophils both enrihced in old and HCC group (G01 and G03)
+
+In healthy group, Mature CD16+ NK cells enriched in both G02 and G05;MAIT and gDT enriched in both G03 and G05;
 
 
 
+### Chat GPT 
 
+Groups G05 and G02 represent younger participants, with G02 predominantly consisting of healthy individuals, while G05 includes both healthy and benign groups. In contrast, Groups G01, G03, and G04 consist of older individuals, with G01 and G04 showing a significant enrichment in HCC patients, while G03 is enriched in the healthy group. Notably, classical monocytes, pDCs, and HLA-DR-low monocytes are only enriched in G01. Non-classical monocytes are exclusively enriched in G02. G03 is characterized by the enrichment of immature NK cells, CD4 TEMRA cells, and CD8 effector memory cells. In G04, naive CD4 T cells, CD8 central memory, CD4 effector memory T cells, and CD4 memory Treg cells are uniquely enriched. CD8 TEMRA cells are only enriched in G05. Interestingly, cDCs and neutrophils are enriched in both older and HCC patients (G01 and G03). Among healthy individuals, mature CD16+ NK cells are enriched in both G02 and G05, while MAIT and γδT cells are enriched in G03 and G05.
 
+    Biological Meaning of Figure Results: The biological significance of these findings lies in the differential immune landscape between healthy individuals, benign tumor patients, and HCC patients, particularly across different age groups. Younger participants, especially in groups enriched in healthy and benign conditions, display an immune profile characterized by non-classical monocytes, MAIT cells, and γδT cells, which may suggest a robust immune response associated with younger age and a lower disease burden.
+
+In contrast, older participants, especially those with HCC, show a distinct immune profile dominated by classical monocytes, pDCs, and HLA-DR-low monocytes, which are known to be involved in immune dysregulation and chronic inflammation, both of which are hallmarks of cancer progression. The enrichment of cDCs and neutrophils in these groups suggests a pro-inflammatory and immunosuppressive microenvironment, potentially facilitating tumor growth and immune evasion in HCC.
+
+Additionally, the specific enrichment of effector memory T cells and naive T cells in older and HCC-enriched groups highlights the altered T cell dynamics in cancer, where there may be a shift towards memory and exhaustion states, reflecting the chronic nature of the disease.
+
+    图例结果： G05和G02组的参与者平均年龄较小，其中G02组主要富集于健康人群，G05组则富集于健康和良性肿瘤人群。相比之下，G01、G03和G04组的参与者平均年龄较大，其中G01和G04组主要富集于肝癌患者，而G03组主要富集于健康人群。值得注意的是，经典单核细胞、pDCs和HLA-DR低表达单核细胞仅在G01组富集。非经典单核细胞仅在G02组富集。幼稚NK细胞、CD4 TEMRA细胞和CD8效应记忆细胞在G03组富集。初级CD4 T细胞、CD8中心记忆细胞、CD4效应记忆T细胞和CD4记忆调节T细胞则在G04组富集。CD8 TEMRA细胞仅在G05组富集。cDCs和中性粒细胞则在年龄较大且肝癌组（G01和G03）中富集。在健康人群中，成熟的CD16+ NK细胞在G02和G05中富集，而MAIT细胞和γδT细胞在G03和G05中富集。
+
+    图例结果的生物学意义： 这些结果的生物学意义在于揭示了健康人群、良性肿瘤患者和肝癌患者之间的免疫差异，尤其是在不同年龄组中。年龄较小的参与者，尤其是富集于健康和良性肿瘤状态的组别，显示出一个以非经典单核细胞、MAIT细胞和γδT细胞为特征的免疫表型，这可能表明与较低疾病负担相关的更为强健的免疫反应。
+
+相反，年龄较大的参与者，尤其是肝癌患者，展现出一个以经典单核细胞、pDCs和HLA-DR低表达单核细胞为主的免疫表型，这些细胞已知与免疫调节异常和慢性炎症有关，而这些也是癌症进展的标志。cDCs和中性粒细胞的富集则表明了一种促炎和免疫抑制的微环境，可能促进肿瘤生长和免疫逃逸。
+
+此外，效应记忆T细胞和初级T细胞在年龄较大和肝癌富集组中的特异性富集表明T细胞动态的改变，反映出慢性疾病状态下从记忆向耗竭状态的转变。
 
 
 ### 问题1
