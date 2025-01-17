@@ -203,23 +203,221 @@ sub_adata.obs["group_id"].value_counts()
 
 ## 测试函数使用
 
+UMAP图（只有数据有obsm ,obsp 和 layers才能做出聚类）
 
 ``` python
+
+# level1  cell type的umap
+
+
+
+def plotEnhancedUMAPV02(adata, 
+                        obs_field_name,
+                        output_prefix,
+                        color_palette = None, # {"PoorSurvival": "tab:red", "Others": "tab:grey"},
+                        point_size = 10,
+                        fig_width = 15,
+                        fig_height = 15):
+    import scanpy as sc
+    import matplotlib.pyplot as plt
+
+    with plt.rc_context({"figure.figsize": (fig_width, fig_height), "figure.dpi": 600, "figure.frameon": False}):
+        sc.pl.umap(adata,
+                color=obs_field_name,
+                size=point_size,
+                show=False,
+                legend_loc="right margin",
+                legend_fontoutline=2,
+                legend_fontsize=32,
+                frameon=False,
+                title = "",
+                palette=color_palette,
+                save = f"_{output_prefix}_enhancedUMAPV02_umap.png")
+
+    with plt.rc_context({"figure.figsize": (15, 15), "figure.dpi": 600, "figure.frameon": False}):
+        sc.pl.umap(adata,
+                color=obs_field_name,
+                size=point_size,
+                show=False,
+                legend_loc="right margin",
+                legend_fontoutline=2,
+                legend_fontsize=32,
+                frameon=False,
+                title = "",
+                palette=color_palette,
+                save = f"_{output_prefix}_enhancedUMAPV02_umap.pdf")
 
 
 
 
 ``` 
 
+``` python 
+
+os.chdir('/mnt/mydisk/scESCC/scESCC/Analysis/Results/Global/Train/')
+
+esca_adata = pickle.load(open("/mnt/mydisk/scESCC/scESCC/Analysis/Results/Global/scANVI/esca_scANVI_adata.pkl", "rb"))
+
+
+sub_adata = esca_adata[np.random.choice(esca_adata.obs.index, 10000, replace=False)]
+
+``` 
 
 
 
+``` python 
+
+# Tcell          3254   Myeloid        213 Epithelial     1244  Bcell          1240   Fibroblast     1073 Endothelial     738   Pericytes       272   FRC              42
+
+ 
+# "#E41A1C", "#377EB8", "#4DAF4A", "#984EA3", "#FF7F00", "#FFFF33", "#A65628", "#F781BF","#999999", "#E7298A", "#66C2A5", "#FC8D62","#8DA0CB", "#E78AC3", "#A6D854", "#FFD92F","#E5C494", "#B3B3B3", "#8DD3C7", "#BEBADA","#FB8072", "#80B1D3", "#FDB462", "#B3DE69"]
 
 
 
+plotEnhancedUMAPV02(adata= sub_adata,
+                        obs_field_name="level1",
+                        output_prefix= "level1",
+                        color_palette = {"Tcell": "#E41A1C", "Myeloid": "#377EB8", "Epithelial": "#4DAF4A", "Bcell": "#984EA3", "Fibroblast": "#FF7F00", "Endothelial": "#FFFF33", "Pericytes": "#A65628", "FRC": "#F781BF"},
+                        point_size = 50,
+                        fig_width = 15,
+                        fig_height = 15)
 
 
 
+``` 
+
+
+``` python 
+
+# 输入： sub_adata作为一个scanpy的adata对象，其中有一个字段是cell_type; 输出： 我希望知道这个字段中有多少个不同的值
+
+
+sub_adata.obs["level1"].value_counts()
+
+``` 
+
+
+``` python
+
+# 如何获得当前路径
+
+
+import os
+
+os.getcwd()
+
+
+
+```
+
+
+
+## barplot cell_number
+
+
+``` python
+
+
+
+def plot_cell_number_by_group_using_barplot(
+                                 adata, 
+                                 groupby,
+                                 prefix,
+                                 color_palette = {}, # {"PHT": "#E41A1C", "LRT": "#377EB8"}
+                                 xlab_text = "",
+                                 ylab_text = "Cell Number",
+                                 fig_width = 10,
+                                 fig_height = 5):
+
+
+    import diopy
+    import anndata as ad
+    import scanpy as sc
+
+    # create directory named cell_number_barplot_by_group
+    os.makedirs("cell_number_barplot_by_group", exist_ok = True)
+    os.chdir("cell_number_barplot_by_group")
+    
+    adata = ad.AnnData(X=adata.X, obs=adata.obs, var=adata.var)
+    
+    nature_colors = ["#E41A1C", "#377EB8", "#4DAF4A", "#984EA3",
+                     "#FF7F00", "#FFFF33", "#A65628", "#F781BF",
+                    "#999999", "#E7298A", "#66C2A5", "#FC8D62",
+                    "#8DA0CB", "#E78AC3", "#A6D854", "#FFD92F",
+                    "#E5C494", "#B3B3B3", "#8DD3C7", "#BEBADA",
+                    "#FB8072", "#80B1D3", "#FDB462", "#B3DE69"]
+
+
+    if len(color_palette) == 0:
+        color_palette = "c(" + ", ".join([f'"{k}" = "{v}"' for k, v in zip(adata.obs[groupby].unique(), nature_colors)]) + ")"
+    else:
+        # convert color_palette to R vector
+        color_palette = "c(" + ", ".join([f'"{k}" = "{v}"' for k, v in color_palette.items()]) + ")"
+        
+    # save the obs to csv file
+    adata.obs.to_csv(f"obs.csv", index = False)
+    
+    
+    
+    r_code = """
+
+library(Seurat)
+library(ggplot2)
+library(dplyr)
+
+
+setwd("{outdir}")
+
+meta_frame <- read.csv("obs.csv", header = TRUE)
+
+# get the total cell number of each group
+total_cell_number_frame <- meta_frame %>% group_by({groupby}) %>% summarise(total_cell_number = n())
+
+# get the groupA cell number
+
+sub_group_cell_number_frame <- meta_frame %>% group_by({groupby}) %>% summarise(sub_group_cell_number = n())
+
+gp <- ggplot(sub_group_cell_number_frame, aes(x = {groupby}, y = sub_group_cell_number, fill = {groupby})) +
+    geom_bar(stat = "identity") +
+    scale_fill_manual(values = {color_palette}) +
+    labs(y = "{ylab_text}", x = "{xlab_text}") +
+    guides(fill=guide_legend(title="")) +
+    theme_classic() +
+    # add the text on the top of the bar
+    geom_text(aes(label = sub_group_cell_number), vjust = -0.3, size = 3) +
+    theme(axis.text.x = element_text(angle = 45, hjust = 1), strip.background = element_blank())
+
+ggplot2::ggsave("{prefix}_cell_number_bar_plot.png", plot = gp, width = {fig_width}, height = {fig_height})
+
+ggplot2::ggsave("{prefix}_cell_number_bar_plot.pdf", plot = gp, width = {fig_width}, height = {fig_height})
+
+
+# get the total count of all cells and add it to the total_cell_number_frame
+total_cell_number <- sum(total_cell_number_frame$total_cell_number)
+total_cell_number_frame <- rbind(total_cell_number_frame, data.frame({groupby} = "Total", total_cell_number = total_cell_number))
+
+# write the total cell number to a tab-delimited file
+write.table(total_cell_number_frame, file = "{prefix}_total_cell_number.txt", sep = "\t", quote = FALSE, row.names = F, col.names = TRUE)
+
+    """.format(outdir = os.getcwd(),
+               groupby = groupby,
+               fig_height = fig_height,
+               fig_width = fig_width,
+               color_palette = color_palette,
+               xlab_text = xlab_text,
+               ylab_text = ylab_text,
+               prefix = prefix)
+
+    # write the r code to a file
+    r_file = open("plotCellNumberBarPlotByGroup.R", "wt", encoding="utf-8")
+    r_file.write(r_code)
+    r_file.close()
+    # run the r code
+    os.system("/mnt/tools/miniconda/envs/scRNA/bin/Rscript plotCellNumberBarPlotByGroup.R")
+
+
+
+```
 
 
 
