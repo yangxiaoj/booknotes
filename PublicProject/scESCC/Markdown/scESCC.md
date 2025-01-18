@@ -1,5 +1,11 @@
 
 
+
+重新开启电脑后需要重新联络。先点击 mnt/SSH:laptop 
+
+
+
+
 ``` bash
 
 # 直接进入  session
@@ -312,7 +318,7 @@ os.getcwd()
 
 
 
-## barplot cell_number
+## barplot cell_number by group
 
 
 ``` python
@@ -419,11 +425,47 @@ write.table(total_cell_number_frame, file = "{prefix}_total_cell_number.txt", se
 
 ```
 
+``` python
+
+
+os.chdir('/mnt/mydisk/scESCC/scESCC/Analysis/Results/Global/Train/')
+
+esca_adata = pickle.load(open("/mnt/mydisk/scESCC/scESCC/Analysis/Results/Global/scANVI/esca_scANVI_adata.pkl", "rb"))
+
+
+
+```
+
+``` python
 
 
 
 
 
+plot_cell_number_by_group_using_barplot(
+                                 adata= "esca_adata",
+                                 groupby= "level1",
+                                 prefix= "barplot of level1",
+                                 color_palette = {"Tcell": "#E41A1C", "Myeloid": "#377EB8", "Epithelial": "#4DAF4A", "Bcell": "#984EA3", "Fibroblast": "#FF7F00", "Endothelial": "#FFFF33", "Pericytes": "#A65628", "FRC": "#F781BF"}
+                                 xlab_text = "cell_type",
+                                 ylab_text = "Cell Number",
+                                 fig_width = 10,
+                                 fig_height = 5):
+
+
+```
+
+
+
+``` python
+
+    
+# 输入： sub_adata作为一个scanpy的adata对象，其中有一个字段是cell_number by group; 输出： 我希望知道这个字段中有多少个不同的值
+
+sub_adata.obs["group_id"].value_counts()
+
+
+```
 加载global的adat文件是存储为pickle格式的文件
 
 这里的adata 文件路径是`/home/cuis/common/projects/IBDNanostring/RawData/scESCC/Analysis/Results/Global/SingleR/esca_query_adata.pkl`
